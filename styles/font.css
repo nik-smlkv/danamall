@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "Hauora";
+	src: url("/fonts/Hauora-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Hauora";
+	src: url("/fonts/Hauora-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Hauora";
+	src: url("/fonts/Hauora-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Hauora";
+	src: url("/fonts/Hauora-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tenor Sans";
+	src: url("/fonts/TenorSans-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tenor Sans";
+	src:
+		url('/fonts/TenorSans.woff2') format('woff2'),
+		url('/fonts/TenorSans.woff') format('woff');
+
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,128 @@
+/* Утилиты: когда нужно навесить размер/шрифт классом, а не семантикой */
+
+.font-sans {
+	font-family: var(--font-primary);
+}
+
+.font-display {
+	font-family: var(--font-display);
+}
+
+.w-regular {
+	font-weight: var(--w-regular);
+}
+
+.w-medium {
+	font-weight: var(--w-medium);
+}
+
+.w-semibold {
+	font-weight: var(--w-semibold);
+}
+
+.w-bold {
+	font-weight: var(--w-bold);
+}
+
+.lh-100 {
+	line-height: var(--lh-100);
+}
+
+.lh-110 {
+	line-height: var(--lh-110);
+}
+
+/* headline 1–8 из макета */
+.headline-1 {
+	font-family: var(--font-display);
+	font-size: var(--h1);
+	line-height: var(--lh-100);
+}
+
+.headline-2 {
+	font-family: var(--font-display);
+	font-size: var(--h2);
+	line-height: var(--lh-100);
+}
+
+.headline-3 {
+	font-family: var(--font-display);
+	font-size: var(--h3);
+	line-height: var(--lh-100);
+}
+
+.headline-4 {
+	font-family: var(--font-display);
+	font-size: var(--h4);
+	line-height: var(--lh-100);
+}
+
+.headline-5 {
+	font-family: var(--font-display);
+	font-size: var(--h5);
+	line-height: var(--lh-100);
+}
+
+.headline-6 {
+	font-family: var(--font-display);
+	font-size: var(--h6);
+	line-height: var(--lh-100);
+}
+
+.headline-7 {
+	font-family: var(--font-display);
+	font-size: var(--h7);
+	line-height: var(--lh-100);
+}
+
+.headline-8 {
+	font-family: var(--font-display);
+	font-size: var(--h8);
+	line-height: var(--lh-100);
+}
+
+/* ссылки */
+.link-1 {
+	font-size: var(--link-1);
+	line-height: var(--lh-110);
+}
+
+.link-2 {
+	font-size: var(--fs-link-1);
+	line-height: var(--lh-110);
+}
+
+/* fluid-варианты (если нужны) */
+@media (max-width: 1024px) {
+	.headline-1 {
+		font-size: var(--h1-fluid);
+	}
+
+	.headline-2 {
+		font-size: var(--h2-fluid);
+	}
+
+	.headline-3 {
+		font-size: var(--h3-fluid);
+	}
+
+	.headline-4 {
+		font-size: var(--h4-fluid);
+	}
+
+	.headline-5 {
+		font-size: var(--h5-fluid);
+	}
+
+	.headline-6 {
+		font-size: var(--h6-fluid);
+	}
+
+	.headline-7 {
+		font-size: var(--h7-fluid);
+	}
+
+	.headline-8 {
+		font-size: var(--h8-fluid);
+	}
+}
