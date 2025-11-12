@@ -1,13 +1,13 @@
 /* Базовые стили для текста и семантики */
 html {
-	-webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-	font-family: var(--font-primary);
-	font-weight: var(--w-regular);
-	line-height: 1.5;
-	text-rendering: optimizeLegibility;
+  font-family: var(--font-primary);
+  font-weight: var(--w-regular);
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 /* Заголовки используют Tenor Sans и фиксированные размеры (или fluid, см. ниже) */
@@ -17,84 +17,89 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--font-display);
-	font-weight: 400;
-	line-height: var(--lh-100);
-	letter-spacing: 0;
-	margin: 0 0 0.5em;
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: var(--lh-100);
+  letter-spacing: 0;
+  margin: 0 0 0.5em;
 }
 
 /* фиксированные */
 h1 {
-	font-size: var(--h1);
+  font-size: var(--h1);
 }
 
 h2 {
-	font-size: var(--h2);
+  font-size: var(--h2);
 }
 
 h3 {
-	font-size: var(--h3);
+  font-size: var(--h3);
 }
 
 h4 {
-	font-size: var(--h4);
+  font-size: var(--h4);
 }
 
 h5 {
-	font-size: var(--h5);
+  font-size: var(--h5);
 }
 
 h6 {
-	font-size: var(--h6);
+  font-size: var(--h6);
 }
 
 /* Тело текста по умолчанию — Hauora */
 
 /* Ссылки */
 a {
-	font-size: var(--fs-link-1);
-	line-height: var(--lh-110);
-	text-decoration: underline;
-	text-underline-offset: 0.15em;
+  font-size: var(--fs-link-1);
+  line-height: var(--lh-110);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 /* Варианты для гигантских заголовков в герое */
 .display-320 {
-	font-family: var(--font-display);
-	font-size: var(--display-320);
-	line-height: var(--lh-100);
+  font-family: var(--font-display);
+  font-size: var(--display-320);
+  line-height: var(--lh-100);
 }
 
 .display-240 {
-	font-family: var(--font-display);
-	font-size: var(--display-240);
-	line-height: var(--lh-100);
+  font-family: var(--font-display);
+  font-size: var(--display-240);
+  line-height: var(--lh-100);
 }
 
 /* Адаптив: переключиться на fluid-токены на маленьких экранах */
 @media (max-width: 1024px) {
-	h1 {
-		font-size: var(--h1-fluid);
-	}
+  h1 {
+    font-size: var(--h1-fluid);
+  }
 
-	h2 {
-		font-size: var(--h2-fluid);
-	}
+  h2 {
+    font-size: var(--h2-fluid);
+  }
 
-	h3 {
-		font-size: var(--h3-fluid);
-	}
+  h3 {
+    font-size: var(--h3-fluid);
+  }
 
-	h4 {
-		font-size: var(--h4-fluid);
-	}
+  h4 {
+    font-size: var(--h4-fluid);
+  }
 
-	h5 {
-		font-size: var(--h5-fluid);
-	}
+  h5 {
+    font-size: var(--h5-fluid);
+  }
 
-	h6 {
-		font-size: var(--h6-fluid);
-	}
+  h6 {
+    font-size: var(--h6-fluid);
+  }
+}
+@media (max-width: 1920px) {
+  a {
+    font-size: clamp(1rem, 0.625rem + 0.417vi, 1.125rem);
+  }
 }

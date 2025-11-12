@@ -233,9 +233,34 @@ textarea:focus-visible {
 
 main {
 	flex: 1 0 auto;
+	padding-top: 82px;
 }
 
 .footer {
 	flex-shrink: 0;
 	margin-top: auto;
 }
+.p-cont{
+	padding: 0px 140px;
+}
+@media(max-width: 1920px)
+{
+	.p-cont{
+		padding:0px clamp(5rem, -6.25rem + 12.5vi, 8.75rem);
+	}
+}
+@media(max-width:1440px){
+	.p-cont{
+		padding: 0 clamp(3.75rem, 0rem + 4.167vi, 5rem);
+	}
+}
+@media(max-width: 1280px){
+	.p-cont{
+		padding: 0 clamp(2.5rem, 0.625rem + 3.906vi, 3.75rem)
+	}
+}
+@media(max-width: 768px){
+	.p-cont{
+		padding: 0px 20px;
+	}
+}	
