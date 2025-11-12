@@ -1,0 +1,96 @@
+.footer {
+	background: #f7f5f2;
+	color: #1c1c1c;
+	padding: 40px 24px;
+	font-family: "Inter", sans-serif;
+}
+
+
+.footer__brands {
+	overflow-x: auto;
+	white-space: nowrap;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 12px;
+	margin-bottom: 24px;
+}
+
+.footer__brands-track {
+	display: inline-flex;
+	gap: 32px;
+	padding-left: 8px;
+}
+
+.footer__brands-track span {
+	font-weight: 600;
+	font-size: 1rem;
+	color: #1c1c1c;
+	flex-shrink: 0;
+}
+
+.footer__brands {
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 12px;
+	margin-bottom: 24px;
+}
+
+.footer__brands-track {
+	display: flex;
+	gap: 32px;
+	white-space: nowrap;
+	animation: scrollBrands 40s linear infinite;
+}
+
+.footer__brands-track span {
+	font-weight: 600;
+	font-size: 1rem;
+	color: #1c1c1c;
+	flex-shrink: 0;
+}
+
+@keyframes scrollBrands {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+
+
+.footer__content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 32px;
+	margin-bottom: 24px;
+}
+
+.footer__section h4 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+
+.footer__section p,
+.footer__section a {
+	font-size: 0.9rem;
+	color: #333;
+	margin-bottom: 6px;
+	text-decoration: none;
+}
+
+.footer__section a:hover {
+	color: #a37c4a;
+}
+
+.footer__bottom {
+	text-align: center;
+	font-size: 0.8rem;
+	color: #999;
+	border-top: 1px solid #ccc;
+	padding-top: 16px;
+}

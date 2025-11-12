@@ -145,12 +145,17 @@ textarea:focus-visible {
 }
 
 .wrapper {
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
 	overflow: hidden;
-	max-inline-size: 1920px;
-	padding: 0px 140px;
 	min-height: 100dvh;
 	position: relative;
+}
+
+.container {
+	max-inline-size: 1920px;
+	padding: 0px 140px;
 }
 
 :root {
@@ -224,4 +229,13 @@ textarea:focus-visible {
 
 .border-bottom {
 	border-bottom: 1px solid var(--border);
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex-shrink: 0;
+	margin-top: auto;
 }
