@@ -1,0 +1,99 @@
+:root {
+
+	--accent-red: #C90509;
+	--accent-green: #006E42;
+	--accent-green-2: #5A6C54;
+
+
+	--text-primary: #090714;
+	--text-secondary: #626262;
+	--text-white: #FFFFFF;
+	--text-muted: rgba(9, 7, 20, 0.60);
+	--text-disabled: rgba(9, 7, 20, 0.38);
+
+	--gray-50: #FFFFFF;
+	--gray-100: #F7F7F7;
+	--gray-200: #EDEDED;
+	--gray-300: rgba(90, 90, 90, 0.30);
+	--gray-400: rgba(55, 55, 55, 0.30);
+	--gray-500: #989898;
+	--gray-700: #626262;
+	--gray-900: #090714;
+
+
+	--bg-primary: #FFFFFF;
+	--bg-secondary: #F7F7F7;
+	--bg-inverse: #111111;
+	--bg-white: #FFFFFF;
+
+
+	--border-light: rgba(9, 7, 20, 0.10);
+	--border-strong: rgba(9, 7, 20, 0.25);
+
+
+	--focus-outline: rgba(9, 7, 20, 0.32);
+
+
+
+
+	--font-primary: "Hauora", sans-serif;
+	--font-headline: "Tenor Sans", sans-serif;
+
+
+	--w-regular: 400;
+	--w-medium: 500;
+	--w-semibold: 600;
+	--w-bold: 700;
+	--w-headline: 400;
+
+
+	--fs-h1: 80px;
+	--fs-h2: 64px;
+	--fs-h3: 48px;
+	--fs-h4: 36px;
+	--fs-h5: 32px;
+	--fs-h6: 28px;
+	--fs-h7: 24px;
+	--fs-h8: 22px;
+
+	--lh-100: 1;
+	--lh-110: 1.1;
+
+
+	--fs-display-320: 320px;
+	--fs-display-240: 240px;
+	--fs-display-128: 128px;
+	--fs-display-102: 102px;
+	--fs-display-90: 90px;
+	--fs-display-46: 46px;
+	--fs-display-34: 34px;
+
+
+	--fs-link-1: 18px;
+	--fs-link-2: 16px;
+
+
+	--fs-h1-fluid: clamp(40px, 6vw, 80px);
+	--fs-h2-fluid: clamp(32px, 4.8vw, 64px);
+	--fs-h3-fluid: clamp(28px, 3.6vw, 48px);
+	--fs-h4-fluid: clamp(24px, 2.8vw, 36px);
+	--fs-h5-fluid: clamp(22px, 2.4vw, 32px);
+	--fs-h6-fluid: clamp(20px, 2.1vw, 28px);
+	--fs-h7-fluid: clamp(18px, 1.9vw, 24px);
+	--fs-h8-fluid: clamp(16px, 1.7vw, 22px);
+}
+
+[data-theme="dark"] {
+	--bg-primary: #111111;
+	--bg-secondary: #1A1A1A;
+
+	--text-primary: #FFFFFF;
+	--text-secondary: rgba(255, 255, 255, 0.75);
+	--text-muted: rgba(255, 255, 255, 0.55);
+	--text-disabled: rgba(255, 255, 255, 0.40);
+
+	--border-light: rgba(255, 255, 255, 0.12);
+	--border-strong: rgba(255, 255, 255, 0.25);
+
+	--focus-outline: rgba(255, 255, 255, 0.45);
+}
