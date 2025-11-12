@@ -1,5 +1,5 @@
 const newsSwiper = new Swiper("#newsSwiper", {
-  slidesPerView: "auto", 
+  slidesPerView: "auto",
   spaceBetween: 20,
   freeMode: false,
   navigation: {
@@ -33,8 +33,44 @@ slides.forEach((slide) => {
   });
 });
 
-// Сделаем первый слайд расширенным при загрузке (если не стоит классом)
 const first = document.querySelector("#newsSwiper .news-card");
 if (first && !first.classList.contains("is-expanded")) {
   first.classList.add("is-expanded");
 }
+
+(function () {
+  function initHero() {
+ 
+    const root = document.querySelector("#hero");
+    if (!root || !window.Swiper) return;
+
+    // инициализация
+    const heroSwiper = new Swiper("#hero", {
+      // базовое
+      loop: true,
+      speed: 700,
+      effect: "fade",
+      fadeEffect: { crossFade: true },
+      autoplay: { delay: 7000, disableOnInteraction: false },
+      allowTouchMove: true,
+
+      // стрелки внутри секции
+      navigation: {
+        nextEl: "#hero .swiper-button-next",
+        prevEl: "#hero .swiper-button-prev",
+      },
+    });
+
+    // маленькая круглая стрелка на промо-карточке — листает назад
+    root.querySelectorAll(".promo .swiper-prev").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        heroSwiper.slidePrev();
+      });
+    });
+  }
+
+  // запуск после загрузки DOM и скриптов
+  if (document.readyState !== "loading") initHero();
+  else document.addEventListener("DOMContentLoaded", initHero);
+})();

@@ -155,7 +155,6 @@ textarea:focus-visible {
 
 .container {
 	max-inline-size: 1920px;
-	padding: 0px 140px;
 }
 
 :root {
@@ -234,6 +233,12 @@ textarea:focus-visible {
 main {
 	flex: 1 0 auto;
 	padding-top: 82px;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	row-gap: 150px;
 }
 
 .footer {
