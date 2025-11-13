@@ -5,7 +5,7 @@ const newsSwiper = new Swiper("#newsSwiper", {
 	spaceBetween: 20,
 	loop: true,
 	loopedSlidesLimit: false,
- 
+	
 	speed: 600,
 	freeMode: false,                // обязательно off
  
