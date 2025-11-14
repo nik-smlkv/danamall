@@ -1,155 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>danamall</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/font.css" />
-    <link rel="stylesheet" href="./styles/typography-utilite.css" />
-    <link rel="stylesheet" href="./styles/tokens.css" />
-    <link rel="stylesheet" href="./styles/typography.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__body p-cont">
-          <div class="header__container">
-            <a href="/" class="header__logo" aria-label="DANA MALL">
-              <img src="./images/Logo.svg" alt="DANA MALL" />
-            </a>
-            <nav class="header__nav">
-              <a href="#">Магазины</a>
-              <a href="#">Кафе и рестораны</a>
-              <a href="#">Кинотеатр</a>
-              <a href="#">Карта ТЦ</a>
-            </nav>
-            <div class="header__info">
-              <p class="header__hours">
-                <img src="./images/hours.svg" alt="" /><span
-                  >Ежедневно 10:00 — 22:00</span
-                >
-              </p>
-              <div class="header-buttons__block">
-                <button class="header__map">
-                  <img src="./images/map.svg" alt="" />
-                </button>
-                <button class="header__search">
-                  <img src="./images/search.svg" alt="" />
-                </button>
-                <button class="header__icon burger" id="burgerBtn">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="header-menu" id="headerMenu">
-            <div class=" p-cont header-menu__wrapper">
-              <div class="header-menu-info__content">
-                <div class="header-menu-link__content">
-                  <div class="header-menu__column">
-                    <a href="#">Схема ТЦ</a>
-                    <a href="#">Как добраться</a>
-                    <a href="#">Паркинг</a>
-                    <a href="#">О DANA MALL</a>
-                    <a href="#">Арендаторам</a>
-                    <a href="#">Новости</a>
-                    <a href="#">Контакты</a>
-                  </div>
-                  <div class="header-menu__column">
-                    <a href="#">Магазины</a>
-                    <a href="#">Кафе и рестораны</a>
-                    <a href="#">Сервисы и услуги</a>
-                    <a href="#">Детям</a>
-                    <a href="#">Развлечения</a>
-                    <a href="#">Кинотеатр</a>
-                  </div>
-                </div>
-                <div class="header-menu__info">
-                  <div class="header-menu-info__center">
-                    <p class="header-menu-info__label">Инфоцентр</p>
-                    <div class="header-menu-info__block">
-						<p>+375 (29) 201-02-19</p>
-						<p>info@dana-mall.com</p>
-						<p>г. Минск, ул. П. Мстиславца, 11, ст.м. Восток</p>
-                    </div>
-                  </div>
-                  <div class="header-menu-info__arenda">
-                    <p class="header-menu-info__label">Отдел аренды</p>
-                    <div class="header-menu-info__block">
-                      <p>г. Минск, ул. П. Мстиславца, 9, («Дана центр»)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="header-menu__footer">
-                <div class="header-menu-footer__body">
-                  <a
-                    href="https://instagram.com/danamall"
-                    class="header-menu__social"
-                    target="_blank"
-                    ><img src="./images/inst-logo.svg" alt="" />
-                    <span>Мы в Instagram</span>
-                    <img src="./images/inst-arrow.svg" alt=""
-                  /></a>
-                  <p class="header__signature">DANA MALL, 2025</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main class="main">
-        <div class="section-group">
-          <section class="hero container p-cont" >
-				<div class="swiper" id="hero">
-            <div class="swiper-wrapper">
-              <!-- SLIDE 1 -->
-              <div class="swiper-slide hero__slide">
-                <img
-                  class="hero__img".hero
-                  src="./images/image.jpg"
-                  alt="Новогодняя инсталляция 2025"
-                />
-                <div class="hero__vignette">
-                  <h1 class="hero__title">НОВОГОДНЯЯ<br />ИНСТАЛЛЯЦИЯ 2025</h1>
-                  <aside class="promo">
-                    <button
-                      class="promo__nav swiper-prev"
-                      aria-label="Предыдущая акция"
-                    ></button>
-                    <div class="promo__body">
-                      <div class="promo__text">
-                        <h3 class="promo__title">TOGAS</h3>
-                        <p class="promo__desc">
-                          Скидка +15% к карте лояльности
-                        </p>
-                        <div class="promo__meta">
-                          <span class="badge badge--date">до 21.10</span>
-                          <span class="badge badge--sale">Скидка</span>
-                        </div>
-                      </div>
-                      <div class="promo__thumb">
-                        <img
-                          src="./images/promo-togas.jpg"
-                          alt="Скидка +15% в TOGAS"
-                        />
-                      </div>
-                    </div>
-                  </aside>
-                </div>
-              </div>
-              <div class="swiper-slide hero__slide">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>danamall</title>
+	<link rel="stylesheet" href="./styles/style.css" />
+	<link rel="stylesheet" href="./styles/header.css" />
+	<link rel="stylesheet" href="./styles/footer.css" />
+	<link rel="stylesheet" href="./styles/font.css" />
+	<link rel="stylesheet" href="./styles/typography-utilite.css" />
+	<link rel="stylesheet" href="./styles/tokens.css" />
+	<link rel="stylesheet" href="./styles/typography.css" />
+	<link rel="stylesheet" href="./styles/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__body p-cont">
+				<div class="header__container">
+					<a href="/" class="header__logo" aria-label="DANA MALL">
+						<img src="./images/Logo.svg" alt="DANA MALL" />
+					</a>
+					<nav class="header__nav">
+						<a href="#">Магазины</a>
+						<a href="#">Кафе и рестораны</a>
+						<a href="#">Кинотеатр</a>
+						<a href="#">Карта ТЦ</a>
+					</nav>
+					<div class="header__info">
+						<p class="header__hours">
+							<img src="./images/hours.svg" alt="" /><span>Ежедневно 10:00 — 22:00</span>
+						</p>
+						<div class="header-buttons__block">
+							<button class="header__map">
+								<img src="./images/map.svg" alt="" />
+							</button>
+							<button class="header__search">
+								<img src="./images/search.svg" alt="" />
+							</button>
+							<button class="header__icon burger" id="burgerBtn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="header-menu" id="headerMenu">
+					<div class=" p-cont header-menu__wrapper">
+						<div class="header-menu-info__content">
+							<div class="header-menu-link__content">
+								<div class="header-menu__column">
+									<a href="#">Схема ТЦ</a>
+									<a href="#">Как добраться</a>
+									<a href="#">Паркинг</a>
+									<a href="#">О DANA MALL</a>
+									<a href="#">Арендаторам</a>
+									<a href="#">Новости</a>
+									<a href="#">Контакты</a>
+								</div>
+								<div class="header-menu__column">
+									<a href="#">Магазины</a>
+									<a href="#">Кафе и рестораны</a>
+									<a href="#">Сервисы и услуги</a>
+									<a href="#">Детям</a>
+									<a href="#">Развлечения</a>
+									<a href="#">Кинотеатр</a>
+								</div>
+							</div>
+							<div class="header-menu__info">
+								<div class="header-menu-info__center">
+									<p class="header-menu-info__label">Инфоцентр</p>
+									<div class="header-menu-info__block">
+										<p>+375 (29) 201-02-19</p>
+										<p>info@dana-mall.com</p>
+										<p>г. Минск, ул. П. Мстиславца, 11, ст.м. Восток</p>
+									</div>
+								</div>
+								<div class="header-menu-info__arenda">
+									<p class="header-menu-info__label">Отдел аренды</p>
+									<div class="header-menu-info__block">
+										<p>г. Минск, ул. П. Мстиславца, 9, («Дана центр»)</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="header-menu__footer">
+							<div class="header-menu-footer__body">
+								<a href="https://instagram.com/danamall" class="header-menu__social" target="_blank"><img
+										src="./images/inst-logo.svg" alt="" />
+									<span>Мы в Instagram</span>
+									<img src="./images/inst-arrow.svg" alt="" /></a>
+								<p class="header__signature">DANA MALL, 2025</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="section-group">
+				<section class="hero container p-cont">
+					<div class="swiper" id="hero">
+						<div class="swiper-wrapper">
+							<!-- SLIDE 1 -->
+							<div class="swiper-slide hero__slide">
+								<img class="hero__img" .hero src="./images/image.jpg" alt="Новогодняя инсталляция 2025" />
+								<div class="hero__vignette">
+									<h1 class="hero__title">НОВОГОДНЯЯ<br />ИНСТАЛЛЯЦИЯ 2025</h1>
+									<aside class="promo">
+										<button class="promo__nav swiper-prev" aria-label="Предыдущая акция"></button>
+										<div class="promo__body">
+											<div class="promo__text">
+												<div class="promo-text__body">
+													<h3 class="promo__title">TOGAS</h3>
+													<p class="promo__desc">
+														Скидка +15% к карте лояльности
+													</p>
+												</div>
+												<div class="promo__meta">
+													<span class="badge badge--date">15.10-21.10</span>
+													<span class="badge badge--sale">Скидка</span>
+												</div>
+											</div>
+											<div class="promo__thumb">
+												<img src="./images/promo-togas.jpg" alt="Скидка +15% в TOGAS" />
+											</div>
+										</div>
+									</aside>
+								</div>
+							</div>
+							<!--   <div class="swiper-slide hero__slide">
                 <img
                   class="hero__img"
                   src="./images/image.jpg"
@@ -164,8 +148,10 @@
                     ></button>
                     <div class="promo__body">
                       <div class="promo__text">
+								<div class="promo-text__body">
                         <h3 class="promo__title">MANGO</h3>
                         <p class="promo__desc">До −30% на коллекцию</p>
+								</div>
                         <div class="promo__meta">
                           <span class="badge badge--date">до 15.12</span>
                           <span class="badge badge--sale">Скидка</span>
@@ -180,487 +166,382 @@
                     </div>
                   </aside>
                 </div>
-              </div>
-            </div>
-            <nav class="hero__chips" aria-label="Разделы">
-              <a href="#" class="chip">Новости</a>
-              <a href="#" class="chip">Виртуальный тур</a>
-              <a href="#" class="chip">Арендаторам</a>
-              <a href="#" class="chip">О нас</a>
-              <a href="#" class="chip">Контакты</a>
-            </nav>
-            <div class="hero-arrow__block">
-              <button
-                class="swiper-button-prev hero__arrow"
-                aria-label="Предыдущий"
-              ></button>
-              <button
-                class="hero__arrow--next swiper-button-next hero__arrow"
-                aria-label="Следующий"
-              ></button>
-            </div>
+              </div> -->
+						</div>
+						<nav class="hero__chips" aria-label="Разделы">
+							<a href="#" class="chip">Новости</a>
+							<a href="#" class="chip">Виртуальный тур</a>
+							<a href="#" class="chip">Арендаторам</a>
+							<a href="#" class="chip">О нас</a>
+							<a href="#" class="chip">Контакты</a>
+						</nav>
+						<div class="hero-arrow__block">
+							<button class="swiper-button-prev hero__arrow" aria-label="Предыдущий"></button>
+							<button class="hero__arrow--next swiper-button-next hero__arrow" aria-label="Следующий"></button>
+						</div>
+					</div>
+				</section>
+				<section class="stats" aria-label="Статистика ТЦ">
+					<div class="container p-cont">
+						<div class="stats__grid">
+							<!-- 1 -->
+							<a href="#" class="stats-card">
+								<span class="stats-card__value" data-count="64">64</span>
+								<span class="stats-card__label">Магазины</span>
+							</a>
+
+							<!-- 2 -->
+							<a href="#" class="stats-card">
+								<span class="stats-card__value" data-count="16">16</span>
+								<span class="stats-card__label">Кафе и рестораны</span>
+							</a>
+
+							<!-- 3 -->
+							<a href="#" class="stats-card">
+								<span class="stats-card__value" data-count="8">8</span>
+								<span class="stats-card__label">Сервисы и услуги</span>
+							</a>
+
+							<!-- 4 — карточка с логотипом Green -->
+							<a href="#" class="stats-card stats-card--logo" aria-label="Гипермаркет Green">
+								<img class="stats-card__logo" src="./images/green-card.png" alt="Green гипермаркет" />
+							</a>
+
+							<!-- 5 -->
+							<a href="#" class="stats-card">
+								<span class="stats-card__value" data-count="12">12</span>
+								<span class="stats-card__label">Детям</span>
+							</a>
+
+							<!-- 6 -->
+							<a href="#" class="stats-card">
+								<span class="stats-card__value" data-count="6">6</span>
+								<span class="stats-card__label">Развлечения</span>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="news" id="news">
+				<div class="container p-cont">
+					<div class="news__head">
+						<h2 class="news__title">Что нового</h2>
+						<nav class="news__tabs" aria-label="Фильтры">
+							<button class="tab is-active">Все</button>
+							<button class="tab">Новости</button>
+							<button class="tab">Скидки и акции</button>
+							<button class="tab">Открытия</button>
+						</nav>
+					</div>
+					<div class="news-swiper swiper" id="newsSwiper">
+						<div class="swiper-wrapper">
+							<!-- расширенная по умолчанию -->
+							<article class="news-card swiper-slide" data-image="./images/pandora-card.png">
+								<a class="news-card__link" href="#">
+									<div class="news-card__media">
+										<img src="./images/pandora-card.png" alt="Pandora −30%" />
+									</div>
+									<div class="news-card__body">
+										<!-- тело скрыто в expanded -->
+										<h3 class="news-card__title">PANDORA</h3>
+										<p class="news-card__desc">−30% на второй товар</p>
+										<div class="promo__meta">
+											<span class="badge badge--date">15.10-21.10</span>
+											<span class="badge badge--sale">Скидка</span>
+										</div>
+									</div>
+								</a>
+							</article>
+
+							<article class="news-card swiper-slide" data-image="./images/togas-card.png">
+								<a class="news-card__link" href="#">
+									<div class="news-card__media">
+										<img src="./images/togas-card.png" alt="TOGAS +15% к карте" />
+									</div>
+									<div class="news-card__body">
+										<h3 class="news-card__title">TOGAS</h3>
+										<p class="news-card__desc">
+											Скидка +15% к карте лояльности
+										</p>
+										<div class="promo__meta">
+											<span class="badge badge--date">15.10-21.10</span>
+											<span class="badge badge--sale">Скидка</span>
+										</div>
+									</div>
+								</a>
+							</article>
+
+							<article class="news-card swiper-slide" data-image="./images/mi-card.png">
+								<a class="news-card__link" href="#">
+									<div class="news-card__media">
+										<img src="./images/mi-card.png" alt="MI.BY скидки до 800 руб" />
+									</div>
+									<div class="news-card__body">
+										<h3 class="news-card__title">MI.BY</h3>
+										<p class="news-card__desc">
+											Скидка +15% к карте за подарки…
+										</p>
+										<div class="news-card__meta">
+											<span class="tag tag--date">15.10–21.10</span>
+											<span class="tag tag--news">Новость</span>
+										</div>
+									</div>
+								</a>
+							</article>
+
+							<article class="news-card swiper-slide" data-image="./images/ziko-card.png">
+								<a class="news-card__link" href="#">
+									<div class="news-card__media">
+										<img src="./images/ziko-card.png" alt="ZIKO — время дарить ему" />
+									</div>
+									<div class="news-card__body">
+										<h3 class="news-card__title">ZIKO</h3>
+										<p class="news-card__desc">
+											Скидки до 65% на часы и украшения
+										</p>
+										<div class="news-card__meta">
+											<span class="tag tag--date">15.10–21.10</span>
+											<span class="tag tag--news">Новость</span>
+										</div>
+									</div>
+								</a>
+							</article>
+
+							<article class="news-card swiper-slide" data-image="./images/sasha-fab.png">
+								<a class="news-card__link" href="#">
+									<div class="news-card__media">
+										<img src="./images/sasha-fab.png" alt="Sasha Fabiani ликвидация" />
+									</div>
+									<div class="news-card__body">
+										<h3 class="news-card__title">SASHA FABIANI</h3>
+										<p class="news-card__desc">
+											Доп. скидка −15% к финальной распродаже
+										</p>
+										<div class="news-card__meta">
+											<span class="tag tag--date">15.10–21.10</span>
+											<span class="tag tag--news">Новость</span>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+
+						<div class="news-buttons__block">
+							<button class="swiper-button-prev news-prev news-arrow" aria-label="Назад"></button>
+							<button class="swiper-button-next news-next news-arrow" aria-label="Вперёд"></button>
+						</div>
+					</div>
 				</div>
-          </section>
-          <section class="stats" aria-label="Статистика ТЦ">
-            <div class="container p-cont">
-              <div class="stats__grid">
-                <!-- 1 -->
-                <a href="#" class="stats-card">
-                  <span class="stats-card__value" data-count="64">64</span>
-                  <span class="stats-card__label">Магазины</span>
-                </a>
+			</section>
+			<section class="instagram" id="instagram">
+				<div class="instagram__container container p-cont">
+					<!-- верхний баннер -->
+					<div class="instagram__banner">
+						<img src="./images/inst-dana.png" alt="Dana Mall Minsk вид сверху ночью"
+							class="instagram__banner-img" />
+						<div class="instagram__banner-overlay"></div>
+						<div class="instagram__banner-content">
+							<div class="instagram-label__body">
+								<p class="instagram__label">
+									<img src="./images/inst-logo.svg" alt="" />
+									Мы в Instagram
+								</p>
+								<h2 class="instagram__handle">@danamallminsk</h2>
+							</div>
+							<a href="https://www.instagram.com/danamallminsk" target="_blank" class="instagram__button">
+								Перейти в Instagram
+								<img src="/images/inst-arrow.svg" alt="">
+							</a>
+						</div>
+					</div>
 
-                <!-- 2 -->
-                <a href="#" class="stats-card">
-                  <span class="stats-card__value" data-count="16">16</span>
-                  <span class="stats-card__label">Кафе и рестораны</span>
-                </a>
+					<!-- сетка постов -->
+					<div class="instagram__grid">
+						<a href="#" class="insta-post">
+							<img src="./images/inst-card-1.png" alt="Итальянское мороженое в Dana Mall" />
+							<span class="insta-post__text">Итальянское мороженое<br />в Dana Mall</span>
+						</a>
+						<a href="#" class="insta-post">
+							<img src="./images/inst-kate-2.png" alt="Брендовый MAKEY" />
+							<span class="insta-post__text">БРЕНД MAKEY<br />в Dana Mall</span>
+						</a>
+						<a href="#" class="insta-post">
+							<img src="./images/inst-kate-3.png" alt="FakeVits" />
+							<span class="insta-post__text">FakeVits</span>
+						</a>
+						<a href="#" class="insta-post">
+							<img src="./images/inst-kate-4.png" alt="Розыгрыш" />
+							<span class="insta-post__text">Розыгрыш</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="route" id="route">
+				<div class="route__container container p-cont">
+					<div class="route__header">
+						<h2 class="route__title">Как добраться</h2>
+						<div class="route__address">
+							<img src="./images/pin.svg" alt="" aria-hidden="true" />
+							г. Минск, ул. П. Мстиславца, 11
+						</div>
+					</div>
+					<div class="route__left">
+						<div class="route__tabs" role="tablist" aria-label="Способ передвижения">
+							<button class="route-tab is-active" role="tab" aria-selected="true" data-tab="car">
+								<img src="./images/car.svg" alt="">
+								<span>На машине</span>
+							</button>
+							<button class="route-tab" role="tab" aria-selected="false" data-tab="metro">
+								<img src="./images/metro.svg" alt="">
+								<span>На метро</span>
+							</button>
+							<button class="route-tab" role="tab" aria-selected="false" data-tab="walk">
+								<img src="./images/person.svg" alt="">
+								<span>Пешком</span>
+							</button>
+						</div>
 
-                <!-- 3 -->
-                <a href="#" class="stats-card">
-                  <span class="stats-card__value" data-count="8">8</span>
-                  <span class="stats-card__label">Сервисы и услуги</span>
-                </a>
+						<div class="route__panes">
+							<div class="route-pane is-active" id="route-pane-car">
+								<p class="route__desc">
+									Удобнее заезжать со стороны ул. Петра Мстиславца, 9. Заезд
+									удобен — ищите белые стенды с обозначением номера въезда,
+									цветов парковочных зон и тарифов на парковку.
+								</p>
 
-                <!-- 4 — карточка с логотипом Green -->
-                <a
-                  href="#"
-                  class="stats-card stats-card--logo"
-                  aria-label="Гипермаркет Green"
-                >
-                  <img
-                    class="stats-card__logo"
-                    src="./images/green-card.png"
-                    alt="Green гипермаркет"
-                  />
-                </a>
+								<div class="route__tariffs">
+									<h3>Тарифы на парковку</h3>
+									<div class="tariff-row">
+										<span>Первые два часа</span>
+										<span class="tariff-free">Бесплатно</span>
+									</div>
+									<div class="tariff-row">
+										<span>Каждый последующий час<br /><small>с 8:00 до 24:00</small></span>
+										<span class="tariff-price">2 BYN</span>
+									</div>
+								</div>
+							</div>
 
-                <!-- 5 -->
-                <a href="#" class="stats-card">
-                  <span class="stats-card__value" data-count="12">12</span>
-                  <span class="stats-card__label">Детям</span>
-                </a>
+							<!-- На метро -->
+							<div class="route-pane" id="route-pane-metro">
+								<p class="route__desc">
+									Станция метро <strong>«Восток»</strong>. Выход к ул. П.
+									Мстиславца. От метро до входа в DANA MALL — около 3 минут
+									пешком по пешеходной аллее.
+								</p>
+								<div class="route__tip">
+									Рядом расположены остановки общественного транспорта,
+									такси-зона и велопарковки.
+								</div>
+							</div>
+							<!-- Пешком -->
+							<div class="route-pane" id="route-pane-walk">
+								<p class="route__desc">
+									Пешие маршруты ведут по благоустроенным дорожкам вдоль
+									проспекта Независимости и ул. П. Мстиславца. Пешеходные
+									переходы регулируемые, подходы к входам безбарьерные.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="route__right">
+						<div class="route__photo">
+							<img src="./images/park.png" alt="Парковка DANA MALL" />
+						</div>
+					</div>
+				</div>
+				<!-- Бренд-блок -->
+			</section>
+			<section class="brand container	p-cont">
+				<img class="brand__logo" src="./images/logo-dana.svg" alt="" aria-hidden="true" />
+				<div class="brand__tagline">ТОРГОВЫЙ ЦЕНТР ДЛЯ ВСЕЙ СЕМЬИ</div>
+				<span class="brand__divider" aria-hidden="true"></span>
+				<h2 class="brand__wordmark">DANA MALL</h2>
+			</section>
+		</main>
+		<footer class="footer">
+			<!-- Бренды -->
+			<div class="footer__brands">
+				<div class="footer__brands-track" id="brandsTrack">
+					<span>ZARA</span><span>BERSHKA</span><span>CONTE</span><span>COLINS</span>
+					<span>PULL&BEAR</span><span>SISTER'S</span><span>STRADIVARIUS</span>
+					<span>MANGO</span><span>MILAVITSA</span><span>O'STIN</span> <span>ZNWR</span><span>MARK FORMELLE</span>
+				</div>
+			</div>
 
-                <!-- 6 -->
-                <a href="#" class="stats-card">
-                  <span class="stats-card__value" data-count="6">6</span>
-                  <span class="stats-card__label">Развлечения</span>
-                </a>
-              </div>
-            </div>
-          </section>
-        </div>
-        <section class="news" id="news">
-          <div class="container p-cont">
-            <div class="news__head">
-              <h2 class="news__title">Что нового</h2>
-              <nav class="news__tabs" aria-label="Фильтры">
-                <button class="tab is-active">Все</button>
-                <button class="tab">Новости</button>
-                <button class="tab">Скидки и акции</button>
-                <button class="tab">Открытия</button>
-              </nav>
-            </div>
-            <div class="news-swiper swiper" id="newsSwiper">
-              <div class="swiper-wrapper">
-                <!-- расширенная по умолчанию -->
-                <article
-                  class="news-card swiper-slide"
-                  data-image="./images/pandora-card.png"
-                >
-                  <a class="news-card__link" href="#">
-                    <div class="news-card__media">
-                      <img src="./images/pandora-card.png" alt="Pandora −30%" />
-                    </div>
-                    <div class="news-card__body">
-                      <!-- тело скрыто в expanded -->
-                      <h3 class="news-card__title">PANDORA</h3>
-                      <p class="news-card__desc">−30% на второй товар</p>
-                      <div class="news-card__meta">
-                        <span class="tag tag--date">15.10–21.10</span>
-                        <span class="tag tag--type">Скидка</span>
-                      </div>
-                    </div>
-                  </a>
-                </article>
+			<!-- Контент как на макете -->
+			<div class="footer__grid">
+				<!-- Режим работы (занимает 2 колонки) -->
+				<section class="footer__work">
+					<h4>РЕЖИМ РАБОТЫ</h4>
+					<div class="work-cols">
+						<div class="work-col">
+							<p class="muted">Гипермаркет Green</p>
+							<p class="strong">8:00 — 23:00</p>
 
-                <article
-                  class="news-card swiper-slide"
-                  data-image="./images/togas-card.png"
-                >
-                  <a class="news-card__link" href="#">
-                    <div class="news-card__media">
-                      <img
-                        src="./images/togas-card.png"
-                        alt="TOGAS +15% к карте"
-                      />
-                    </div>
-                    <div class="news-card__body">
-                      <h3 class="news-card__title">TOGAS</h3>
-                      <p class="news-card__desc">
-                        Скидка +15% к карте лояльности
-                      </p>
-                      <div class="news-card__meta">
-                        <span class="tag tag--date">15.10–21.10</span>
-                        <span class="tag tag--type">Скидка</span>
-                      </div>
-                    </div>
-                  </a>
-                </article>
+							<p class="muted">Фуд-корт Dana Mall</p>
+							<p class="strong">10:00 — 22:00</p>
+						</div>
+						<div class="work-col">
+							<p class="muted">Магазины и услуги</p>
+							<p class="strong">10:00 — 22:00</p>
 
-                <article
-                  class="news-card swiper-slide"
-                  data-image="./images/mi-card.png"
-                >
-                  <a class="news-card__link" href="#">
-                    <div class="news-card__media">
-                      <img
-                        src="./images/mi-card.png"
-                        alt="MI.BY скидки до 800 руб"
-                      />
-                    </div>
-                    <div class="news-card__body">
-                      <h3 class="news-card__title">MI.BY</h3>
-                      <p class="news-card__desc">
-                        Скидка +15% к карте за подарки…
-                      </p>
-                      <div class="news-card__meta">
-                        <span class="tag tag--date">15.10–21.10</span>
-                        <span class="tag tag--news">Новость</span>
-                      </div>
-                    </div>
-                  </a>
-                </article>
+							<p class="muted">Подземный паркинг</p>
+							<p class="strong">Круглосуточно</p>
+						</div>
+						<div class="work-col">
+							<p class="muted">Кинопространство Mooon</p>
+							<p>Вс–Чт: 10:00 — 00:00</p>
+							<p>Пт–Сб: 10:00 — 01:30</p>
+						</div>
+					</div>
+				</section>
 
-                <article
-                  class="news-card swiper-slide"
-                  data-image="./images/ziko-card.png"
-                >
-                  <a class="news-card__link" href="#">
-                    <div class="news-card__media">
-                      <img
-                        src="./images/ziko-card.png"
-                        alt="ZIKO — время дарить ему"
-                      />
-                    </div>
-                    <div class="news-card__body">
-                      <h3 class="news-card__title">ZIKO</h3>
-                      <p class="news-card__desc">
-                        Скидки до 65% на часы и украшения
-                      </p>
-                      <div class="news-card__meta">
-                        <span class="tag tag--date">15.10–21.10</span>
-                        <span class="tag tag--news">Новость</span>
-                      </div>
-                    </div>
-                  </a>
-                </article>
+				<!-- Адрес -->
+				<section class="footer__addr">
+					<h4>АДРЕС DANA MALL</h4>
+					<p>Беларусь, г. Минск,</p>
+					<p>ул. П. Мстиславца, 11,</p>
+					<p>ст.м.Восток</p>
+					<a class="footer__link-arrow" href="#">Как добраться</a>
+				</section>
 
-                <article
-                  class="news-card swiper-slide"
-                  data-image="./images/sasha-fab.png"
-                >
-                  <a class="news-card__link" href="#">
-                    <div class="news-card__media">
-                      <img
-                        src="./images/sasha-fab.png"
-                        alt="Sasha Fabiani ликвидация"
-                      />
-                    </div>
-                    <div class="news-card__body">
-                      <h3 class="news-card__title">SASHA FABIANI</h3>
-                      <p class="news-card__desc">
-                        Доп. скидка −15% к финальной распродаже
-                      </p>
-                      <div class="news-card__meta">
-                        <span class="tag tag--date">15.10–21.10</span>
-                        <span class="tag tag--news">Новость</span>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </div>
+				<!-- Инфоцентр -->
+				<section class="footer__info">
+					<h4>ИНФОЦЕНТР</h4>
+					<p>+375 (29) 201-02-19</p>
+					<p><a href="mailto:info@dana-mall.com">info@dana-mall.com</a></p>
+				</section>
+			</div>
 
-              <div class="news-buttons__block">
-                <button
-                  class="swiper-button-prev news-prev news-arrow"
-                  aria-label="Назад"
-                ></button>
-                <button
-                  class="swiper-button-next news-next news-arrow"
-                  aria-label="Вперёд"
-                ></button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="instagram" id="instagram">
-          <div class="instagram__container">
-            <!-- верхний баннер -->
-            <div class="instagram__banner">
-              <img
-                src="./images/inst-dana.png"
-                alt="Dana Mall Minsk вид сверху ночью"
-                class="instagram__banner-img"
-              />
-              <div class="instagram__banner-overlay"></div>
-              <div class="instagram__banner-content">
-                <p class="instagram__label">
-                  <img src="./images/inst-logo.svg" alt="" />
-                  Мы в Instagram
-                </p>
-                <h2 class="instagram__handle">@danamallminsk</h2>
-                <a
-                  href="https://www.instagram.com/danamallminsk"
-                  target="_blank"
-                  class="instagram__button"
-                >
-                  Перейти в Instagram
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
+			<!-- Нижняя плашка -->
+			<div class="footer__bar">
+				<button class="footer__legal-toggle" id="legalToggle" aria-expanded="false">
+					Юридическая информация <span class="caret">▾</span>
+				</button>
+				<a href="#" class="footer__bar-link">Политика в отношении обработки персональных данных</a>
+				<p class="footer__copy">© DANA MALL, 2025</p>
+			</div>
 
-            <!-- сетка постов -->
-            <div class="instagram__grid">
-              <a href="#" class="insta-post">
-                <img
-                  src="./images/inst-card-1.png"
-                  alt="Итальянское мороженое в Dana Mall"
-                />
-                <span class="insta-post__text"
-                  >Итальянское мороженое<br />в Dana Mall</span
-                >
-              </a>
-              <a href="#" class="insta-post">
-                <img src="./images/inst-kate-2.png" alt="Брендовый MAKEY" />
-                <span class="insta-post__text"
-                  >БРЕНД MAKEY<br />в Dana Mall</span
-                >
-              </a>
-              <a href="#" class="insta-post">
-                <img src="./images/inst-kate-3.png" alt="FakeVits" />
-                <span class="insta-post__text">FakeVits</span>
-              </a>
-              <a href="#" class="insta-post">
-                <img src="./images/inst-kate-4.png" alt="Розыгрыш" />
-                <span class="insta-post__text">Розыгрыш</span>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="route" id="route">
-          <div class="route__container">
-            <div class="route__left">
-              <h2 class="route__title">Как добраться</h2>
-              <div
-                class="route__tabs"
-                role="tablist"
-                aria-label="Способ передвижения"
-              >
-                <button
-                  class="route-tab is-active"
-                  role="tab"
-                  aria-selected="true"
-                  data-tab="car"
-                >
-                  На машине
-                </button>
-                <button
-                  class="route-tab"
-                  role="tab"
-                  aria-selected="false"
-                  data-tab="metro"
-                >
-                  На метро
-                </button>
-                <button
-                  class="route-tab"
-                  role="tab"
-                  aria-selected="false"
-                  data-tab="walk"
-                >
-                  Пешком
-                </button>
-              </div>
+			<!-- Раскрывающийся блок юридической инфы -->
+			<div class="footer__legal" id="legalPanel" hidden>
+				<div class="footer__legal-inner">
+					<p>
+						ООО «Дана Молл». УНП 123456789. Юр. адрес: 220000, Беларусь, г.
+						Минск, ул. П. Мстиславца, 11. Настоящая информация размещена в
+						целях соблюдения действующего законодательства и носит справочный
+						характер.
+					</p>
+				</div>
+			</div>
+		</footer>
 
-              <div class="route__panes">
-                <div class="route-pane is-active" id="route-pane-car">
-                  <p class="route__desc">
-                    Удобнее заезжать со стороны ул. Петра Мстиславца, 9. Заезд
-                    удобен — ищите белые стенды с обозначением номера въезда,
-                    цветов парковочных зон и тарифов на парковку.
-                  </p>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/header.js"></script>
+		<script src="./js/footer.js"></script>
+		<script src="./js/index.js"></script>
+		<script src="./js/swiper.js"></script>
+	</div>
+</body>
 
-                  <div class="route__tariffs">
-                    <h3>Тарифы на парковку</h3>
-                    <div class="tariff-row">
-                      <span>Первые два часа</span>
-                      <span class="tariff-free">Бесплатно</span>
-                    </div>
-                    <div class="tariff-row">
-                      <span
-                        >Каждый последующий час<br /><small
-                          >с 8:00 до 24:00</small
-                        ></span
-                      >
-                      <span class="tariff-price">2 BYN</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- На метро -->
-                <div class="route-pane" id="route-pane-metro">
-                  <p class="route__desc">
-                    Станция метро <strong>«Восток»</strong>. Выход к ул. П.
-                    Мстиславца. От метро до входа в DANA MALL — около 3 минут
-                    пешком по пешеходной аллее.
-                  </p>
-                  <div class="route__tip">
-                    Рядом расположены остановки общественного транспорта,
-                    такси-зона и велопарковки.
-                  </div>
-                </div>
-
-                <!-- Пешком -->
-                <div class="route-pane" id="route-pane-walk">
-                  <p class="route__desc">
-                    Пешие маршруты ведут по благоустроенным дорожкам вдоль
-                    проспекта Независимости и ул. П. Мстиславца. Пешеходные
-                    переходы регулируемые, подходы к входам безбарьерные.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="route__right">
-              <div class="route__address">
-                <img src="./images/pin.svg" alt="" aria-hidden="true" />
-                г. Минск, ул. П. Мстиславца, 11
-              </div>
-
-              <div class="route__photo">
-                <img src="./images/park.png" alt="Парковка DANA MALL" />
-              </div>
-            </div>
-          </div>
-          <!-- Бренд-блок -->
-          <div class="brand">
-            <img
-              class="brand__logo"
-              src="./images/logo-icon.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <div class="brand__tagline">ТОРГОВЫЙ ЦЕНТР ДЛЯ ВСЕЙ СЕМЬИ</div>
-            <span class="brand__divider" aria-hidden="true"></span>
-            <h2 class="brand__wordmark">DANA MALL</h2>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <!-- Бренды -->
-        <div class="footer__brands">
-          <div class="footer__brands-track" id="brandsTrack">
-            <span>ZARA</span><span>BERSHKA</span><span>CONTE</span
-            ><span>COLINS</span> <span>PULL&BEAR</span><span>SISTER'S</span
-            ><span>STRADIVARIUS</span> <span>MANGO</span><span>MILAVITSA</span
-            ><span>O'STIN</span> <span>ZNWR</span><span>MARK FORMELLE</span>
-          </div>
-        </div>
-
-        <!-- Контент как на макете -->
-        <div class="footer__grid">
-          <!-- Режим работы (занимает 2 колонки) -->
-          <section class="footer__work">
-            <h4>РЕЖИМ РАБОТЫ</h4>
-            <div class="work-cols">
-              <div class="work-col">
-                <p class="muted">Гипермаркет Green</p>
-                <p class="strong">8:00 — 23:00</p>
-
-                <p class="muted">Фуд-корт Dana Mall</p>
-                <p class="strong">10:00 — 22:00</p>
-              </div>
-              <div class="work-col">
-                <p class="muted">Магазины и услуги</p>
-                <p class="strong">10:00 — 22:00</p>
-
-                <p class="muted">Подземный паркинг</p>
-                <p class="strong">Круглосуточно</p>
-              </div>
-              <div class="work-col">
-                <p class="muted">Кинопространство Mooon</p>
-                <p>Вс–Чт: 10:00 — 00:00</p>
-                <p>Пт–Сб: 10:00 — 01:30</p>
-              </div>
-            </div>
-          </section>
-
-          <!-- Адрес -->
-          <section class="footer__addr">
-            <h4>АДРЕС DANA MALL</h4>
-            <p>Беларусь, г. Минск,</p>
-            <p>ул. П. Мстиславца, 11,</p>
-            <p>ст.м.Восток</p>
-            <a class="footer__link-arrow" href="#">Как добраться</a>
-          </section>
-
-          <!-- Инфоцентр -->
-          <section class="footer__info">
-            <h4>ИНФОЦЕНТР</h4>
-            <p>+375 (29) 201-02-19</p>
-            <p><a href="mailto:info@dana-mall.com">info@dana-mall.com</a></p>
-          </section>
-        </div>
-
-        <!-- Нижняя плашка -->
-        <div class="footer__bar">
-          <button
-            class="footer__legal-toggle"
-            id="legalToggle"
-            aria-expanded="false"
-          >
-            Юридическая информация <span class="caret">▾</span>
-          </button>
-          <a href="#" class="footer__bar-link"
-            >Политика в отношении обработки персональных данных</a
-          >
-          <p class="footer__copy">© DANA MALL, 2025</p>
-        </div>
-
-        <!-- Раскрывающийся блок юридической инфы -->
-        <div class="footer__legal" id="legalPanel" hidden>
-          <div class="footer__legal-inner">
-            <p>
-              ООО «Дана Молл». УНП 123456789. Юр. адрес: 220000, Беларусь, г.
-              Минск, ул. П. Мстиславца, 11. Настоящая информация размещена в
-              целях соблюдения действующего законодательства и носит справочный
-              характер.
-            </p>
-          </div>
-        </div>
-      </footer>
-
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="./js/header.js"></script>
-      <script src="./js/footer.js"></script>
-      <script src="./js/index.js"></script>
-      <script src="./js/swiper.js"></script>
-    </div>
-  </body>
 </html>

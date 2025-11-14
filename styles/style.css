@@ -233,6 +233,7 @@ textarea:focus-visible {
 main {
 	flex: 1 0 auto;
 	padding-top: 82px;
+	padding-bottom: 150px;
 }
 
 .main {
@@ -257,6 +258,7 @@ main {
 
 	.main {
 		row-gap: clamp(8.75rem, 6.875rem + 2.083vi, 9.375rem);
+		padding-bottom: clamp(8.75rem, 6.875rem + 2.083vi, 9.375rem);
 	}
 }
 
@@ -275,6 +277,7 @@ main {
 
 	.main {
 		row-gap: clamp(7.5rem, -2.5rem + 12.5vi, 8.75rem);
+		padding-bottom: clamp(7.5rem, -2.5rem + 12.5vi, 8.75rem);
 	}
 }
 
@@ -286,5 +289,6 @@ main {
 
 	.main {
 		row-gap: clamp(5rem, 2.794rem + 9.804vi, 7.5rem);
+		padding-bottom: clamp(5rem, 2.794rem + 9.804vi, 7.5rem);
 	}
 }
