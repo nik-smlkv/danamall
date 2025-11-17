@@ -12,14 +12,15 @@
 .hero__vignette {
 	position: absolute;
 	bottom: 60px;
-	left: 0;
-	padding: 0px 30px;
+	right: 170px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 	width: 100%;
+	max-width: 470px;
 	height: auto;
 	column-gap: 30px;
 	row-gap: 20px;
+	background-color: #F7F7F7;
 }
 
 
@@ -91,6 +92,11 @@
 	font-weight: var(--w-headline);
 	font-size: 80px;
 	line-height: 0.98;
+	position: absolute;
+	width: 100%;
+	max-width: 55%;
+	bottom: 60px;
+	left: 30px;
 	text-transform: uppercase;
 	margin: 0;
 }
@@ -146,40 +152,51 @@
 .promo {
 	position: relative;
 	z-index: 2;
-	background: var(--bg-white);
+	background: #F7F7F7;
 	color: var(--text-primary);
 	border-radius: 20px;
 	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-	padding: 20px;
 	height: auto;
-	flex: 0 0 460px;
+	display: flex;
 	max-height: 160px;
 	align-self: end;
+
 }
 
+.promo .promo-swiper {
+	padding: 20px;
+	display: flex;
+	padding-left: 37px;
+	overflow: hidden;
+	max-width: 470px;
+
+}
+
+
 .promo__body {
-	display: grid;
-	grid-template-columns: 1fr 132px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 	gap: 14px;
 	align-items: center;
 }
 
 .promo__desc {
 	max-width: 250px;
-	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 
 .promo__text {
-	padding-left: 10px;
 	align-self: start;
 	height: 100%;
+	width: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	row-gap: 20px;
 	max-height: 110px;
+	flex: 1 1 270px;
 }
 
 .promo-text__body {
@@ -195,7 +212,7 @@
 
 .promo__meta {
 
-	background-color: #F7F7F7;
+	background-color: #FFFFFF;
 	backdrop-filter: blur(10px);
 	width: auto;
 	border-radius: 20px;
@@ -204,7 +221,7 @@
 	font-size: 16px;
 	column-gap: 20px;
 	padding: 9.5px 20px;
-	flex: 0 0 auto;
+	flex: 1 1 auto;
 	max-width: 200px;
 	height: 43px;
 }
@@ -214,6 +231,8 @@
 	width: 100%;
 	height: 100%;
 	flex: 1 1 120px;
+	max-width: 120px;
+	max-height: 120px;
 }
 
 .promo__thumb img {
@@ -237,6 +256,15 @@
 	cursor: pointer;
 	background: #58585830;
 	backdrop-filter: blur(20px);
+	z-index: 3;
+}
+
+.promo__nav .swiper-button-prev {
+	display: none;
+}
+
+.promo__nav .swiper-button-next {
+	width: 100%;
 }
 
 .brand__wordmark {
@@ -264,17 +292,37 @@
 	.brand__wordmark {
 		font-size: clamp(7.5rem, 0rem + 8.333vi, 10rem)
 	}
+
+	.instagram__grid .insta-post:nth-child(1) {
+		display: none;
+	}
 }
 
 @media(max-width: 1024px) {
 	.brand__wordmark {
 		font-size: clamp(6.25rem, 2.5rem + 7.813vi, 7.5rem);
 	}
+
+	.instagram__grid .insta-post:nth-child(2) {
+		display: none;
+	}
 }
 
 @media(max-width: 768px) {
 	.brand__wordmark {
 		font-size: clamp(3.125rem, -5.288rem + 24.038vi, 6.25rem)
+	}
+
+	.promo__meta {
+		padding: 9.5px 12px;
+	}
+
+	.promo__meta .badge {
+		font-size: 14px;
+	}
+
+	.promo__desc {
+		font-size: 14px;
 	}
 }
 
@@ -362,8 +410,8 @@
 /* responsive promo */
 @media (max-width: 920px) {
 	.promo {
-		flex: 1 1 420px;
-		max-width: 420px;
+		flex: 1 1 100%;
+		max-width: 100%;
 	}
 }
 
@@ -493,6 +541,10 @@
 	height: 494px;
 }
 
+.news-swiper.swiper {
+	height: 494px;
+}
+
 .news__head {
 	display: flex;
 	align-items: flex-end;
@@ -590,6 +642,7 @@
 	height: var(--card-h-lg);
 	border-radius: 30px;
 	flex: 1 0 494px;
+	transition: all .5s ease;
 }
 
 .news-card {
@@ -605,13 +658,18 @@
 	text-decoration: none;
 	min-height: 0;
 	flex: 0 0 420px;
+	transition: all .5s ease;
+}
+
+.news-card.is-expanded .news-card__link {
+	flex: 1 1 100%;
 }
 
 .news-card__media {
 	width: 100%;
 
 	overflow: hidden;
-
+	transition: all .5s ease;
 	border-radius: 20px;
 	flex: 1 1 320px;
 }
@@ -621,6 +679,7 @@
 	height: 100%;
 	object-fit: cover;
 	display: block;
+	transition: all .5s ease;
 }
 
 .news-card__body {
@@ -670,6 +729,10 @@
 .tag--news {
 	background: #e9f7ef;
 	color: #2f8c60;
+}
+
+.news-card {
+	transition: all .5s ease;
 }
 
 /* В «большой» карточке скрываем текст, делаем фулл-медиа */
@@ -741,6 +804,21 @@
 		flex-wrap: wrap;
 	}
 
+	.hero__vignette {
+		right: auto;
+		left: 60px;
+	}
+
+	.promo .promo-swiper {
+		padding-left: 20px;
+		padding-right: 37px;
+	}
+
+	.hero__title {
+		bottom: 40%;
+		max-width: 100%;
+	}
+
 	.promo__nav {
 		left: auto;
 		right: -25px;
@@ -750,7 +828,6 @@
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
-		padding-right: 13px;
 	}
 
 	.promo__text {
@@ -778,8 +855,8 @@
 
 /* ===== INSTAGRAM SECTION ===== */
 .instagram {
-	padding: 40px 16px 60px;
-	background: var(--bg-primary);
+	padding: 120px 0px;
+	background: #F7F7F7;
 }
 
 .instagram .container {
@@ -931,20 +1008,7 @@
 	z-index: 2;
 }
 
-@media (max-width: 768px) {
-	.instagram {
-		padding: 32px 12px 48px;
-	}
 
-	.instagram__grid {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 12px;
-	}
-
-	.insta-post__text {
-		font-size: 14px;
-	}
-}
 
 /* ===== ROUTE ===== */
 .route {
@@ -952,15 +1016,23 @@
 }
 
 .route__container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto 1fr;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
 	gap: 28px 56px;
 	margin: 0 auto;
 }
 
+.route__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 40px;
+}
+
 .route__header {
-	grid-column: 1 / -1;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -969,15 +1041,16 @@
 
 /* Левый блок — tabs + content */
 .route__left {
-	grid-column: 1 / 2;
+	align-self: start;
+	flex: 1 1 652px;
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 36px;
 }
 
 /* Правый блок — фото */
 .route__right {
-	grid-column: 2 / 3;
+	flex: 1 1 948px;
 	position: relative;
 }
 
@@ -997,11 +1070,7 @@
 	}
 }
 
-.route__left {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-}
+
 
 .route__title {
 	margin: 0;
@@ -1032,13 +1101,21 @@
 	background: transparent;
 	color: var(--text-primary);
 
-	font: var(--w-medium) 14px/36px var(--font-primary);
+	font-size: 18px;
 }
 
 .route-tab.is-active {
 	background: #0b0b0f;
 	color: #fff;
 	border-color: transparent;
+}
+
+.route-tab img {
+	opacity: 0;
+}
+
+.route-tab.is-active img {
+	opacity: 1;
 }
 
 .route-tab:hover {
@@ -1059,8 +1136,8 @@
 }
 
 .route__desc {
-	color: var(--text-secondary);
-	font: var(--w-regular) 15px/1.5 var(--font-primary);
+	color: #090714;
+	font-size: 18px;
 	margin: 0 0 18px;
 }
 
@@ -1071,9 +1148,10 @@
 
 .route__tariffs h3 {
 	margin: 0 0 8px;
-	font: var(--w-semibold) 14px/1 var(--font-primary);
+	font-size: 24px;
+	font-weight: 500;
 	text-transform: uppercase;
-	letter-spacing: 0.02em;
+
 	color: var(--text-primary);
 }
 
@@ -1086,13 +1164,13 @@
 	border-bottom: 1px solid var(--border-light);
 }
 
-.tariff-row:first-of-type {
-	border-top: 1px solid var(--border-light);
+.tariff-row:last-of-type {
+	border-bottom: none;
 }
 
 .tariff-row span {
 	color: var(--text-primary);
-	font: var(--w-regular) 14px/1.35 var(--font-primary);
+	font-size: 18px;
 }
 
 .tariff-row small {
@@ -1100,15 +1178,32 @@
 	font-size: 12px;
 }
 
-.tariff-free {
+span.tariff-free {
 	color: var(--accent-red);
 	text-transform: uppercase;
+	font-size: 20px;
 	font-weight: var(--w-semibold);
 }
 
-.tariff-price {
+span.tariff-price {
 	color: var(--accent-red);
 	font-weight: var(--w-semibold);
+}
+
+.tariff-next-time {
+	font-weight: 400;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+	color: #626262;
+}
+
+span.tariff-time {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 120%;
+	color: #090714;
 }
 
 /* right column */
@@ -1120,19 +1215,11 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
-	padding: 8px 12px;
-	border-radius: 999px;
-	background: #fff;
 	color: var(--text-primary);
-	font: var(--w-regular) 13px/1 var(--font-primary);
+	font-size: 18px;
 	z-index: 2;
 }
 
-.route__address img {
-	width: 16px;
-	height: 16px;
-	opacity: 0.8;
-}
 
 @media (max-width: 1024px) {
 	.route__address {
@@ -1174,7 +1261,54 @@
 	.brand__tagline {
 		font-size: clamp(0.938rem, 0.603rem + 0.956vi, 1.75rem);
 	}
+
+	.instagram {
+		padding: clamp(5rem, -2.5rem + 8.333vi, 7.5rem) 0px;
+	}
+
+	.instagram__handle {
+		font-size: clamp(2rem, 0.765rem + 3.529vi, 5rem);
+	}
+
+	.instagram__label {
+		font-size: clamp(1.5rem, 0.75rem + 0.833vi, 1.75rem);
+	}
 }
+
+@media (max-width: 768px) {
+	.instagram {
+		padding: clamp(2.5rem, -4.231rem + 19.231vi, 5rem) 0px;
+	}
+
+	.hero__vignette {
+		left: 30px;
+	}
+
+	.instagram__label {
+		font-size: clamp(1rem, -0.346rem + 3.846vi, 1.5rem);
+	}
+
+	.instagram__grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
+	}
+
+	.insta-post__text {
+		font-size: 14px;
+	}
+
+	.instagram__banner {
+		height: 70vh;
+	}
+
+
+	.instagram__button {
+		font-size: clamp(1rem, 0.327rem + 1.923vi, 1.25rem);
+		padding: 15px clamp(1.75rem, -0.269rem + 5.769vi, 2.5rem);
+	}
+}
+
+
 
 @media(max-width: 1300px) {
 	.news__head {
@@ -1227,6 +1361,15 @@
 	.hero {
 		height: 100vh;
 		max-height: 572px;
+		border-radius: 0;
+	}
+
+	.hero .swiper {
+		border-radius: 0;
+	}
+
+	.hero.p-cont {
+		padding: 0 !important;
 	}
 
 	.stats-card {
@@ -1247,5 +1390,73 @@
 	.route__header {
 		flex-direction: column;
 		align-items: start;
+	}
+}
+
+@media(max-width: 560px) {
+	.hero__vignette {
+		max-width: 100%;
+		left: 20px;
+		overflow: hidden;
+		bottom: 30px;
+	}
+
+	.hero__title {
+		left: 20px;
+		bottom: 35%;
+	}
+
+	.promo__text {
+		row-gap: 11px;
+	}
+
+	.promo {
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.promo .promo-swiper {
+		padding: 0;
+		overflow: visible;
+	}
+
+	.promo .promo-swiper .swiper-slide {
+		padding: 12px;
+		border-radius: 20px;
+		background-color: #F7F7F7;
+		margin-right: 0px;
+		width: 290px;
+	}
+
+	.promo__nav {
+		top: 40%;
+		right: 40px;
+	}
+
+	.promo__thumb {
+		display: flex;
+	}
+
+	.promo__thumb img {
+		display: flex;
+		flex: 0 0 103px;
+		height: 100%;
+	}
+
+	.promo__desc {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 90%;
+		line-height: 1.4;
+	}
+
+}
+
+@media((min-width: 640px) and (max-width: 768px)) {
+	.hero__vignette {
+		left: 60px;
 	}
 }

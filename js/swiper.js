@@ -1,15 +1,14 @@
 
 
 const newsSwiper = new Swiper("#newsSwiper", {
-	slidesPerView: "auto",          // <— вместо 4
-	spaceBetween: 20,
+	slidesPerView: "auto",
+	spaceBetween: 30,
 	loop: true,
 	loopedSlidesLimit: false,
-	
 	speed: 600,
-	freeMode: false,                // обязательно off
- 
-	roundLengths: true,             // убирает сабпиксели
+	freeMode: false,
+
+	roundLengths: true,
 	centeredSlides: false,
 	centeredSlidesBounds: true,
 	watchSlidesProgress: true,
@@ -117,3 +116,26 @@ window.addEventListener("resize", () => {
 	if (document.readyState !== "loading") initHero();
 	else document.addEventListener("DOMContentLoaded", initHero);
 })();
+
+const promoSwiper = new Swiper('.promo-swiper', {
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 40,
+	freeMode: true,
+	speed: 600,
+	navigation: {
+		nextEl: '.promo .promo__nav .swiper-button-next',
+		prevEl: '.promo .promo__nav .swiper-button-prev',
+	},
+	breakpoints: {
+		0: {
+			spaceBetween: 10,
+			centeredSlides: false,
+			slidesPerView: "auto",
+			watchOverflow: true,
+		},
+		560: {
+			spaceBetween: 40, // от 560px и выше
+		},
+	},
+});

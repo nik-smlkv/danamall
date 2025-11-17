@@ -24,7 +24,7 @@
 }
 
 .header::after {
-/* 	content: "";
+	/* 	content: "";
 	position: absolute;
 	bottom: 0;
 	width: 100vw;
@@ -173,6 +173,61 @@
 	width: 100%;
 	z-index: 0;
 	height: auto;
+}
+
+.hours__dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.hours__dropdown__toggle {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font: inherit;
+	color: var(--text-primary);
+}
+
+.hours__dropdown__arrow {
+	width: 8px;
+	height: 8px;
+	border-right: 2px solid var(--text-primary);
+	border-bottom: 2px solid var(--text-primary);
+	transform: rotate(45deg);
+	transition: transform 0.3s ease;
+}
+
+.hours__dropdown[open] .hours__dropdown__arrow,
+.hours__dropdown.open .hours__dropdown__arrow {
+	transform: rotate(-135deg);
+}
+
+.hours__dropdown__menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 6px;
+	background: #fff;
+	border: 1px solid var(--border-light);
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	padding: 8px 12px;
+	z-index: 10;
+}
+
+.hours__dropdown__menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.hours__dropdown__menu li {
+	padding: 6px 0;
+	font-size: 0.9rem;
+	color: var(--text-secondary);
 }
 
 .header-menu-footer__body {

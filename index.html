@@ -31,9 +31,24 @@
 						<a href="#">Карта ТЦ</a>
 					</nav>
 					<div class="header__info">
-						<p class="header__hours">
-							<img src="./images/hours.svg" alt="" /><span>Ежедневно 10:00 — 22:00</span>
-						</p>
+						<div class="header__hours hours__dropdown">
+							<button class="hours__dropdown__toggle" aria-expanded="false">
+								<img src="./images/hours.svg" alt="" />
+								<span>Ежедневно 10:00 — 22:00</span>
+								<span class="hours__dropdown__arrow"></span>
+							</button>
+
+							<div class="hours__dropdown__menu" hidden>
+								<ul>
+									<li>Гипермаркет Green — 8:00–23:00</li>
+									<li>Фуд-корт — 10:00–22:00</li>
+									<li>Кинотеатр Mooon — Вс–Чт: 10:00–00:00</li>
+									<li>Кинотеатр Mooon — Пт–Сб: 10:00–01:30</li>
+									<li>Паркинг — круглосуточно</li>
+								</ul>
+							</div>
+						</div>
+
 						<div class="header-buttons__block">
 							<button class="header__map">
 								<img src="./images/map.svg" alt="" />
@@ -108,65 +123,13 @@
 						<div class="swiper-wrapper">
 							<!-- SLIDE 1 -->
 							<div class="swiper-slide hero__slide">
+								<h1 class="hero__title">НОВОГОДНЯЯ<br />ИНСТАЛЛЯЦИЯ 2025</h1>
 								<img class="hero__img" .hero src="./images/image.jpg" alt="Новогодняя инсталляция 2025" />
-								<div class="hero__vignette">
-									<h1 class="hero__title">НОВОГОДНЯЯ<br />ИНСТАЛЛЯЦИЯ 2025</h1>
-									<aside class="promo">
-										<button class="promo__nav swiper-prev" aria-label="Предыдущая акция"></button>
-										<div class="promo__body">
-											<div class="promo__text">
-												<div class="promo-text__body">
-													<h3 class="promo__title">TOGAS</h3>
-													<p class="promo__desc">
-														Скидка +15% к карте лояльности
-													</p>
-												</div>
-												<div class="promo__meta">
-													<span class="badge badge--date">15.10-21.10</span>
-													<span class="badge badge--sale">Скидка</span>
-												</div>
-											</div>
-											<div class="promo__thumb">
-												<img src="./images/promo-togas.jpg" alt="Скидка +15% в TOGAS" />
-											</div>
-										</div>
-									</aside>
-								</div>
 							</div>
-							<!--   <div class="swiper-slide hero__slide">
-                <img
-                  class="hero__img"
-                  src="./images/image.jpg"
-                  alt="Зимние сезонные скидки"
-                />
-                <div class="hero__vignette">
-                  <h1 class="hero__title">ЗИМНИЕ<br />СЕЗОННЫЕ СКИДКИ</h1>
-                  <aside class="promo">
-                    <button
-                      class="promo__nav swiper-prev"
-                      aria-label="Предыдущая акция"
-                    ></button>
-                    <div class="promo__body">
-                      <div class="promo__text">
-								<div class="promo-text__body">
-                        <h3 class="promo__title">MANGO</h3>
-                        <p class="promo__desc">До −30% на коллекцию</p>
-								</div>
-                        <div class="promo__meta">
-                          <span class="badge badge--date">до 15.12</span>
-                          <span class="badge badge--sale">Скидка</span>
-                        </div>
-                      </div>
-                      <div class="promo__thumb">
-                        <img
-                          src="./images/promo-mango.jpg"
-                          alt="До −30% в MANGO"
-                        />
-                      </div>
-                    </div>
-                  </aside>
-                </div>
-              </div> -->
+							<div class="swiper-slide hero__slide">
+								<h1 class="hero__title">НОВОГОДНЯЯ<br />ТЕСТОВАЯ 2025</h1>
+								<img class="hero__img" src="./images/image.jpg" alt="Зимние сезонные скидки" />
+							</div>
 						</div>
 						<nav class="hero__chips" aria-label="Разделы">
 							<a href="#" class="chip">Новости</a>
@@ -179,6 +142,69 @@
 							<button class="swiper-button-prev hero__arrow" aria-label="Предыдущий"></button>
 							<button class="hero__arrow--next swiper-button-next hero__arrow" aria-label="Следующий"></button>
 						</div>
+					</div>
+					<div class="hero__vignette">
+						<aside class="promo">
+							<div class="promo-swiper swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="promo__body">
+											<div class="promo__text">
+												<div class="promo-text__body">
+													<h3 class="promo__title">TOGAS</h3>
+													<p class="promo__desc">Скидка +15% к карте лояльности</p>
+												</div>
+												<div class="promo__meta">
+													<span class="badge badge--date">15.10–21.10</span>
+													<span class="badge badge--sale">Скидка</span>
+												</div>
+											</div>
+											<div class="promo__thumb">
+												<img src="./images/news-card-img.jpg" alt="Скидка +15% в TOGAS" />
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="promo__body">
+											<div class="promo__text">
+												<div class="promo-text__body">
+													<h3 class="promo__title">MANGO</h3>
+													<p class="promo__desc">До −30% на коллекцию</p>
+												</div>
+												<div class="promo__meta">
+													<span class="badge badge--date">до 15.12</span>
+													<span class="badge badge--sale">Скидка</span>
+												</div>
+											</div>
+											<div class="promo__thumb">
+												<img src="./images/news-card-img.jpg" alt="До −30% в MANGO" />
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="promo__body">
+											<div class="promo__text">
+												<div class="promo-text__body">
+													<h3 class="promo__title">MANGO</h3>
+													<p class="promo__desc">До −30% на коллекцию</p>
+												</div>
+												<div class="promo__meta">
+													<span class="badge badge--date">до 15.12</span>
+													<span class="badge badge--sale">Скидка</span>
+												</div>
+											</div>
+											<div class="promo__thumb">
+												<img src="./images/news-card-img.jpg" alt="До −30% в MANGO" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="promo__nav">
+								<button class="swiper-button-prev" aria-label="Предыдущая акция"></button>
+								<button class="swiper-button-next" aria-label="Следующая акция"></button>
+							</div>
+						</aside>
 					</div>
 				</section>
 				<section class="stats" aria-label="Статистика ТЦ">
@@ -355,23 +381,18 @@
 						</div>
 					</div>
 
-					<!-- сетка постов -->
 					<div class="instagram__grid">
 						<a href="#" class="insta-post">
 							<img src="./images/inst-card-1.png" alt="Итальянское мороженое в Dana Mall" />
-							<span class="insta-post__text">Итальянское мороженое<br />в Dana Mall</span>
 						</a>
 						<a href="#" class="insta-post">
 							<img src="./images/inst-kate-2.png" alt="Брендовый MAKEY" />
-							<span class="insta-post__text">БРЕНД MAKEY<br />в Dana Mall</span>
 						</a>
 						<a href="#" class="insta-post">
 							<img src="./images/inst-kate-3.png" alt="FakeVits" />
-							<span class="insta-post__text">FakeVits</span>
 						</a>
 						<a href="#" class="insta-post">
 							<img src="./images/inst-kate-4.png" alt="Розыгрыш" />
-							<span class="insta-post__text">Розыгрыш</span>
 						</a>
 					</div>
 				</div>
@@ -381,72 +402,109 @@
 					<div class="route__header">
 						<h2 class="route__title">Как добраться</h2>
 						<div class="route__address">
-							<img src="./images/pin.svg" alt="" aria-hidden="true" />
+							<img src="./images/loc.svg" alt="" aria-hidden="true" />
 							г. Минск, ул. П. Мстиславца, 11
 						</div>
 					</div>
-					<div class="route__left">
-						<div class="route__tabs" role="tablist" aria-label="Способ передвижения">
-							<button class="route-tab is-active" role="tab" aria-selected="true" data-tab="car">
-								<img src="./images/car.svg" alt="">
-								<span>На машине</span>
-							</button>
-							<button class="route-tab" role="tab" aria-selected="false" data-tab="metro">
-								<img src="./images/metro.svg" alt="">
-								<span>На метро</span>
-							</button>
-							<button class="route-tab" role="tab" aria-selected="false" data-tab="walk">
-								<img src="./images/person.svg" alt="">
-								<span>Пешком</span>
-							</button>
-						</div>
+					<div class="route__body">
+						<div class="route__left">
+							<div class="route__tabs" role="tablist" aria-label="Способ передвижения">
+								<button class="route-tab is-active" role="tab" aria-selected="true" data-tab="car">
+									<img src="./images/car.svg" alt="">
+									<span>На машине</span>
+								</button>
+								<button class="route-tab" role="tab" aria-selected="false" data-tab="metro">
+									<img src="./images/metro.svg" alt="">
+									<span>На метро</span>
+								</button>
+								<button class="route-tab" role="tab" aria-selected="false" data-tab="walk">
+									<img src="./images/person.svg" alt="">
+									<span>Пешком</span>
+								</button>
+							</div>
+							<div class="route__panes">
+								<div class="route-pane is-active" id="route-pane-car">
+									<p class="route__desc">
+										Удобнее заезжать со стороны ул. Петра Мстиславца, 9. Заезд
+										удобен — ищите белые стенды с обозначением номера въезда,
+										цветов парковочных зон и тарифов на парковку.
+									</p>
 
-						<div class="route__panes">
-							<div class="route-pane is-active" id="route-pane-car">
-								<p class="route__desc">
-									Удобнее заезжать со стороны ул. Петра Мстиславца, 9. Заезд
-									удобен — ищите белые стенды с обозначением номера въезда,
-									цветов парковочных зон и тарифов на парковку.
-								</p>
-
-								<div class="route__tariffs">
-									<h3>Тарифы на парковку</h3>
-									<div class="tariff-row">
-										<span>Первые два часа</span>
-										<span class="tariff-free">Бесплатно</span>
-									</div>
-									<div class="tariff-row">
-										<span>Каждый последующий час<br /><small>с 8:00 до 24:00</small></span>
-										<span class="tariff-price">2 BYN</span>
+									<div class="route__tariffs">
+										<h3>Тарифы на парковку</h3>
+										<div class="tariff-row">
+											<span>Первые два часа</span>
+											<span class="tariff-free">Бесплатно</span>
+										</div>
+										<div class="tariff-row">
+											<span class="tariff-next-time">Каждый последующий час <span class="tariff-time">с 8:00
+													до 24:00</span></span>
+											<span class="tariff-price">2 BYN</span>
+										</div>
 									</div>
 								</div>
-							</div>
+								<div class="route-pane" id="route-pane-metro">
+									<p class="route__desc">
+										Добраться быстро в ТЦ Dana Mall на метро. Доехать до станции <strong>«Восток»</strong>
+										(Московская линия).
 
-							<!-- На метро -->
-							<div class="route-pane" id="route-pane-metro">
-								<p class="route__desc">
-									Станция метро <strong>«Восток»</strong>. Выход к ул. П.
-									Мстиславца. От метро до входа в DANA MALL — около 3 минут
-									пешком по пешеходной аллее.
-								</p>
-								<div class="route__tip">
-									Рядом расположены остановки общественного транспорта,
-									такси-зона и велопарковки.
+									</p>
+									<p> Выходите в сторону <strong>«Национальной библиотеки»</strong> и вы окажетесь прямо у
+										наших
+										дверей — всего в минуте пешком.</p>
+
+
+									<div class="route__tip">
+										<a href="#" class="route__map-link">Подробнее на карте ↗</a>
+										<div class="route__map-buttons">
+											<a href="https://yandex.by/maps" target="_blank" class="badge badge--map">Яндекс
+												Карты</a>
+											<a href="https://maps.google.com" target="_blank" class="badge badge--map">Google
+												Maps</a>
+										</div>
+									</div>
 								</div>
-							</div>
-							<!-- Пешком -->
-							<div class="route-pane" id="route-pane-walk">
-								<p class="route__desc">
-									Пешие маршруты ведут по благоустроенным дорожкам вдоль
-									проспекта Независимости и ул. П. Мстиславца. Пешеходные
-									переходы регулируемые, подходы к входам безбарьерные.
-								</p>
+
+								<!-- Пешком -->
+								<div class="route-pane" id="route-pane-walk">
+									<section class="route-card">
+										<h3 class="route-card__title">К торговому центру идут маршруты:</h3>
+
+										<ul class="route-card__list">
+											<li>автобусы № 25, 36, 88, 94;</li>
+											<li>троллейбусы № 25, 37, 38.</li>
+										</ul>
+
+										<hr class="route-card__divider" />
+
+										<a class="route-card__maplink" href="https://yandex.ru/maps" target="_blank"
+											rel="noopener">
+											Подробнее на карте
+
+										</a>
+
+										<h4 class="route-card__subtitle">Построить маршрут</h4>
+
+										<div class="route-card__actions">
+											<a class="map-btn" href="https://yandex.ru/maps" target="_blank" rel="noopener">
+												<img src="./images/yandex-maps.svg" alt="" class="map-btn__logo" />
+												Яндекс&nbsp;Карты
+											</a>
+
+											<a class="map-btn" href="https://www.google.com/maps" target="_blank" rel="noopener">
+												<img src="./images/google-maps.svg" alt="" class="map-btn__logo" />
+												Google&nbsp;Maps
+											</a>
+										</div>
+									</section>
+								</div>
+
 							</div>
 						</div>
-					</div>
-					<div class="route__right">
-						<div class="route__photo">
-							<img src="./images/park.png" alt="Парковка DANA MALL" />
+						<div class="route__right">
+							<div class="route__photo">
+								<img src="./images/park.png" alt="Парковка DANA MALL" />
+							</div>
 						</div>
 					</div>
 				</div>
