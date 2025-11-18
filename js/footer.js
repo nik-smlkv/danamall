@@ -41,7 +41,6 @@
   btn.addEventListener('click', () => {
     const isOpen = btn.getAttribute('aria-expanded') === 'true';
     btn.setAttribute('aria-expanded', String(!isOpen));
-    panel.hidden = isOpen;
-    btn.querySelector('.caret').textContent = isOpen ? '▾' : '▴';
+    panel.classList.toggle('open');
   });
 })();
