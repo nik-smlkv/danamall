@@ -25,10 +25,10 @@
 						<img src="./images/Logo.svg" alt="DANA MALL" />
 					</a>
 					<nav class="header__nav">
-						<a href="#">Магазины</a>
-						<a href="#">Кафе и рестораны</a>
-						<a href="#">Кинотеатр</a>
-						<a href="#">Карта ТЦ</a>
+						<a href="/stores.html">Магазины</a>
+						<a href="/cafe-and-restaurants.html">Кафе и рестораны</a>
+						<a href="/cinema.html">Кинотеатр</a>
+						<a href="/map.html">Карта ТЦ</a>
 					</nav>
 					<div class="header__info">
 						<div class="header__hours hours__dropdown">
@@ -69,21 +69,21 @@
 						<div class="header-menu-info__content">
 							<div class="header-menu-link__content">
 								<div class="header-menu__column">
-									<a href="#">Схема ТЦ</a>
-									<a href="#">Как добраться</a>
-									<a href="#">Паркинг</a>
-									<a href="#">О DANA MALL</a>
-									<a href="#">Арендаторам</a>
-									<a href="#">Новости</a>
-									<a href="#">Контакты</a>
+									<a href="/map.html">Схема ТЦ</a>
+									<a href="/how-to-get.html">Как добраться</a>
+									<a href="/parking.html">Паркинг</a>
+									<a href="/about-us.html">О DANA MALL</a>
+									<a href="/arendators.html">Арендаторам</a>
+									<a href="/news.html">Новости</a>
+									<a href="/contacts.html">Контакты</a>
 								</div>
 								<div class="header-menu__column">
-									<a href="#">Магазины</a>
-									<a href="#">Кафе и рестораны</a>
-									<a href="#">Сервисы и услуги</a>
-									<a href="#">Детям</a>
-									<a href="#">Развлечения</a>
-									<a href="#">Кинотеатр</a>
+									<a href="/stores.html">Магазины</a>
+									<a href="/cafe-and-restaurants.html">Кафе и рестораны</a>
+									<a href="/services-and-facilities.html">Сервисы и услуги</a>
+									<a href="/kids.html">Детям</a>
+									<a href="/entertainments.html">Развлечения</a>
+									<a href="/cinema.html">Кинотеатр</a>
 								</div>
 							</div>
 							<div class="header-menu__info">
@@ -116,168 +116,184 @@
 				</div>
 			</div>
 		</header>
-		<main class="main page-shops">
+		<main class="main">
 			<div class="container p-cont">
+
 				<nav class="breadcrumbs" aria-label="Навигация по разделам">
-					<a href="/">Главная</a> / <span>Магазины</span>
+					<a class="breadcrumbs__item" href="/">Главная</a>
+					<span class="breadcrumbs__item breadcrumbs__item--current">Развлечения</span>
 				</nav>
 
+				<h1 class="page-directory__title">Развлечения</h1>
+				<section class="directory-filters" aria-label="Фильтры каталога">
+					<div class="filters__body">
+						<!-- поиск -->
 
-				<h1 class="page-shops__title">Магазины</h1>
+						<div class="directory-filters__search">
+							<img src="./images/search.svg" alt="" class="directory-filters__search-icon" />
+							<input type="search" placeholder="Найти" aria-label="Найти" />
+						</div>
 
-
-				<section class="shops-filters" aria-label="Фильтры магазинов">
-					<!-- Поиск -->
-					<div class="shops-search">
-						<img src="./images/search.svg" alt="" class="shops-search-icon" />
-						<input type="search" placeholder="Найти магазин" aria-label="Найти магазин" />
-					</div>
-
-					<!-- Категории -->
-					<div class="shops-select">
-						<select aria-label="Категория магазина">
-							<option value="">Все категории</option>
-							<option value="fashion">Одежда</option>
-							<option value="kids">Товары для детей</option>
-							<option value="home">Товары для дома</option>
-							<option value="beauty">Красота и здоровье</option>
-							<option value="services">Сервисы и услуги</option>
-						</select>
-					</div>
-
-					<!-- Этажи -->
-					<div class="shops-floors">
-						<span class="shops-floors__label">Этаж</span>
-						<div class="shops-floors__buttons">
-							<button class="shops-floors__btn is-active" type="button">Все</button>
-							<button class="shops-floors__btn" type="button">1</button>
-							<button class="shops-floors__btn" type="button">2</button>
-							<button class="shops-floors__btn" type="button">3</button>
+						<!-- этажи -->
+						<div class="directory-filters__floors">
+							<span class="directory-filters__label">Этаж</span>
+							<div class="directory-filters__group">
+								<button class="directory-filters__btn is-active" type="button">Все</button>
+								<button class="directory-filters__btn" type="button">1</button>
+								<button class="directory-filters__btn" type="button">2</button>
+								<button class="directory-filters__btn" type="button">3</button>
+							</div>
 						</div>
 					</div>
-
-					<!-- Кнопка плана этажей -->
-					<button class="shops-plan-btn" type="button">
-						<span>План этажей</span>
+					<!-- план этажей -->
+					<button class="directory-filters__plan" type="button">
+						<span>План этажей </span>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.888672 15.1109L15.1109 0.888672M15.1109 0.888672V15.1109M15.1109 0.888672H0.888672"
+								stroke="#090714" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="bevel"></path>
+						</svg>
 					</button>
 				</section>
 
-
-				<section class="stores-grid" aria-label="Список магазинов">
-
-
-					<article class="store-card" data-floor="1" data-category="fashion">
-						<div class="store-card__floor">1 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/mango.svg" alt="MANGO" />
+				<section class="directory-flex" aria-label="Список брендов">
+					<!-- ОДНА КАРТОЧКА -->
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
 						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">MANGO</h3>
-							<p class="store-card__category">Женская одежда</p>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
+						</div>
+					</article>
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
+						</div>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
+						</div>
+					</article>
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
+						</div>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
+						</div>
+					</article>
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
+						</div>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
+						</div>
+					</article>
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
+						</div>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
 						</div>
 					</article>
 
-
-					<article class="store-card" data-floor="2" data-category="fashion">
-						<div class="store-card__floor">2 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/milavitsa.svg" alt="MILAVITSA" />
-						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">MILAVITSA</h3>
-							<p class="store-card__category">Женское бельё</p>
-						</div>
-					</article>
-
-
-					<article class="store-card" data-floor="2" data-category="beauty">
-						<div class="store-card__floor">2 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/dnk.svg" alt="DNK" />
-						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">DNK</h3>
-							<p class="store-card__category">Красота и здоровье</p>
-						</div>
-					</article>
-
+					<!-- дальше копируешь по макету -->
 				</section>
+
 			</div>
 		</main>
+
 		<footer class="footer">
-			<!-- Бренды -->
 			<div class="footer__brands">
 				<div class="footer__brands-track" id="brandsTrack">
 					<span>ZARA</span><span>BERSHKA</span><span>CONTE</span><span>COLINS</span>
 					<span>PULL&BEAR</span><span>SISTER'S</span><span>STRADIVARIUS</span>
-					<span>MANGO</span><span>MILAVITSA</span><span>O'STIN</span> <span>ZNWR</span><span>MARK
-						FORMELLE</span>
+					<span>MANGO</span><span>MILAVITSA</span><span>O'STIN</span> <span>ZNWR</span><span>MARK FORMELLE</span>
 				</div>
 			</div>
-
-			<!-- Контент как на макете -->
-			<div class="footer__grid">
-				<!-- Режим работы (занимает 2 колонки) -->
-				<section class="footer__work">
-					<h4>РЕЖИМ РАБОТЫ</h4>
-					<div class="work-cols">
-						<div class="work-col">
-							<p class="muted">Гипермаркет Green</p>
-							<p class="strong">8:00 — 23:00</p>
-
-							<p class="muted">Фуд-корт Dana Mall</p>
-							<p class="strong">10:00 — 22:00</p>
+			<div class="container p-cont">
+				<div class="footer__grid">
+					<!-- Режим работы (занимает 2 колонки) -->
+					<section class="footer__work">
+						<h4>РЕЖИМ РАБОТЫ</h4>
+						<div class="work-cols">
+							<div class="work-col work-col-gap">
+								<div class="">
+									<p class="muted">Гипермаркет Green</p>
+									<p class="strong">8:00 — 23:00</p>
+								</div>
+								<div class="">
+									<p class="muted">Фуд-корт Dana Mall</p>
+									<p class="strong">10:00 — 22:00</p>
+								</div>
+							</div>
+							<div class="work-col work-col-gap">
+								<div class="">
+									<p class="muted">Магазины и услуги</p>
+									<p class="strong">10:00 — 22:00</p>
+								</div>
+								<div class="">
+									<p class="muted">Подземный паркинг</p>
+									<p class="strong">Круглосуточно</p>
+								</div>
+							</div>
+							<div class="work-col">
+								<p class="muted">Кинопространство Mooon</p>
+								<p class="strong strong-time">Вс–Чт: 10:00 — 00:00</p>
+								<p class="strong strong-time">Пт–Сб: 10:00 — 01:30</p>
+							</div>
 						</div>
-						<div class="work-col">
-							<p class="muted">Магазины и услуги</p>
-							<p class="strong">10:00 — 22:00</p>
+					</section>
 
-							<p class="muted">Подземный паркинг</p>
-							<p class="strong">Круглосуточно</p>
-						</div>
-						<div class="work-col">
-							<p class="muted">Кинопространство Mooon</p>
-							<p>Вс–Чт: 10:00 — 00:00</p>
-							<p>Пт–Сб: 10:00 — 01:30</p>
+					<!-- Адрес -->
+					<section class="footer__addr">
+						<h4>АДРЕС DANA MALL</h4>
+						<p>Беларусь, г. Минск, ул. П. Мстиславца, 11, ст.м.Восток</p>
+						<a class="footer__link-arrow" href="#">Как добраться
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.666748 14.8887L14.889 0.666504M14.889 0.666504V14.8887M14.889 0.666504H0.666748"
+									stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="bevel" />
+							</svg>
+						</a>
+					</section>
+
+					<!-- Инфоцентр -->
+					<section class="footer__info">
+						<h4>ИНФОЦЕНТР</h4>
+						<p>+375 (29) 201-02-19</p>
+						<a href="mailto:info@dana-mall.com">info@dana-mall.com</a>
+					</section>
+				</div>
+				<div class="footer__bar">
+					<div class="footer-legal__block">
+						<button class="footer__legal-toggle" id="legalToggle" aria-expanded="false">
+							Юридическая информация <span class="caret"></span>
+						</button>
+						<div class="footer__legal" id="legalPanel">
+							<div class="footer__legal-inner">
+								<p>
+									Общество с ограниченной ответственностью «Гранд Атриум»
+									220076, г. Минск, ул. П. Мстиславца, дом 11, помещение 3,
+									кабинет 57 УНП 193620986 Свидетельство о государственной
+									регистрации №193620986, выдано Минским горисполкомом
+									01.04.2022 г.
+								</p>
+							</div>
 						</div>
 					</div>
-				</section>
-
-				<!-- Адрес -->
-				<section class="footer__addr">
-					<h4>АДРЕС DANA MALL</h4>
-					<p>Беларусь, г. Минск,</p>
-					<p>ул. П. Мстиславца, 11,</p>
-					<p>ст.м.Восток</p>
-					<a class="footer__link-arrow" href="#">Как добраться</a>
-				</section>
-
-				<!-- Инфоцентр -->
-				<section class="footer__info">
-					<h4>ИНФОЦЕНТР</h4>
-					<p>+375 (29) 201-02-19</p>
-					<p><a href="mailto:info@dana-mall.com">info@dana-mall.com</a></p>
-				</section>
-			</div>
-
-			<!-- Нижняя плашка -->
-			<div class="footer__bar">
-				<button class="footer__legal-toggle" id="legalToggle" aria-expanded="false">
-					Юридическая информация <span class="caret">▾</span>
-				</button>
-				<a href="#" class="footer__bar-link">Политика в отношении обработки персональных данных</a>
-				<p class="footer__copy">© DANA MALL, 2025</p>
-			</div>
-
-			<!-- Раскрывающийся блок юридической инфы -->
-			<div class="footer__legal" id="legalPanel" hidden>
-				<div class="footer__legal-inner">
-					<p>
-						ООО «Дана Молл». УНП 123456789. Юр. адрес: 220000, Беларусь, г.
-						Минск, ул. П. Мстиславца, 11. Настоящая информация размещена в
-						целях соблюдения действующего законодательства и носит справочный
-						характер.
-					</p>
+					<a href="#" class="footer__bar-link">Политика в отношении обработки персональных данных</a>
+					<p class="footer__copy">© DANA MALL, 2025</p>
 				</div>
 			</div>
 		</footer>
