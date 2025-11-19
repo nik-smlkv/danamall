@@ -1,0 +1,120 @@
+/* ===== ROUTE CARDS ===== */
+
+.route-cards {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+	margin-top: 32px;
+}
+
+.route-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: #F7F7F7;
+	border-radius: 24px;
+	overflow: hidden;
+	row-gap: 20px;
+}
+
+.route-card__content {
+	padding: 26px 24px 0px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.route-card__title {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 500;
+	display: flex;
+	line-height: 110%;
+	align-items: center;
+	gap: 8px;
+}
+
+.route-card__icon {
+	font-size: 18px;
+}
+
+.route-card__text {
+	margin: 0;
+	font-size: 16px;
+	line-height: 124%;
+	font-weight: 400;
+	color: #090714;
+}
+
+.page-directory__block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.address__text p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
+}
+
+.route-card__link {
+
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 18px;
+	line-height: 120%;
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: 1px solid #090714;
+	color: #090714;
+
+	width: fit-content;
+}
+
+.route-card__link-arrow {
+	font-size: 13px;
+}
+
+.route-card__link:hover {
+	border-bottom-color: #090714;
+}
+
+.route-card__image {
+	width: 100%;
+}
+
+.route-card__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* Адаптив */
+
+@media (max-width: 1024px) {
+	.route-cards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.route-card__image {
+		height: 200px;
+	}
+}
+
+@media (max-width: 640px) {
+	.route-cards {
+		grid-template-columns: 1fr;
+	}
+
+	.route-card {
+		border-radius: 20px;
+	}
+}

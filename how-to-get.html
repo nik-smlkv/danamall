@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="./styles/tokens.css" />
 	<link rel="stylesheet" href="./styles/typography.css" />
 	<link rel="stylesheet" href="./styles/stores.css" />
+	<link rel="stylesheet" href="./styles/how-to-get.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
@@ -119,89 +120,133 @@
 		<main class="main page-shops">
 			<div class="container p-cont">
 				<nav class="breadcrumbs" aria-label="Навигация по разделам">
-					<a href="/">Главная</a> / <span>Магазины</span>
+					<a href="/">Главная</a> / <span>Как добраться</span>
 				</nav>
 
-
-				<h1 class="page-shops__title">Магазины</h1>
-
-
-				<section class="shops-filters" aria-label="Фильтры магазинов">
-					<!-- Поиск -->
-					<div class="shops-search">
-						<img src="./images/search.svg" alt="" class="shops-search-icon" />
-						<input type="search" placeholder="Найти магазин" aria-label="Найти магазин" />
+				<div class="page-directory__block">
+					<h1 class="page-directory__title">Как добраться</h1>
+					<div class="address__text">
+						<p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="24" height="24" fill="white" />
+								<path
+									d="M11.9989 13.4299C13.722 13.4299 15.1189 12.0331 15.1189 10.3099C15.1189 8.58681 13.722 7.18994 11.9989 7.18994C10.2758 7.18994 8.87891 8.58681 8.87891 10.3099C8.87891 12.0331 10.2758 13.4299 11.9989 13.4299Z"
+									stroke="#090714" stroke-width="1.5" />
+								<path
+									d="M3.62166 8.49C5.59166 -0.169998 18.4217 -0.159997 20.3817 8.5C21.5317 13.58 18.3717 17.88 15.6017 20.54C13.5917 22.48 10.4117 22.48 8.39166 20.54C5.63166 17.88 2.47166 13.57 3.62166 8.49Z"
+									stroke="#090714" stroke-width="1.5" />
+							</svg>
+							г. Минск, ул. П. Мстиславца, 11</p>
 					</div>
+				</div>
 
-					<!-- Категории -->
-					<div class="shops-select">
-						<select aria-label="Категория магазина">
-							<option value="">Все категории</option>
-							<option value="fashion">Одежда</option>
-							<option value="kids">Товары для детей</option>
-							<option value="home">Товары для дома</option>
-							<option value="beauty">Красота и здоровье</option>
-							<option value="services">Сервисы и услуги</option>
-						</select>
-					</div>
 
-					<!-- Этажи -->
-					<div class="shops-floors">
-						<span class="shops-floors__label">Этаж</span>
-						<div class="shops-floors__buttons">
-							<button class="shops-floors__btn is-active" type="button">Все</button>
-							<button class="shops-floors__btn" type="button">1</button>
-							<button class="shops-floors__btn" type="button">2</button>
-							<button class="shops-floors__btn" type="button">3</button>
+				<section class="route-cards">
+					<article class="route-card">
+						<div class="route-card__content">
+							<h3 class="route-card__title">
+								<img class="route-card__icon" src="./images/metro.svg" />
+								На метро
+							</h3>
+							<p class="route-card__text">
+								Ближайшая станция метро «Восток» находится в 2 минутах пешком
+								от входа в Dana Mall. Воспользуйтесь любым выходом из метро.
+							</p>
+							<a href="#" class="route-card__link">
+								На карте
+								<span class="route-card__link-arrow"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.789062 13.4321L13.431 0.790161M13.431 0.790161V13.4321M13.431 0.790161H0.789062"
+											stroke="#090714" stroke-width="1.18519" stroke-linecap="round"
+											stroke-linejoin="bevel" />
+									</svg>
+								</span>
+							</a>
 						</div>
-					</div>
+						<div class="route-card__image">
+							<img src="./images/dobratsa-1.jpg" alt="Как добраться на метро" />
+						</div>
+					</article>
 
-					<!-- Кнопка плана этажей -->
-					<button class="shops-plan-btn" type="button">
-						<span>План этажей</span>
-					</button>
+					<article class="route-card">
+						<div class="route-card__content">
+							<h3 class="route-card__title">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M22.4365 8.91618C22.6053 8.91618 22.7654 8.99073 22.8739 9.1179C22.9261 9.18016 22.9636 9.25342 22.9835 9.3322C23.0035 9.41098 23.0053 9.49325 22.989 9.57286L22.6711 11.0649C22.6434 11.1901 22.5734 11.3019 22.473 11.3815C22.3726 11.4612 22.2478 11.5038 22.1196 11.5023H21.4432C22.0922 12.2029 22.4025 13.0985 22.3992 13.992C22.4011 14.5018 22.2949 15.0063 22.0876 15.4721C21.8803 15.9379 21.5766 16.3545 21.1966 16.6943V18.7422C21.1928 18.9627 21.1019 19.1728 20.9437 19.3264C20.7855 19.4801 20.5729 19.5649 20.3524 19.5622H18.3769C18.1563 19.5652 17.9436 19.4805 17.7853 19.3268C17.6271 19.173 17.5362 18.9628 17.5328 18.7422V17.9025H6.46683V18.7422C6.46337 18.9628 6.37255 19.173 6.2143 19.3268C6.05605 19.4805 5.84329 19.5652 5.62269 19.5622H3.64827C3.42767 19.5652 3.21491 19.4805 3.05666 19.3268C2.89841 19.173 2.80759 18.9628 2.80413 18.7422V16.6538C2.79994 16.6499 2.79555 16.6462 2.79097 16.6428L2.78768 16.6406C2.78467 16.6386 2.78175 16.6364 2.77891 16.6341C2.0159 15.9511 1.59821 14.9863 1.6026 13.9174C1.60118 13.0281 1.92612 12.1692 2.51581 11.5034H1.88105C1.75308 11.5048 1.62852 11.4622 1.52816 11.3828C1.4278 11.3034 1.35772 11.192 1.32962 11.0671L1.0117 9.57395C0.994703 9.49419 0.996245 9.4116 1.0162 9.33253C1.03616 9.25347 1.074 9.18003 1.12681 9.1179C1.18048 9.05427 1.24748 9.00322 1.32307 8.96836C1.39866 8.9335 1.48099 8.91569 1.56423 8.91618H3.70528C4.23588 7.56445 4.92216 6.23685 5.70491 5.73475C8.41165 4.0059 15.5901 4.0059 18.2969 5.73475C19.0796 6.23575 19.7681 7.56226 20.2965 8.91618H22.4365ZM17.3672 7.1062C15.2108 5.72598 8.78987 5.72598 6.63237 7.1062C6.21359 7.3737 5.67421 8.45354 5.18088 9.77457H18.8187C18.3254 8.45245 17.786 7.3737 17.3672 7.1062ZM4.10542 14.1236C4.10542 13.2312 4.8509 12.5098 5.7674 12.5098C6.68609 12.5098 7.43047 13.2312 7.43047 14.1236C7.43047 15.0159 6.68609 15.7384 5.7674 15.7384C4.8498 15.7384 4.10542 15.0148 4.10542 14.1236ZM16.5922 14.1236C16.5922 15.0159 17.3376 15.7384 18.2552 15.7384C19.1728 15.7384 19.9172 15.0148 19.9172 14.1236C19.9172 13.2312 19.1739 12.5098 18.2541 12.5098C17.3376 12.5098 16.5922 13.2312 16.5922 14.1236Z"
+										fill="#090714" />
+								</svg>
+
+								На машине
+							</h3>
+							<p class="route-card__text">
+								Удобнее заезжать со стороны ул. Петра Мстиславца, 9. Вдоль улицы
+								вы увидите белые стелы с обозначением номера въезда, цветов парковочных зон
+								и тарифов на парковку.
+							</p>
+							<a href="#" class="route-card__link">
+								На карте
+								<span class="route-card__link-arrow"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.789062 13.4321L13.431 0.790161M13.431 0.790161V13.4321M13.431 0.790161H0.789062"
+											stroke="#090714" stroke-width="1.18519" stroke-linecap="round"
+											stroke-linejoin="bevel" />
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="route-card__image">
+							<img src="./images/dobratsa-2.jpg" alt="Как добраться на машине" />
+						</div>
+					</article>
+
+					<article class="route-card">
+						<div class="route-card__content">
+							<h3 class="route-card__title">
+								<svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1009_7058)">
+										<path
+											d="M10.7849 5.42472C11.2713 5.40904 11.6792 5.22076 12.0087 4.85987C12.3382 4.49897 12.4951 4.07534 12.4794 3.58895C12.4638 3.10248 12.2833 2.6867 11.9381 2.34158C11.5929 1.99641 11.1771 1.83166 10.6907 1.84733C10.2044 1.86301 9.7964 2.05129 9.4669 2.41218C9.1374 2.77308 8.97266 3.19671 8.97266 3.6831C8.97266 4.16948 9.15308 4.5853 9.51397 4.93047C9.87486 5.27564 10.2985 5.44039 10.7849 5.42472Z"
+											fill="#090714" />
+										<path
+											d="M16.7419 11.3795L14.153 9.96743L12.0348 6.57833C11.6269 6.07622 11.1248 5.8252 10.5286 5.8252C10.1206 5.8252 9.72836 5.9978 9.3518 6.34297L6.15098 9.59086C6.05684 9.7164 5.9941 9.85761 5.9627 10.0145L5.53906 13.6389V13.7331C5.53906 13.9527 5.61753 14.141 5.77442 14.2979C5.9313 14.4548 6.11959 14.5333 6.33927 14.5333C6.55895 14.5333 6.73937 14.4548 6.88058 14.2979C7.02179 14.141 7.10807 13.9684 7.13947 13.7802L7.46897 10.6735L8.59866 9.54379L7.56311 18.2048L5.72735 22.3C5.6646 22.4883 5.6332 22.6605 5.6332 22.8179C5.6332 23.1625 5.75088 23.4534 5.98624 23.6887C6.22159 23.9241 6.51187 24.0259 6.85704 23.9947C7.32775 23.9947 7.67292 23.7745 7.8926 23.3357L9.86958 18.9109C9.86958 18.8794 9.88525 18.8246 9.91665 18.7462C9.94809 18.6676 9.97949 18.597 10.0108 18.5344C10.0422 18.4715 10.0579 18.4087 10.0579 18.3461L10.2932 16.2278L12.3173 23.1945C12.5369 23.7593 12.9292 24.026 13.494 23.9947C13.8078 23.9947 14.0824 23.877 14.3178 23.6416C14.5531 23.4063 14.6708 23.1155 14.6708 22.7708C14.6708 22.7389 14.6629 22.7002 14.6473 22.6531C14.6316 22.6061 14.6237 22.5667 14.6237 22.5354L11.7995 12.8858L12.129 9.73207L12.9292 11.003C12.9919 11.0971 13.0704 11.1756 13.1645 11.2383L15.9417 12.7917C16.13 12.8544 16.2555 12.8858 16.3183 12.8858C16.538 12.8858 16.7262 12.7995 16.8831 12.6269C17.04 12.4543 17.1185 12.2582 17.1185 12.0385C17.1185 11.7561 16.9929 11.5364 16.7419 11.3795Z"
+											fill="#090714" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1009_7058">
+											<rect width="22.1535" height="24.0001" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+
+								Пешком
+							</h3>
+							<p class="route-card__text">
+								Ближайшая станция метро «Восток» находится в 2 минутах пешком
+								от входа в Dana Mall. Воспользуйтесь любым выходом из метро.
+							</p>
+							<a href="#" class="route-card__link">
+								На карте
+								<span class="route-card__link-arrow"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.789062 13.4321L13.431 0.790161M13.431 0.790161V13.4321M13.431 0.790161H0.789062"
+											stroke="#090714" stroke-width="1.18519" stroke-linecap="round"
+											stroke-linejoin="bevel" />
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="route-card__image">
+							<img src="./images/dobratsa-3.jpg" alt="Как добраться пешком" />
+						</div>
+					</article>
 				</section>
 
 
-				<section class="stores-grid" aria-label="Список магазинов">
 
-
-					<article class="store-card" data-floor="1" data-category="fashion">
-						<div class="store-card__floor">1 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/mango.svg" alt="MANGO" />
-						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">MANGO</h3>
-							<p class="store-card__category">Женская одежда</p>
-						</div>
-					</article>
-
-
-					<article class="store-card" data-floor="2" data-category="fashion">
-						<div class="store-card__floor">2 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/milavitsa.svg" alt="MILAVITSA" />
-						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">MILAVITSA</h3>
-							<p class="store-card__category">Женское бельё</p>
-						</div>
-					</article>
-
-
-					<article class="store-card" data-floor="2" data-category="beauty">
-						<div class="store-card__floor">2 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/dnk.svg" alt="DNK" />
-						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">DNK</h3>
-							<p class="store-card__category">Красота и здоровье</p>
-						</div>
-					</article>
-
-				</section>
 			</div>
 		</main>
 		<footer class="footer">
