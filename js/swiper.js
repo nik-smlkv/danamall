@@ -6,7 +6,7 @@
 		const newsSwiper = new Swiper("#newsSwiper", {
 			slidesPerView: "auto",
 			spaceBetween: 30,
-			loop: false,             // ← loop выключен
+			loop: false,
 			speed: 600,
 			freeMode: true,
 			slidesPerGroup: 1,
@@ -15,8 +15,8 @@
 				prevEl: ".news__body .news-prev",
 			},
 			breakpoints: {
-				0: { spaceBetween: 14 },
-				768: { spaceBetween: 18 },
+				0: { spaceBetween: 0, slidesPerView: 1, loop: true, },
+				650: { spaceBetween: 20, slidesPerView: "auto", loop: false, },
 				1200: { spaceBetween: 20 },
 			},
 		});
@@ -25,6 +25,7 @@
 
 		// вешаем is-expanded по обычному индексу
 		function setExpandedByIndex(index) {
+			if (window.innerWidth <= 650) return;
 			getSlides().forEach((slide, i) => {
 				slide.classList.toggle("is-expanded", i === index);
 			});
