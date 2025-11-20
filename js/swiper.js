@@ -132,3 +132,32 @@ const promoSwiper = new Swiper(".promo-swiper", {
 		},
 	},
 });
+
+new Swiper(".tariffs__slider", {
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 24,
+	freeMode: true,
+	navigation: {
+		nextEl: ".tariffs .tariffs-buttons__block .swiper-button-next",
+		prevEl: ".tariffs .tariffs-buttons__block .swiper-button-prev",
+	},
+	breakpoints: {
+		640: { slidesPerView: 2 },
+		1024: { slidesPerView: 3 }
+	}
+});
+
+
+new Swiper(".comfort__slider", {
+	slidesPerView: 1,
+	spaceBetween: 24,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	breakpoints: {
+		640: { slidesPerView: 2 },
+		1024: { slidesPerView: 3 }
+	}
+});

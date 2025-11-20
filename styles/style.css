@@ -238,7 +238,8 @@ main {
 	padding-bottom: 150px;
 }
 
-.main {
+.main,
+.main .container {
 	display: flex;
 	flex-direction: column;
 	row-gap: 150px;
@@ -254,7 +255,9 @@ main {
 }
 
 @media((max-width: 1920px) and (min-width: 650px)) {
-	.news .p-cont {
+
+	.news .p-cont,
+	.tarrifs-swiper .p-cont {
 		padding-right: 0 !important;
 	}
 }
