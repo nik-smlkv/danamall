@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       dropdown.classList.add("open");
       toggle.setAttribute("aria-expanded", "true");
       // плавно раскрываем до фактической высоты контента
-      menu.style.maxHeight = menu.scrollHeight + "px";
+      menu.style.maxHeight = menu.scrollHeight + 20 + "px";
     }
   });
 

@@ -73,7 +73,7 @@
               <div class="header-menu-info__content">
                 <div class="header-menu-link__content">
                   <div class="header-menu__column">
-                    <a href="/map.html">Схема ТЦ</a>
+                    <a href="/map.html">Карта ТЦ</a>
                     <a href="/how-to-get.html">Как добраться</a>
                     <a href="/parking.html">Паркинг</a>
                     <a href="/about-us.html">О DANA MALL</a>
@@ -129,7 +129,7 @@
           <section class="current-directory-info">
             <div class="current-directory-text">
               <small>Главная / Кинотеатр</small>
-              <h1 class="page-directory__title">КИНОТЕАТР MOON</h1>
+              <h1 class="page-directory__title">Чёрная пятница в DANA MALL</h1>
               <div class="nav__block">
                 <div class="tags__body">
                   <div class="tag-floor">3 этаж</div>
@@ -155,17 +155,21 @@
               </div>
               <div class="description__block">
                 <p>
-                  Кинопространство moon в ТРЦ Dana Mall — беспроигрышный вариант
-                  для полноценного расслабления и непревзойденного отдыха,
-                  которое подарит своим гостям настоящее удовольствие от
-                  просмотра фильмов MOON.
+                  С 28 по 30 ноября в ТЦ Dana Mall стартует самая  долгожданная
+                  распродажа года — Чёрная пятница!
                 </p>
                 <p>
-                  Кино здесь обособленно подчинено ключевым событиям, ведь
-                  кинопространство оснащено самыми актуальными залами —
-                  уютнейшее место, куда вновь и вновь хочется возвращаться с
-                  любимым человеком, большой компанией или чтобы побыть наедине
-                  с собой.
+                  В эти дни магазины в Dana Mall открывают для вас самые щедрые
+                  предложения — скидки достигают до (90-это  не точно) %. Среди
+                  уютных вещей, праздничных коллекций, игрушек, ароматов
+                  и красивых мелочей вы обязательно найдёте то, что вызовет
+                  улыбку у тех, кого любите — и подберёте идеальные подарки
+                  к предстоящим зимним праздникам.
+                </p>
+                <p>
+                  Приходите всей семьёй. Пусть этот шопинг станет не просто
+                  выгодным, а по-настоящему тёплым: с новогодним настроением,
+                  маленькими радостями и ощущением, что праздник уже рядом.
                 </p>
               </div>
             </div>
@@ -175,91 +179,123 @@
             </div>
           </section>
 
-          <section class="now-showing">
-            <h2>СЕЙЧАС В ПРОКАТЕ</h2>
+          <div class="floor-nav">
+            <button onclick="scrollToFloor('floor1')" class="active">
+              1 этаж
+            </button>
+            <button onclick="scrollToFloor('floor2')">2 этаж</button>
+            <button onclick="scrollToFloor('floor3')">3 этаж</button>
+          </div>
+          <div id="floor1" class="floor-block">
+            <h2>1 ЭТАЖ</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Магазин</th>
+                  <th>Акция / Скидки</th>
+                  <th>Период</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Магазин">Доктор Вет</td>
+                  <td data-label="Акция">
+                    Товары со скидками до 40%!<br />20% на всё съедобное
+                    («Корм», «Витамины и добавки и Лакомства»), 40% на всё
+                    несъедобное
+                  </td>
+                  <td data-label="Период">28 – 30 ноября 2025</td>
+                </tr>
+                <tr>
+                  <td data-label="Магазин">Yves Rocher</td>
+                  <td data-label="Акция">Скидки до 50%</td>
+                  <td data-label="Период">28 – 30 ноября 2025</td>
+                </tr>
+                <tr>
+                  <td data-label="Магазин">Кравт</td>
+                  <td data-label="Акция">
+                    PUPA, CLARINS, FERRAGAMO и др. бренды — приятные цены на
+                    весь ассортимент
+                  </td>
+                  <td data-label="Период">28 – 29 ноября 2025</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-            <div class="swiper current-directory-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/kinoteatr-1.png" alt="Битва" />
-                  <h4>Битва за битвой</h4>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/kinoteatr-2.png" alt="Автобус" />
-                  <h4>Школьный автобус</h4>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/kinoteatr-3.png" alt="Заклятие" />
-                  <h4>Заклятие 4: Последний обряд</h4>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/kinoteatr-4.png" alt="Грабитель" />
-                  <h4>Грабитель с крыши</h4>
-                </div>
-              </div>
+          <div id="floor2" class="floor-block">
+            <h2>2 ЭТАЖ</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Магазин</th>
+                  <th>Акция / Скидки</th>
+                  <th>Период</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Магазин">Доктор Вет</td>
+                  <td data-label="Акция">
+                    Товары со скидками до 40%!<br />20% на всё съедобное
+                    («Корм», «Витамины и добавки и Лакомства»), 40% на всё
+                    несъедобное
+                  </td>
+                  <td data-label="Период">28 – 30 ноября 2025</td>
+                </tr>
+                <tr>
+                  <td data-label="Магазин">Yves Rocher</td>
+                  <td data-label="Акция">Скидки до 50%</td>
+                  <td data-label="Период">28 – 30 ноября 2025</td>
+                </tr>
+                <tr>
+                  <td data-label="Магазин">Кравт</td>
+                  <td data-label="Акция">
+                    PUPA, CLARINS, FERRAGAMO и др. бренды — приятные цены на
+                    весь ассортимент
+                  </td>
+                  <td data-label="Период">28 – 29 ноября 2025</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </section>
-
-          <section class="banner">
-            <img src="./images/moon-card.jpg" alt="" />
-            <div class="banner__text">
-              <div class="banner__text_block">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="223"
-                  height="40"
-                  viewBox="0 0 223 40"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_913_5684)">
-                    <mask
-                      id="mask0_913_5684"
-                      style="mask-type: luminance"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
-                      width="223"
-                      height="40"
-                    >
-                      <path d="M223 0H0V40H223V0Z" fill="white" />
-                    </mask>
-                    <g mask="url(#mask0_913_5684)">
-                      <path
-                        d="M123.615 39.8902C135.02 39.8902 144.266 30.9605 144.266 19.9451C144.266 8.92972 135.02 0 123.615 0C112.21 0 102.965 8.92972 102.965 19.9451C102.965 30.9605 112.21 39.8902 123.615 39.8902Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M60.7539 19.9706C60.7539 8.21751 69.8077 0 81.3354 0C92.863 0 101.917 8.21751 101.917 19.9706C101.917 31.7238 92.8685 39.9414 81.3354 39.9414C69.8077 39.9363 60.7539 31.7188 60.7539 19.9706ZM93.965 19.9706C93.965 12.2137 88.2541 7.06623 81.3354 7.06623C74.4166 7.06623 68.7058 12.2137 68.7058 19.9706C68.7058 27.7277 74.4166 32.8751 81.3354 32.8751C88.2541 32.8751 93.965 27.7277 93.965 19.9706Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M145.223 19.9706C145.223 8.21751 154.271 0 165.804 0C177.332 0 186.385 8.21751 186.385 19.9706C186.385 31.7238 177.336 39.9414 165.804 39.9414C154.271 39.9363 145.223 31.7188 145.223 19.9706ZM178.429 19.9706C178.429 12.2137 172.717 7.06623 165.799 7.06623C158.88 7.06623 153.169 12.2137 153.169 19.9706C153.169 27.7277 158.88 32.8751 165.799 32.8751C172.717 32.8751 178.429 27.7277 178.429 19.9706Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M208.245 0C203.105 0 198.756 1.97506 195.975 6.00706H195.811V0.767512H187.859V39.1688H195.811V18.0877C195.811 10.4842 200.011 6.75411 205.664 6.75411C211.63 6.75411 215.057 9.81394 215.057 17.4174V39.1637H223.009V16.0002C223.003 4.70742 216.943 0 208.245 0Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M45.0196 0C39.3458 0 34.8904 1.94437 31.982 6.58014H31.8497C28.5227 1.74482 25.2963 0 19.6968 0C15.1143 0 10.3569 2.0774 8.05775 5.8638H7.9518V0.767512H0V39.1688H7.9518V17.1258C7.9518 10.213 11.443 6.75923 16.7725 6.75923C22.1018 6.75923 25.5878 9.76788 25.5878 16.6806V39.1688H33.5395V17.4635C33.5395 10.5507 37.0307 6.75923 42.4396 6.75923C47.7691 6.75923 51.0643 9.76788 51.0643 16.6806V39.1688H59.016V15.5908C59.016 5.07071 53.0509 0 45.0196 0Z"
-                        fill="white"
-                      />
-                    </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_913_5684">
-                      <rect width="223" height="40" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <h3>КИНО НОВОГО УРОВНЯ</h3>
-              </div>
-              <button class="banner__button">СМОТРЕТЬ АФИШУ ↗</button>
-            </div>
-          </section>
+          <div id="floor3" class="floor-block">
+            <h2>3 ЭТАЖ</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Магазин</th>
+                  <th>Акция / Скидки</th>
+                  <th>Период</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Магазин">Доктор Вет</td>
+                  <td data-label="Акция">
+                    Товары со скидками до 40%!<br />20% на всё съедобное
+                    («Корм», «Витамины и добавки и Лакомства»), 40% на всё
+                    несъедобное
+                  </td>
+                  <td data-label="Период">28 – 30 ноября 2025</td>
+                </tr>
+                <tr>
+                  <td data-label="Магазин">Yves Rocher</td>
+                  <td data-label="Акция">Скидки до 50%</td>
+                  <td data-label="Период">28 – 30 ноября 2025</td>
+                </tr>
+                <tr>
+                  <td data-label="Магазин">Кравт</td>
+                  <td data-label="Акция">
+                    PUPA, CLARINS, FERRAGAMO и др. бренды — приятные цены на
+                    весь ассортимент
+                  </td>
+                  <td data-label="Период">28 – 29 ноября 2025</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </main>
       <footer class="footer">

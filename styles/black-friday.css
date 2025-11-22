@@ -1,0 +1,84 @@
+.floor-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.floor-nav button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.floor-nav button.active {
+  background: black;
+  color: white;
+}
+
+.floor-block {
+  margin-bottom: 60px;
+}
+
+.floor-block h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border-top: 1px solid #ddd;
+  padding: 12px;
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+td {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .floor-nav {
+    flex-wrap: wrap;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+}

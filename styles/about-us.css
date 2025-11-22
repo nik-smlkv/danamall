@@ -1,0 +1,205 @@
+.hero {
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 40%, transparent 100%);
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.overlay h1 {
+  font-size: 80px;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--font-headline);
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.about {
+  text-align: center;
+}
+
+.about h4 {
+  font-size: 18px;
+}
+
+.about p {
+  font-size: 52px;
+  font-family: var(--font-headline);
+  line-height: 120%;
+  font-weight: 500;
+  max-width: 1174px;
+  margin: 0 auto;
+}
+
+/* ===== БЛОК "ПРАВИЛА И МЕРОПРИЯТИЯ" ===== */
+.rules-events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.rules-events img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.rules-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.rules-text h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.rules-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.rules-text a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid currentColor;
+}
+
+.events {
+  display: flex;
+  column-gap: 162px;
+}
+
+.events h2 {
+  color: #090714;
+  font-family: var(--font-headline);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.events p {
+  max-width: 600px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+/* ===== SWIPER СЛАЙДЕР ===== */
+.slider-section {
+  padding: 40px 0;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+
+.slider-controls button,
+.slider-controls select {
+  background: none;
+  border: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.slider-controls button.active {
+  font-weight: bold;
+  background: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.swiper {
+  padding: 20px;
+}
+
+.swiper-slide {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide img {
+  width: 100%;
+  display: block;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #c82327;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.about-us__swiper .swiper-slide{
+    max-width: 540px;
+}
+.about-us__swiper .swiper-slide img {
+  max-width: 540px;
+}
+@media (max-width: 600px) {
+  .overlay h1 {
+    font-size: 24px;
+  }
+
+  .buttons button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
