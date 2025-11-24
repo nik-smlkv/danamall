@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="widli=device-widli, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./styles/style.css" />
 	<link rel="stylesheet" href="./styles/header.css" />
@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="./styles/tokens.css" />
 	<link rel="stylesheet" href="./styles/typography.css" />
 	<link rel="stylesheet" href="./styles/stores.css" />
+
+	<link rel="stylesheet" href="./styles/news.css" />
+	<link rel="stylesheet" href="./styles/arendators.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
@@ -116,92 +119,162 @@
 				</div>
 			</div>
 		</header>
-		<main class="main page-shops">
+		<main class="main">
 			<div class="container p-cont">
 				<nav class="breadcrumbs" aria-label="Навигация по разделам">
 					<a href="/">Главная</a> / <span>Магазины</span>
 				</nav>
 
 
-				<h1 class="page-shops__title">Магазины</h1>
+				<h1 class="page-directory__title">Арендаторам</h1>
+				<div class="main__body">
+					<section class="calculator" id="calculator">
+						<div class="calculator__container container">
+							<!-- Табуляция -->
+							<div class="calculator__tabs">
+								<button class="calculator__tab active" data-tab="rent">Калькулятор аренды</button>
+								<button class="calculator__tab" data-tab="memo">Памятка по расчёту аренды</button>
+							</div>
+
+							<!-- Контент -->
+							<div class="calculator__content">
+								<!-- Левая часть: форма -->
+								<div class="calculator__form" id="rent-form">
+									<h3>Калькулятор для расчета арендной платы c учетом Индекса потребительских цен</h3>
+									<div class="calculator-date__block">
+										<p>Дата подписания акта приёмки-перелачи помещения</p>
+										<div class="custom-select" id="date-select">
+											<div class="custom-select__trigger">
+												<span>до 01.01.2025</span>
+												<div class="custom-select__arrow"></div>
+											</div>
+											<ul class="custom-select__options">
+												<li data-value="до 01.01.2025" class="selected">до 01.01.2025</li>
+												<li data-value="до 01.02.2025">до 01.02.2025</li>
+												<li data-value="до 01.03.2025">до 01.03.2025</li>
+											</ul>
+										</div>
 
 
-				<section class="shops-filters" aria-label="Фильтры магазинов">
-					<!-- Поиск -->
-					<div class="shops-search">
-						<img src="./images/search.svg" alt="" class="shops-search-icon" />
-						<input type="search" placeholder="Найти магазин" aria-label="Найти магазин" />
-					</div>
+									</div>
 
-					<!-- Категории -->
-					<div class="shops-select">
-						<select aria-label="Категория магазина">
-							<option value="">Все категории</option>
-							<option value="fashion">Одежда</option>
-							<option value="kids">Товары для детей</option>
-							<option value="home">Товары для дома</option>
-							<option value="beauty">Красота и здоровье</option>
-							<option value="services">Сервисы и услуги</option>
-						</select>
-					</div>
+									<div class="form-field">
+										<input type="text" id="month-days" placeholder="" class="form-field__calc" required />
+										<label for="month-days">Базовая арендная плата (БАП)</label>
+									</div>
+									<div class="form-field">
+										<input type="number" id="month-days" placeholder="" class="form-field__calc" required />
+										<label for="month-days">Дней в расчетном месяце</label>
+									</div>
 
-					<!-- Этажи -->
-					<div class="shops-floors">
-						<span class="shops-floors__label">Этаж</span>
-						<div class="shops-floors__buttons">
-							<button class="shops-floors__btn is-active" type="button">Все</button>
-							<button class="shops-floors__btn" type="button">1</button>
-							<button class="shops-floors__btn" type="button">2</button>
-							<button class="shops-floors__btn" type="button">3</button>
+									<div class="form-field">
+										<input type="number" id="rent-days" placeholder="" class="form-field__calc" required />
+										<label for="rent-days">Дней аренды по ставке БАП</label>
+									</div>
+
+
+									<p class="calculator__note">
+										Внимание! Калькулятор предназначен только для базовой аренды в белорусских рублях.
+									</p>
+									<button class="calculator__submit" disabled>Рассчитать</button>
+								</div>
+
+								<!-- Правая часть: таблица -->
+								<div class="calculator__table" id="rent">
+									<div class="calculator-table__head">
+										<ul class="calculator-table-head__list">
+											<li>Калькулятор 2025</li>
+											<li>ИПЦ</li>
+											<li>ИПЦ fix</li>
+											<li>ИПЦ n-2</li>
+											<li>ИПЦ агр</li>
+											<li>Сумма аренды</li>
+										</ul>
+									</div>
+
+									<div class="calculator-table__body">
+
+										<ul class="calculator-table__list">
+											<li>Январь 2025</li>
+											<li>100.76%</li>
+											<li>101.26%</li>
+											<li>100.55%</li>
+											<li>100.55%</li>
+											<li>100.55%</li>
+										</ul>
+
+									</div>
+								</div>
+
+								<div class="calculator__table hidden" id="memo">
+									<h3>Памятка по расчету квоты</h3>
+									<p>СКП — средняя квота поставки<br>НПП — новое предприятие или наниматель</p>
+									<a href="#" class="calculator__download">Скачать памятку</a>
+								</div>
+							</div>
 						</div>
-					</div>
+					</section>
 
-					<!-- Кнопка плана этажей -->
-					<button class="shops-plan-btn" type="button">
-						<span>План этажей</span>
-					</button>
-				</section>
-
-
-				<section class="stores-grid" aria-label="Список магазинов">
-
-
-					<article class="store-card" data-floor="1" data-category="fashion">
-						<div class="store-card__floor">1 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/mango.svg" alt="MANGO" />
+					<section class="promo" id="promo">
+						<img class="promo__banner" src="./images/arenda-banner.jpg" alt="" />
+						<div class="promo__container container">
+							<div class="promo-text__block">
+								<img src="./images/white-logo.png" alt="">
+								<h2 class="promo__title">Торговый центр для всей семьи</h2>
+							</div>
+							<a href="#about" class="promo__link">Подробнее о Dana Mall</a>
 						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">MANGO</h3>
-							<p class="store-card__category">Женская одежда</p>
+					</section>
+					<section class="rent-form" id="rent">
+						<div class="rent-form__container container">
+							<h2 class="rent-form__title">Оставить заявку</h2>
+							<div class="rent-form__content">
+								<form class="rent-form__form">
+									<div class="form-field rent-form__input">
+										<input type="text" id="company" placeholder=" " required />
+										<label for="company">Название компании</label>
+									</div>
+
+									<div class="form-field rent-form__input">
+										<input type="tel" id="phone" placeholder=" " required />
+										<label for="phone">Телефон</label>
+									</div>
+
+									<div class="form-field rent-form__input">
+										<input type="text" id="industry" placeholder=" " required />
+										<label for="industry">Сфера деятельности</label>
+									</div>
+
+									<div class="form-field rent-form__input">
+										<input type="number" id="area" placeholder=" " required />
+										<label for="area">Необходимая площадь помещения</label>
+									</div>
+									<div class="rent-form__block">
+										<button type="submit">Отправить</button>
+										<p class="rent-form__policy">
+											Нажимая кнопку отправить, вы соглашаетесь <br> с <a href="#">Политикой обработки
+												персональных
+												данных</a>
+										</p>
+									</div>
+								</form>
+
+								<div class="rent-form__contact">
+									<div class="rent-contact__arenda">
+										<h3>Отдел аренды</h3>
+										<p>г. Минск, ул. П. Мстиславца, 9 («Дана Центр»)</p>
+									</div>
+									<div class="rent-contact__phone">
+										<p>Контактный телефон:</p>
+										<a href="tel:+375172696199">+375 (17) 269 61 99</a>
+									</div>
+								</div>
+							</div>
 						</div>
-					</article>
+					</section>
 
 
-					<article class="store-card" data-floor="2" data-category="fashion">
-						<div class="store-card__floor">2 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/milavitsa.svg" alt="MILAVITSA" />
-						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">MILAVITSA</h3>
-							<p class="store-card__category">Женское бельё</p>
-						</div>
-					</article>
-
-
-					<article class="store-card" data-floor="2" data-category="beauty">
-						<div class="store-card__floor">2 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/dnk.svg" alt="DNK" />
-						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">DNK</h3>
-							<p class="store-card__category">Красота и здоровье</p>
-						</div>
-					</article>
-
-				</section>
+				</div>
 			</div>
 		</main>
 		<footer class="footer">
@@ -284,6 +357,7 @@
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="./js/header.js"></script>
+	<script src="./js/arenda.js"></script>
 	<script src="./js/footer.js"></script>
 	<script src="./js/index.js"></script>
 	<script src="./js/swiper.js"></script>

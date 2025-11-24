@@ -199,3 +199,43 @@ new Swiper('.news-swiper', {
 		}
 	}
 });
+
+new Swiper('.current-directory-gallery-swiper', {
+	slidesPerView: 3,
+	spaceBetween: 16,
+	loop: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+ 
+});
+
+const gallery = document.querySelector('.directory__gallery');
+const cursor = document.querySelector('.custom-cursor');
+
+function handleCursor(e) {
+	cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+	cursor.style.display = 'block';
+}
+
+function hideCursor() {
+	cursor.style.display = 'none';
+}
+
+function updateCursorBehavior() {
+	if (window.innerWidth >= 768) {
+		gallery.addEventListener('mousemove', handleCursor);
+		gallery.addEventListener('mouseleave', hideCursor);
+	} else {
+		gallery.removeEventListener('mousemove', handleCursor);
+		gallery.removeEventListener('mouseleave', hideCursor);
+		cursor.style.display = 'none';
+	}
+}
+
+// Инициализация
+updateCursorBehavior();
+
+// Обновление при изменении размера окна
+window.addEventListener('resize', updateCursorBehavior);

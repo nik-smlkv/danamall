@@ -5,24 +5,7 @@
 
 
 
-.breadcrumbs {
-	margin-bottom: 16px;
-	font: 400 13px/1.4 var(--font-primary, system-ui);
-	color: #9ca3af;
-}
 
-.breadcrumbs__item {
-	color: inherit;
-	text-decoration: none;
-}
-
-.breadcrumbs__item+.breadcrumbs__item::before {
-	content: " / ";
-}
-
-.breadcrumbs__item--current {
-	color: #111827;
-}
 
 /* заголовок */
 .page-directory__title {
@@ -325,6 +308,12 @@
 	}
 }
 
+@media(max-width: 768px) {
+	.page-directory__title {
+		font-size: clamp(2rem, -0.692rem + 7.692vi, 3rem);
+	}
+}
+
 @media (max-width: 640px) {
 	.page-directory {
 		padding: 24px 12px 40px;
@@ -332,7 +321,7 @@
 
 	.page-directory__title {
 		margin-bottom: 18px;
-		font-size: 32px;
+
 	}
 
 	.directory-card {
