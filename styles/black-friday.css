@@ -1,84 +1,119 @@
 .floor-nav {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 30px;
+	display: flex;
+	gap: 10px;
+	margin-bottom: 30px;
 }
 
 .floor-nav button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  background: #eee;
-  cursor: pointer;
-  font-size: 14px;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 20px;
+	background: #eee;
+	cursor: pointer;
+	font-size: 14px;
 }
 
 .floor-nav button.active {
-  background: black;
-  color: white;
+	background: black;
+	color: white;
 }
 
-.floor-block {
-  margin-bottom: 60px;
+.discount-card__block {
+	display: flex;
+	flex-direction: column;
 }
 
-.floor-block h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
+
+.floor-section {
+	display: flex;
+	flex-direction: column;
+	row-gap: 60px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+.floor-section h2 {
+	font-size: 28px;
+	font-weight: 500;
+	margin-bottom: 30px;
 }
 
-th,
-td {
-  border-top: 1px solid #ddd;
-  padding: 12px;
-  vertical-align: top;
-  text-align: left;
+.discount-card__content:first-child {
+	border-top: 1px solid #D9D9D9;
 }
 
-th {
-  background: #f5f5f5;
-  font-size: 14px;
-  text-transform: uppercase;
+.discount-card__content {
+	border-bottom: 1px solid #D9D9D9;
+	padding: 16px 0px;
+
 }
 
-td {
-  font-size: 14px;
+.discount-card__content p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.discount-card__head {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 120%;
+	margin-bottom: 16px;
+}
+
+.discount-card__content,
+.discount-card__head {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 60px;
+
+}
+
+.discount-card h3 {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+ 
+
+.discount-card__name,
+.discount-card-head__name {
+	flex: 1 1 400px;
+}
+.discount-card__description{
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}
+.discount-card__description,
+.discount-card-head__type {
+	flex: 1 1 600px;
+}
+
+.discount-card__date,
+.discount-card-head__date {
+	flex: 1 1 520px
+}
+
+.discount-card .label {
+	font-weight: bold;
+	color: #555;
 }
 
 @media (max-width: 600px) {
-  .floor-nav {
-    flex-wrap: wrap;
-  }
+	.discount-card {
+		padding: 12px;
+	}
 
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block;
-  }
+	.floor-nav button {
+		font-size: 13px;
+		padding: 6px 12px;
+	}
+}
 
-  th {
-    display: none;
-  }
 
-  td {
-    padding: 10px;
-    border: none;
-    border-top: 1px solid #ccc;
-  }
 
-  td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
+@media (max-width: 600px) {
+	.floor-nav {
+		flex-wrap: wrap;
+	}
+
 }

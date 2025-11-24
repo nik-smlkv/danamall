@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>danamall</title>
 	<link rel="stylesheet" href="./styles/style.css" />
 	<link rel="stylesheet" href="./styles/header.css" />
 	<link rel="stylesheet" href="./styles/footer.css" />
@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="./styles/typography-utilite.css" />
 	<link rel="stylesheet" href="./styles/tokens.css" />
 	<link rel="stylesheet" href="./styles/typography.css" />
+	<link rel="stylesheet" href="./styles/main.css" />
+	<link rel="stylesheet" href="./styles/current-directory.css" />
 	<link rel="stylesheet" href="./styles/stores.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -27,7 +29,7 @@
 					<nav class="header__nav">
 						<a href="/stores.html">Магазины</a>
 						<a href="/cafe-and-restaurants.html">Кафе и рестораны</a>
-						<a href="/cinema.html">Кинотеатр</a>
+						<a href="/current-directory.html">Кинотеатр</a>
 						<a href="/map.html">Карта ТЦ</a>
 					</nav>
 					<div class="header__info">
@@ -65,7 +67,7 @@
 					</div>
 				</div>
 				<div class="header-menu" id="headerMenu">
-					<div class=" p-cont header-menu__wrapper">
+					<div class="p-cont header-menu__wrapper">
 						<div class="header-menu-info__content">
 							<div class="header-menu-link__content">
 								<div class="header-menu__column">
@@ -83,7 +85,7 @@
 									<a href="/services-and-facilities.html">Сервисы и услуги</a>
 									<a href="/kids.html">Детям</a>
 									<a href="/entertainments.html">Развлечения</a>
-									<a href="/cinema.html">Кинотеатр</a>
+									<a href="/current-directory.html">Кинотеатр</a>
 								</div>
 							</div>
 							<div class="header-menu__info">
@@ -117,104 +119,135 @@
 			</div>
 		</header>
 		<main class="main">
-			<div class="container p-cont">
-
-				<nav class="breadcrumbs" aria-label="Навигация по разделам">
-					<a class="breadcrumbs__item" href="/">Главная</a> /
-					<span class="breadcrumbs__item breadcrumbs__item--current">Магазины</span>
-				</nav>
-
-				<h1 class="page-directory__title">Магазины</h1>
-				<section class="directory-filters" aria-label="Фильтры каталога">
-					<div class="filters__body">
-						<!-- поиск -->
-
-						<div class="directory-filters__search">
-							<img src="./images/search.svg" alt="" class="directory-filters__search-icon" />
-							<input type="search" placeholder="Найти" aria-label="Найти" />
+			<div class="main__body container p-cont">
+				<section class="current-directory-info">
+					<div class="current-directory-text">
+						<small>Главная / Кинотеатр</small>
+						<h1 class="page-directory__title">КИНОТЕАТР MOON</h1>
+						<div class="nav__block">
+							<div class="tags__body">
+								<div class="tag-floor">3 этаж</div>
+								<p class="tag-type">Развлечение</p>
+							</div>
+							<a href="#">На карте </a>
 						</div>
-
-						<!-- селект категорий -->
-						<div class="directory-filters__select">
-							<select aria-label="Категория">
-								<option value="">Все категории</option>
-								<option value="fashion">Одежда</option>
-								<option value="food">Кафе и рестораны</option>
-								<option value="kids">Товары для детей</option>
-								<option value="services">Сервисы и услуги</option>
-							</select>
-						</div>
-
-						<!-- этажи -->
-						<div class="directory-filters__floors">
-							<span class="directory-filters__label">Этаж</span>
-							<div class="directory-filters__group">
-								<button class="directory-filters__btn is-active" type="button">Все</button>
-								<button class="directory-filters__btn" type="button">1</button>
-								<button class="directory-filters__btn" type="button">2</button>
-								<button class="directory-filters__btn" type="button">3</button>
+						<div class="info__body">
+							<div class="info-text__body">
+								<div class="info-block">
+									<strong>Режим:</strong> ПН – ВС 10:00 — 22:00
+								</div>
+								<div class="info-block">
+									<strong>Телефон:</strong> +375 29 686-00-33
+								</div>
+								<div class="info-block">
+									<strong>Билеты:</strong> MOOON.BY
+								</div>
+							</div>
+							<div class="logo">
+								<img src="./images/moon-logo.png" alt="moon" width="80" />
 							</div>
 						</div>
+						<div class="description__block">
+							<p>
+								Кинопространство moon в ТРЦ Dana Mall — беспроигрышный вариант
+								для полноценного расслабления и непревзойденного отдыха,
+								которое подарит своим гостям настоящее удовольствие от
+								просмотра фильмов MOON.
+							</p>
+							<p>
+								Кино здесь обособленно подчинено ключевым событиям, ведь
+								кинопространство оснащено самыми актуальными залами —
+								уютнейшее место, куда вновь и вновь хочется возвращаться с
+								любимым человеком, большой компанией или чтобы побыть наедине
+								с собой.
+							</p>
+						</div>
 					</div>
-					<!-- план этажей -->
-					<button class="directory-filters__plan" type="button">
-						<span>План этажей </span>
-						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0.888672 15.1109L15.1109 0.888672M15.1109 0.888672V15.1109M15.1109 0.888672H0.888672"
-								stroke="#090714" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="bevel"></path>
-						</svg>
-					</button>
-				</section>
-				
-				<section class="directory-flex" aria-label="Список брендов">
-					<!-- ОДНА КАРТОЧКА -->
-					<article class="directory-card" data-floor="1" data-category="fashion">
-						<div class="directory-card__floor">1 этаж</div>
-						<div class="directory-card__logo">
-							<img src="./images/mango-logo.png" alt="MANGO" />
-						</div>
-						<div class="directory-card__body">
-							<h3 class="directory-card__title">MANGO</h3>
-							<p class="directory-card__subtitle">Женская одежда</p>
-						</div>
-					</article>
-					<article class="directory-card" data-floor="1" data-category="fashion">
-						<div class="directory-card__floor">1 этаж</div>
-						<div class="directory-card__logo">
-							<img src="./images/mango-logo.png" alt="MANGO" />
-						</div>
-						<div class="directory-card__body">
-							<h3 class="directory-card__title">MANGO</h3>
-							<p class="directory-card__subtitle">Женская одежда</p>
-						</div>
-					</article>
-					<article class="directory-card" data-floor="1" data-category="fashion">
-						<div class="directory-card__floor">1 этаж</div>
-						<div class="directory-card__logo">
-							<img src="./images/mango-logo.png" alt="MANGO" />
-						</div>
-						<div class="directory-card__body">
-							<h3 class="directory-card__title">MANGO</h3>
-							<p class="directory-card__subtitle">Женская одежда</p>
-						</div>
-					</article>
-					<article class="directory-card" data-floor="1" data-category="fashion">
-						<div class="directory-card__floor">1 этаж</div>
-						<div class="directory-card__logo">
-							<img src="./images/mango-logo.png" alt="MANGO" />
-						</div>
-						<div class="directory-card__body">
-							<h3 class="directory-card__title">MANGO</h3>
-							<p class="directory-card__subtitle">Женская одежда</p>
-						</div>
-					</article>
 
-					<!-- дальше копируешь по макету -->
+					<div class="current-directory-image">
+						<img src="./images/moon.jpg" alt="Moon current-directory" />
+					</div>
 				</section>
 
+				<section class="news-directory__block">
+					<div class="section-header">
+						<h2>ЧТО НОВОГО</h2>
+						<a href="#">Все новости и акции ↗</a>
+					</div>
+
+					<!-- Swiper -->
+					<div class="swiper news-swiper">
+						<div class="swiper-wrapper">
+							<!-- СЛАЙД 1 -->
+							<div class="swiper-slide">
+								<div class="news-card">
+									<img src="/mnt/data/801f3e90-f098-495d-b73e-7728e48e2dc7.png" alt="Togas">
+									<div class="news-content">
+										<div class="brand">Togas</div>
+										<div class="desc">Грандиские дни: Скидки до 50% на ткани, аксессуары и карнизы.</div>
+										<div class="meta">
+											<span>17.10–13.11</span>
+											<span class="tag discount">Скидки</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- СЛАЙД 2 -->
+							<div class="swiper-slide">
+								<div class="news-card">
+									<img src="/mnt/data/801f3e90-f098-495d-b73e-7728e48e2dc7.png" alt="Askona">
+									<div class="news-content">
+										<div class="brand">Askona</div>
+										<div class="desc">Ночь скидок: Только 4 дня – 10% по промокоду RB_1720%</div>
+										<div class="meta">
+											<span>20.10</span>
+											<span class="tag news">Новости</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- СЛАЙД 3 -->
+							<div class="swiper-slide">
+								<div class="news-card">
+									<img src="/mnt/data/801f3e90-f098-495d-b73e-7728e48e2dc7.png" alt="Mi.BY">
+									<div class="news-content">
+										<div class="brand">Mi.BY</div>
+										<div class="desc">В Mi.BY по промокоду MAMA скидки до 30% на подарки!</div>
+										<div class="meta">
+											<span>09.10–15.10</span>
+											<span class="tag discount">Скидки</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- СЛАЙД 4 -->
+							<div class="swiper-slide">
+								<div class="news-card">
+									<img src="/mnt/data/801f3e90-f098-495d-b73e-7728e48e2dc7.png" alt="ORO">
+									<div class="news-content">
+										<div class="brand">ORO</div>
+										<div class="desc">-10% на всё в честь дня матери + -5% на золото по промо!</div>
+										<div class="meta">
+											<span>10.10–14.10</span>
+											<span class="tag discount">Скидки</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- Навигация -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
+				</section>
 			</div>
 		</main>
-
 		<footer class="footer">
 			<div class="footer__brands">
 				<div class="footer__brands-track" id="brandsTrack">
@@ -298,12 +331,13 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/header.js"></script>
+		<script src="./js/footer.js"></script>
+		<script src="./js/index.js"></script>
+		<script src="./js/swiper.js"></script>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script src="./js/header.js"></script>
-	<script src="./js/footer.js"></script>
-	<script src="./js/index.js"></script>
-	<script src="./js/swiper.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="./styles/tokens.css" />
 	<link rel="stylesheet" href="./styles/typography.css" />
 	<link rel="stylesheet" href="./styles/stores.css" />
+	<link rel="stylesheet" href="./styles/news.css" />
+	<link rel="stylesheet" href="./styles/main.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
@@ -123,85 +125,62 @@
 				</nav>
 
 
-				<h1 class="page-shops__title">Магазины</h1>
+				<h1 class="page-directory__title">Что нового</h1>
 
-
-				<section class="shops-filters" aria-label="Фильтры магазинов">
-					<!-- Поиск -->
-					<div class="shops-search">
-						<img src="./images/search.svg" alt="" class="shops-search-icon" />
-						<input type="search" placeholder="Найти магазин" aria-label="Найти магазин" />
-					</div>
-
-					<!-- Категории -->
-					<div class="shops-select">
-						<select aria-label="Категория магазина">
-							<option value="">Все категории</option>
-							<option value="fashion">Одежда</option>
-							<option value="kids">Товары для детей</option>
-							<option value="home">Товары для дома</option>
-							<option value="beauty">Красота и здоровье</option>
-							<option value="services">Сервисы и услуги</option>
-						</select>
-					</div>
-
-					<!-- Этажи -->
-					<div class="shops-floors">
-						<span class="shops-floors__label">Этаж</span>
-						<div class="shops-floors__buttons">
-							<button class="shops-floors__btn is-active" type="button">Все</button>
-							<button class="shops-floors__btn" type="button">1</button>
-							<button class="shops-floors__btn" type="button">2</button>
-							<button class="shops-floors__btn" type="button">3</button>
+				<div class="news-grid">
+					<!-- Пример карточки -->
+					<div class="news-card">
+						<img class="news-banner" src="/mnt/data/caa4294f-3b1b-4e2c-a1ce-f614c36feefa.png" alt="VDOM">
+						<div class="news-content">
+							<div class="news-title">VDOM</div>
+							<div class="news-description">День рождения VDOM — дарим скидки до 20% на всю продукцию!</div>
+						</div>
+						<div class="news-meta">
+							<span>10 – 20 ноября</span>
+							<span class="tag discount">Скидка</span>
 						</div>
 					</div>
 
-					<!-- Кнопка плана этажей -->
-					<button class="shops-plan-btn" type="button">
-						<span>План этажей</span>
-					</button>
-				</section>
-
-
-				<section class="stores-grid" aria-label="Список магазинов">
-
-
-					<article class="store-card" data-floor="1" data-category="fashion">
-						<div class="store-card__floor">1 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/mango.svg" alt="MANGO" />
+					<!-- Скопируй этот блок для других карточек -->
+					<div class="news-card">
+						<img class="news-banner" src="/mnt/data/caa4294f-3b1b-4e2c-a1ce-f614c36feefa.png" alt="GalanTeya">
+						<div class="news-content">
+							<div class="news-title">GALANTEYA</div>
+							<div class="news-description">20% OFF на все сумки и аксессуары в честь новой коллекции!</div>
 						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">MANGO</h3>
-							<p class="store-card__category">Женская одежда</p>
+						<div class="news-meta">
+							<span>15 – 25 ноября</span>
+							<span class="tag discount">Скидка</span>
 						</div>
-					</article>
+					</div>
 
-
-					<article class="store-card" data-floor="2" data-category="fashion">
-						<div class="store-card__floor">2 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/milavitsa.svg" alt="MILAVITSA" />
+					<div class="news-card">
+						<img class="news-banner" src="/mnt/data/caa4294f-3b1b-4e2c-a1ce-f614c36feefa.png" alt="O'STIN">
+						<div class="news-content">
+							<div class="news-title">O’STIN</div>
+							<div class="news-description">Зимняя коллекция уже в продаже! Пуховики, куртки и многое другое.
+							</div>
 						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">MILAVITSA</h3>
-							<p class="store-card__category">Женское бельё</p>
+						<div class="news-meta">
+							<span>20 ноября</span>
+							<span class="tag news">Новость</span>
 						</div>
-					</article>
+					</div>
 
-
-					<article class="store-card" data-floor="2" data-category="beauty">
-						<div class="store-card__floor">2 этаж</div>
-						<div class="store-card__logo">
-							<img src="./images/logos/dnk.svg" alt="DNK" />
+					<div class="news-card">
+						<img class="news-banner" src="/mnt/data/caa4294f-3b1b-4e2c-a1ce-f614c36feefa.png" alt="ORO">
+						<div class="news-content">
+							<div class="news-title">ORO</div>
+							<div class="news-description">Скоро открытие нового магазина ювелирных изделий — скидки в честь
+								старта!</div>
 						</div>
-						<div class="store-card__body">
-							<h3 class="store-card__name">DNK</h3>
-							<p class="store-card__category">Красота и здоровье</p>
+						<div class="news-meta">
+							<span>25 ноября</span>
+							<span class="tag opening">Открытие</span>
 						</div>
-					</article>
+					</div>
 
-				</section>
+				</div>
 			</div>
 		</main>
 		<footer class="footer">
