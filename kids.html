@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/font.css" />
-    <link rel="stylesheet" href="./styles/typography-utilite.css" />
-    <link rel="stylesheet" href="./styles/tokens.css" />
-    <link rel="stylesheet" href="./styles/typography.css" />
-    <link rel="stylesheet" href="./styles/stores.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      		<header class="header">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./styles/style.css" />
+	<link rel="stylesheet" href="./styles/header.css" />
+	<link rel="stylesheet" href="./styles/footer.css" />
+	<link rel="stylesheet" href="./styles/font.css" />
+	<link rel="stylesheet" href="./styles/typography-utilite.css" />
+	<link rel="stylesheet" href="./styles/tokens.css" />
+	<link rel="stylesheet" href="./styles/typography.css" />
+	<link rel="stylesheet" href="./styles/stores.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
 			<div class="header__body p-cont">
 				<div class="header__container">
 					<a href="/danamall" class="header__logo" aria-label="DANA MALL">
@@ -68,7 +66,7 @@
 						</div>
 
 						<div class="header-buttons__block">
-							
+
 							<button class="header__search">
 								<img src="./images/search.svg" alt="" />
 							</button>
@@ -132,151 +130,111 @@
 				</div>
 			</div>
 		</header>
-      <main class="main">
-        <div class="container p-cont">
-          <nav class="breadcrumbs" aria-label="Навигация по разделам">
-            <a class="breadcrumbs__item" href="/">Главная</a>
-            <span class="breadcrumbs__item breadcrumbs__item--current"
-              >Детям</span
-            >
-          </nav>
+		<main class="main">
+			<div class="container p-cont">
+				<nav class="breadcrumbs" aria-label="Навигация по разделам">
+					<a class="breadcrumbs__item" href="/">Главная</a>
+					<span class="breadcrumbs__item breadcrumbs__item--current">Детям</span>
+				</nav>
 
-          <h1 class="page-directory__title">Детям</h1>
-          <section class="directory-filters" aria-label="Фильтры каталога">
-            <div class="filters__body">
-              <!-- поиск -->
+				<h1 class="page-directory__title">Детям</h1>
+				<section class="directory-filters" aria-label="Фильтры каталога">
+					<div class="filters__body">
+						<!-- поиск -->
 
-              <div class="directory-filters__search">
-                <img
-                  src="./images/search.svg"
-                  alt=""
-                  class="directory-filters__search-icon"
-                />
-                <input type="search" placeholder="Найти" aria-label="Найти" />
-              </div>
+						<div class="directory-filters__search">
+							<img src="./images/search.svg" alt="" class="directory-filters__search-icon" />
+							<input type="search" placeholder="Найти" aria-label="Найти" />
+						</div>
 
-              <!-- этажи -->
-              <div class="directory-filters__floors">
-                <span class="directory-filters__label">Этаж</span>
-                <div class="directory-filters__group">
-                  <button
-                    class="directory-filters__btn is-active"
-                    type="button"
-                  >
-                    Все
-                  </button>
-                  <button class="directory-filters__btn" type="button">
-                    1
-                  </button>
-                  <button class="directory-filters__btn" type="button">
-                    2
-                  </button>
-                  <button class="directory-filters__btn" type="button">
-                    3
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- план этажей -->
-            <button class="directory-filters__plan" type="button">
-              <span>План этажей </span>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.888672 15.1109L15.1109 0.888672M15.1109 0.888672V15.1109M15.1109 0.888672H0.888672"
-                  stroke="#090714"
-                  stroke-width="1.33333"
-                  stroke-linecap="round"
-                  stroke-linejoin="bevel"
-                ></path>
-              </svg>
-            </button>
-          </section>
+						<!-- этажи -->
+						<div class="directory-filters__floors">
+							<span class="directory-filters__label">Этаж</span>
+							<div class="directory-filters__group">
+								<button class="directory-filters__btn is-active" type="button">
+									Все
+								</button>
+								<button class="directory-filters__btn" type="button">
+									1
+								</button>
+								<button class="directory-filters__btn" type="button">
+									2
+								</button>
+								<button class="directory-filters__btn" type="button">
+									3
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- план этажей -->
+					<button class="directory-filters__plan" type="button">
+						<span>План этажей </span>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.888672 15.1109L15.1109 0.888672M15.1109 0.888672V15.1109M15.1109 0.888672H0.888672"
+								stroke="#090714" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="bevel"></path>
+						</svg>
+					</button>
+				</section>
 
-          <section class="directory-flex" aria-label="Список брендов">
-            <!-- ОДНА КАРТОЧКА -->
-            <article
-              class="directory-card"
-              data-floor="1"
-              data-category="fashion"
-            >
-              <div class="directory-card__floor">1 этаж</div>
-              <div class="directory-card__logo">
-                <img src="./images/mango-logo.png" alt="MANGO" />
-              </div>
-              <div class="directory-card__body">
-                <h3 class="directory-card__title">MANGO</h3>
-                <p class="directory-card__subtitle">Женская одежда</p>
-              </div>
-            </article>
-            <article
-              class="directory-card"
-              data-floor="1"
-              data-category="fashion"
-            >
-              <div class="directory-card__floor">1 этаж</div>
-              <div class="directory-card__logo">
-                <img src="./images/mango-logo.png" alt="MANGO" />
-              </div>
-              <div class="directory-card__body">
-                <h3 class="directory-card__title">MANGO</h3>
-                <p class="directory-card__subtitle">Женская одежда</p>
-              </div>
-            </article>
-            <article
-              class="directory-card"
-              data-floor="1"
-              data-category="fashion"
-            >
-              <div class="directory-card__floor">1 этаж</div>
-              <div class="directory-card__logo">
-                <img src="./images/mango-logo.png" alt="MANGO" />
-              </div>
-              <div class="directory-card__body">
-                <h3 class="directory-card__title">MANGO</h3>
-                <p class="directory-card__subtitle">Женская одежда</p>
-              </div>
-            </article>
-            <article
-              class="directory-card"
-              data-floor="1"
-              data-category="fashion"
-            >
-              <div class="directory-card__floor">1 этаж</div>
-              <div class="directory-card__logo">
-                <img src="./images/mango-logo.png" alt="MANGO" />
-              </div>
-              <div class="directory-card__body">
-                <h3 class="directory-card__title">MANGO</h3>
-                <p class="directory-card__subtitle">Женская одежда</p>
-              </div>
-            </article>
-            <article
-              class="directory-card"
-              data-floor="1"
-              data-category="fashion"
-            >
-              <div class="directory-card__floor">1 этаж</div>
-              <div class="directory-card__logo">
-                <img src="./images/mango-logo.png" alt="MANGO" />
-              </div>
-              <div class="directory-card__body">
-                <h3 class="directory-card__title">MANGO</h3>
-                <p class="directory-card__subtitle">Женская одежда</p>
-              </div>
-            </article>
+				<section class="directory-flex" aria-label="Список брендов">
+					<!-- ОДНА КАРТОЧКА -->
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
+						</div>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
+						</div>
+					</article>
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
+						</div>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
+						</div>
+					</article>
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
+						</div>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
+						</div>
+					</article>
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
+						</div>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
+						</div>
+					</article>
+					<article class="directory-card" data-floor="1" data-category="fashion">
+						<div class="directory-card__floor">1 этаж</div>
+						<div class="directory-card__logo">
+							<img src="./images/mango-logo.png" alt="MANGO" />
+						</div>
+						<div class="directory-card__body">
+							<h3 class="directory-card__title">MANGO</h3>
+							<p class="directory-card__subtitle">Женская одежда</p>
+						</div>
+					</article>
 
-            <!-- дальше копируешь по макету -->
-          </section>
-        </div>
-      </main>
+					<!-- дальше копируешь по макету -->
+				</section>
+			</div>
+		</main>
 
-      		<footer class="footer">
+		<footer class="footer">
 			<div class="footer__brands">
 				<div class="footer__brands-track" id="brandsTrack">
 					<span>ZARA</span><span>BERSHKA</span><span>CONTE</span><span>COLINS</span>
@@ -354,16 +312,17 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" class="footer__bar-link">Политика в отношении обработки персональных данных</a>
+					<a href="/policity.html" class="footer__bar-link">Политика в отношении обработки персональных данных</a>
 					<p class="footer__copy">© DANA MALL, 2025</p>
 				</div>
 			</div>
 		</footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/footer.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/swiper.js"></script>
-  </body>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./js/header.js"></script>
+	<script src="./js/footer.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/swiper.js"></script>
+</body>
+
 </html>
