@@ -205,6 +205,7 @@
 .hours__dropdown[open] .hours__dropdown__arrow,
 .hours__dropdown.open .hours__dropdown__arrow {
   transform: rotate(-135deg);
+  bottom: 0;
 }
 
 .hours__dropdown__menu {

@@ -294,6 +294,23 @@ main {
 	color: #090714;
 }
 
+.swiper-button-prev, .swiper-button-next {
+	transition: all .3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+	background-color: white;
+}
+
+.swiper-button-prev:before {
+	transition: border-color .3s ease;
+}
+
+.swiper-button-prev:hover:before,
+.swiper-button-next:hover:before {
+	border-color: #090714;
+}
 
 @media ((max-width: 1920px) and (min-width: 650px)) {
 

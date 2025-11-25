@@ -114,8 +114,8 @@ const promoSwiper = new Swiper(".promo-swiper", {
 	freeMode: true,
 	speed: 600,
 	navigation: {
-		nextEl: ".promo .promo__nav .swiper-button-next",
-		prevEl: ".promo .promo__nav .swiper-button-prev",
+		nextEl: ".promo__nav .swiper-button-next",
+		prevEl: ".promo__nav .swiper-button-prev",
 	},
 	breakpoints: {
 		0: {
