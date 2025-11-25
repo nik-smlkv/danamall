@@ -21,12 +21,12 @@
 	flex-direction: column;
 }
 
+.page-about .hero {
+	height: 100%;
+}
+
 .overlay h1 {
-	font-size: 80px;
 	color: white;
-	text-transform: uppercase;
-	font-family: var(--font-headline);
-	font-weight: 400;
 }
 
 .buttons {
@@ -147,43 +147,92 @@
 	gap: 20px;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
-	background: #f9f9f9;
+
+}
+
+.about-us-slider__content {
+	display: flex;
+	flex-direction: column;
+	padding: 60px 0px;
+	position: relative;
+	z-index: 3;
+}
+
+.about-us-slider__content::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	left: -100%;
+	width: 300%;
+	height: 100%;
+	background-color: #f9f9f9;
+}
+
+.slider-controls {
+	position: relative;
+	justify-content: start;
+}
+
+.about-us-slider__section {
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
 }
 
 .slider-controls button,
 .slider-controls select {
 	background: none;
 	border: none;
-	font-size: 14px;
-	padding: 8px 12px;
+	font-size: 18px;
+	padding: 14px 20px;
+	font-weight: 400;
 	cursor: pointer;
 }
 
-.slider-controls button.active {
-	font-weight: bold;
+.about-us-slider-btn__block {
+	display: flex;
+	position: static !important;
+}
+
+.about-us-slider-btn__block .news-arrow {
+	top: 0;
+}
+
+.slider-controls__block .slider-controls button.active {
 	background: black;
 	color: white;
-	border-radius: 20px;
+	border-radius: 30px;
 }
 
-.swiper {
-	padding: 20px;
+.slider-controls__block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
 }
 
-.swiper-slide {
+.about-us__swiper.swiper {}
+
+.about-us-slider-btn__block .news-prev::before {
+	border-color: white !important;
+}
+
+.about-us__swiper .swiper-slide {
 	background: white;
 	border-radius: 16px;
 	overflow: hidden;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background: none;
 }
 
-.swiper-slide img {
+.about-us__swiper .swiper-slide img {
 	width: 100%;
 	display: block;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.about-us__swiper .swiper-button-next,
+.about-us__swiper .swiper-button-prev {
 	background-color: #c82327;
 	color: white;
 	border-radius: 50%;
@@ -201,6 +250,45 @@
 	max-width: 540px;
 }
 
+@media(max-width: 1920px) {
+	.about p {
+		font-size: clamp(3rem, 2.5rem + 0.625vi, 3.25rem);
+	}
+}
+
+@media(max-width: 1280px) {
+	.about p {
+		font-size: clamp(2.875rem, 2.375rem + 0.781vi, 3rem);
+	}
+}
+
+@media(max-width: 1100px) {
+	.events {
+		flex-direction: column;
+	}
+
+	.slider-controls {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.about-us-slider-btn__block {
+		position: absolute !important;
+		right: 0 !important;
+		justify-content: end !important;
+		bottom: 5px !important;
+	}
+	.about-us-slider__content{
+		padding: 40px 0px;
+	}
+}
+
+@media(max-width: 1024px) {
+	.about p {
+		font-size: clamp(2.125rem, -0.125rem + 4.688vi, 2.875rem);
+	}
+}
+
 @media (max-width: 600px) {
 	.overlay h1 {
 		font-size: 24px;
@@ -209,5 +297,11 @@
 	.buttons button {
 		font-size: 12px;
 		padding: 8px 16px;
+	}
+}
+
+@media(max-width: 768px) {
+	.about p {
+		font-size: clamp(1.25rem, -1.106rem + 6.731vi, 2.125rem);
 	}
 }

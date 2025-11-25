@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="./styles/stores.css" />
 	<link rel="stylesheet" href="./styles/about-us.css" />
 	<link rel="stylesheet" href="./styles/main.css" />
+	<link rel="stylesheet" href="./styles/current-directory.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
@@ -69,9 +70,7 @@
 						</div>
 
 						<div class="header-buttons__block">
-							<button class="header__map">
-								<img src="./images/map.svg" alt="" />
-							</button>
+							 
 							<button class="header__search">
 								<img src="./images/search.svg" alt="" />
 							</button>
@@ -135,12 +134,12 @@
 				</div>
 			</div>
 		</header>
-		<main class="main page-shops">
+		<main class="main page-about">
 			<div class="main__body container p-cont">
 				<section class="hero">
 					<img src="./images/about-us.jpg" alt="" />
 					<div class="overlay">
-						<h1>ТОРГОВЫЙ ЦЕНТР DANA MALL</h1>
+						<h1 class="page-directory__title">ТОРГОВЫЙ ЦЕНТР DANA MALL</h1>
 						<div class="buttons">
 							<button>О ТЦ</button>
 							<button>ПРАВИЛА ПОСЕЩЕНИЯ</button>
@@ -209,7 +208,7 @@
 					</div>
 				</section>
 
-				<section class="slider-section">
+				<section class="slider-section about-us-slider__section">
 					<div class="events">
 						<h2>МЕРОПРИЯТИЯ</h2>
 						<p>
@@ -219,30 +218,45 @@
 							посетителям эмоции и вдохновение.
 						</p>
 					</div>
-					<div class="slider-controls">
-						<button class="active">Новый год</button>
-						<button>Пасха</button>
-						<button>14 февраля</button>
-						<button>Другие</button>
-						<select>
-							<option>2024-2025</option>
-						</select>
-					</div>
-
-					<div class="swiper about-us__swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="./images/image-1.jpg" alt="" />
+					<div class="about-us-slider__content custom-cursor-block">
+						<div class="slider-controls__block">
+							<div class="slider-controls">
+								<button class="active">Новый год</button>
+								<button>Пасха</button>
+								<button>14 февраля</button>
+								<button>Другие</button>
+								<select>
+									<option>2024-2025</option>
+								</select>
 							</div>
-							<div class="swiper-slide">
-								<img src="./images/image-2.jpg" alt="" />
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/image.jpg" alt="" />
+							<div class="news-buttons__block about-us-slider-btn__block">
+								<button class="swiper-button-prev news-prev news-arrow" aria-label="Назад"></button>
+								<button class="swiper-button-next news-next news-arrow" aria-label="Вперёд"></button>
 							</div>
 						</div>
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
+						<div class="swiper about-us__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="./images/image-1.jpg" alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/image-2.jpg" alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/image.jpg" alt="" />
+								</div>
+							</div>
+
+						</div>
+						<!-- <div class="custom-cursor">
+							<div class="cursor-circle">
+								<span class="cursor-text">Листайте</span>
+								<div class="cursor-arrows">
+									<img src="./images/arrow-left.svg" alt="←" />
+									<img src="./images/arrow-right.svg" alt="→" />
+								</div>
+							</div>
+						</div> -->
 					</div>
 				</section>
 				<section class="brand container p-cont">
@@ -253,7 +267,7 @@
 				</section>
 			</div>
 		</main>
-				<footer class="footer">
+		<footer class="footer">
 			<div class="footer__brands">
 				<div class="footer__brands-track" id="brandsTrack">
 					<span>ZARA</span><span>BERSHKA</span><span>CONTE</span><span>COLINS</span>

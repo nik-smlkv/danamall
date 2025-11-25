@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="./styles/stores.css" />
 	<link rel="stylesheet" href="./styles/main.css" />
 	<link rel="stylesheet" href="./styles/parking.css" />
+	<link rel="stylesheet" href="./styles/current-directory.css" />
 	<link rel="stylesheet" href="./styles/contacts.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
@@ -24,7 +25,7 @@
 
 <body>
 	<div class="wrapper">
-				<header class="header">
+		<header class="header">
 			<div class="header__body p-cont">
 				<div class="header__container">
 					<a href="/" class="header__logo" aria-label="DANA MALL">
@@ -72,9 +73,7 @@
 						</div>
 
 						<div class="header-buttons__block">
-							<button class="header__map">
-								<img src="./images/map.svg" alt="" />
-							</button>
+							
 							<button class="header__search">
 								<img src="./images/search.svg" alt="" />
 							</button>
@@ -143,11 +142,10 @@
 				<section class="parking" id="parking">
 					<div class="parking__container container">
 						<div class="parking__grid">
-
 							<div class="parking__image">
 								<img src="./images/main-parking.jpg" alt="Карта проезда" />
 								<div class="parking-card__block">
-									<h2 class="parking__title">Подземная парковка</h2>
+									<h2 class="parking__title page-directory__title">Подземная парковка</h2>
 									<a href="#" class="parking__label">Карта проезда <svg width="16" height="16"
 											viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path
@@ -182,8 +180,8 @@
 						<div class="tarrifs__content ">
 							<h2 class="tariffs__title">Тарифы на парковку</h2>
 							<div class="tariffs-buttons__block">
-								<button class="swiper-button-prev news-prev tariffs-arrow" aria-label="Назад"></button>
-								<button class="swiper-button-next news-next tariffs-arrow" aria-label="Вперёд"></button>
+								<button class="swiper-button-prev news-prev news-arrow" aria-label="Назад"></button>
+								<button class="swiper-button-next news-next news-arrow" aria-label="Вперёд"></button>
 							</div>
 						</div>
 					</div>
@@ -261,7 +259,6 @@
 						</div>
 					</div>
 					<div class="comfort__slider-wrapper">
-
 						<div class="swiper comfort__slider">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide comfort__slide">
@@ -277,14 +274,12 @@
 									<img src="./images/park-4.jpg" alt="Парковка с жёлтыми колоннами" />
 								</div>
 							</div>
-
 							<!-- Стрелки -->
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
+
 						</div>
 
 						<!-- Кнопка-подсказка -->
-						<div class="comfort__hint">Листайте ↔</div>
+
 					</div>
 				</div>
 			</section>
@@ -315,7 +310,6 @@
 									</defs>
 								</svg>
 							</a>
-
 							<a class="map-btn" href="https://www.google.com/maps" target="_blank" rel="noopener">
 								<img src="./images/google-maps.svg" alt="" class="map-btn__logo">
 								<svg width="105" height="20" viewBox="0 0 105 20" fill="none"
@@ -367,7 +361,7 @@
 				</div>
 			</section>
 		</main>
-				<footer class="footer">
+		<footer class="footer">
 			<div class="footer__brands">
 				<div class="footer__brands-track" id="brandsTrack">
 					<span>ZARA</span><span>BERSHKA</span><span>CONTE</span><span>COLINS</span>

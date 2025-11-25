@@ -163,8 +163,8 @@ new Swiper(".about-us__swiper", {
 	spaceBetween: 20,
 	freeMode: true,
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: " .about-us-slider__content  .swiper-button-next",
+		prevEl: " .about-us-slider__content  .swiper-button-prev",
 	},
 });
 new Swiper(".current-directory-swiper", {
@@ -248,7 +248,7 @@ new Swiper('.current-directory-gallery-swiper', {
 	loop: true,
 });
 
-const gallery = document.querySelector('.directory__gallery');
+const gallery = document.querySelector('.custom-cursor-block');
 const cursor = document.querySelector('.custom-cursor');
 
 function handleCursor(e) {

@@ -1,10 +1,8 @@
 .parking__title {
-	font-size: 80px;
-	font-weight: 400;
-	font-family: var(--font-headline);
+
 	margin: 0;
-	color: white;
-	text-transform: uppercase;
+	color: white !important;
+
 }
 
 .parking__grid {
@@ -24,11 +22,20 @@
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
+.tariffs-buttons__block .news-arrow::before {
+	border-color: white !important;
+}
+
+.tariffs-buttons__block .news-arrow {
+	top: 0 !important;
+}
+
 .tarrifs__content {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
+	margin-bottom: 20px;
 }
 
 .tariffs__slider .swiper-slide {
@@ -50,6 +57,7 @@
 	font-family: var(--font-headline);
 	text-transform: uppercase;
 	max-width: 533px;
+	width: 100%;
 	color: var(--text-primary);
 }
 
@@ -57,6 +65,7 @@
 	font-size: 18px;
 	line-height: 120%;
 	color: #090714;
+	width: 100%;
 	align-self: start;
 	max-width: 670px;
 
@@ -134,6 +143,7 @@
 	align-items: center;
 	justify-content: start;
 	column-gap: 160px;
+	margin-bottom: 20px;
 }
 
 .parking__label {
@@ -279,5 +289,32 @@
 @media (max-width: 768px) {
 	.parking__grid {
 		grid-template-columns: 1fr;
+	}
+}
+
+@media(max-width: 1920px) {
+	.comfort__title {
+		font-size: clamp(1.5rem, 0.882rem + 1.765vi, 3rem);
+	}
+}
+@media(max-width: 1200px){
+	.comfort-text__block{
+		flex-direction: column;
+		align-items: start;
+	}
+}
+@media(max-width: 1100px) {
+	.parking__features {
+		flex-direction: column;
+	}
+}
+
+@media(max-width: 1100px) {
+	.parking-rules__grid {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.parking-rules__item{
+		justify-content: start;
 	}
 }
