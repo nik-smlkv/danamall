@@ -89,6 +89,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.querySelectorAll('.directory-filters__select').forEach(select => {
+	const trigger = select.querySelector('.custom-select__trigger');
+	const label = select.querySelector('.custom-select__label');
+	const options = select.querySelectorAll('.custom-select__options li');
+
+	trigger.addEventListener('click', () => {
+		select.classList.toggle('open');
+	});
+
+	options.forEach(option => {
+		option.addEventListener('click', () => {
+			label.textContent = option.textContent;
+			select.dataset.value = option.dataset.value;
+			select.classList.remove('open');
+		});
+	});
+});
+
+// Закрытие при клике вне
+document.addEventListener('click', (e) => {
+	document.querySelectorAll('.custom-select').forEach(select => {
+		if (!select.contains(e.target)) {
+			select.classList.remove('open');
+		}
+	});
+});
+
 ymaps.ready(function () {
 	const map = new ymaps.Map("yandex-map", {
 		center: [53.9315, 27.6487], // координаты Dana Mall

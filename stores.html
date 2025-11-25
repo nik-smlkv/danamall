@@ -135,7 +135,7 @@
 			<div class="container p-cont">
 
 				<nav class="breadcrumbs" aria-label="Навигация по разделам">
-					<a class="breadcrumbs__item" href="/danamall/">Главная</a> /
+					<a class="breadcrumbs__item" href="/danamall/">Главная</a>
 					<span class="breadcrumbs__item breadcrumbs__item--current">Магазины</span>
 				</nav>
 
@@ -151,13 +151,17 @@
 
 						<!-- селект категорий -->
 						<div class="directory-filters__select">
-							<select aria-label="Категория">
-								<option value="">Все категории</option>
-								<option value="fashion">Одежда</option>
-								<option value="food">Кафе и рестораны</option>
-								<option value="kids">Товары для детей</option>
-								<option value="services">Сервисы и услуги</option>
-							</select>
+							<button class="custom-select__trigger" aria-label="Категория">
+								<span class="custom-select__label">Все категории</span>
+								<span class="custom-select__arrow"></span>
+							</button>
+							<ul class="custom-select__options">
+								<li data-value="">Все категории</li>
+								<li data-value="fashion">Одежда</li>
+								<li data-value="food">Кафе и рестораны</li>
+								<li data-value="kids">Товары для детей</li>
+								<li data-value="services">Сервисы и услуги</li>
+							</ul>
 						</div>
 
 						<!-- этажи -->
@@ -174,10 +178,7 @@
 					<!-- план этажей -->
 					<button class="directory-filters__plan" type="button">
 						<span>План этажей </span>
-						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0.888672 15.1109L15.1109 0.888672M15.1109 0.888672V15.1109M15.1109 0.888672H0.888672"
-								stroke="#090714" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="bevel"></path>
-						</svg>
+						<img src="./images/arrow-button.svg" alt="">
 					</button>
 				</section>
 

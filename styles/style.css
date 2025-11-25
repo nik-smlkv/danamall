@@ -294,7 +294,8 @@ main {
 	color: #090714;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
 	transition: all .3s ease;
 }
 
@@ -342,12 +343,18 @@ main {
 	.p-cont {
 		padding: 0 clamp(3.75rem, 0rem + 4.167vi, 5rem) !important;
 	}
+
+	.breadcrumbs {
+		padding-top: 40px;
+	}
+
 }
 
 @media (max-width: 1280px) {
 	.p-cont {
 		padding: 0 clamp(2.5rem, 0.625rem + 3.906vi, 3.75rem) !important;
 	}
+
 
 	.main,
 	.main__body {
