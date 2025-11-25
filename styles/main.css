@@ -47,7 +47,7 @@
 	position: absolute;
 	z-index: 3;
 	top: 30px;
-	left: 20px;
+	left: 30px;
 	display: flex;
 	gap: 12px;
 }
@@ -64,6 +64,7 @@
 	text-transform: uppercase;
 	color: var(--text-white);
 	text-decoration: none;
+	font-weight: 500;
 	background: rgba(255, 255, 255, 0.12);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
@@ -113,7 +114,7 @@
 .hero-arrow__block {
 	position: absolute;
 	top: 30px;
-	right: 20px;
+	right: 30px;
 	width: 100%;
 	max-width: 120px;
 	height: 50px;
@@ -161,7 +162,7 @@
 .promo {
 	position: relative;
 	z-index: 2;
-	background: #f7f7f7;
+	background: white;
 	color: var(--text-primary);
 	border-radius: 20px;
 	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
@@ -217,7 +218,7 @@
 }
 
 .promo__meta {
-	background-color: #ffffff;
+	background-color: #F7F7F7;
 	backdrop-filter: blur(10px);
 	width: auto;
 	border-radius: 20px;
@@ -946,10 +947,7 @@
 .instagram__banner-overlay {
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(0deg,
-			rgba(0, 0, 0, 0.55) 0%,
-			rgba(0, 0, 0, 0.3) 45%,
-			rgba(0, 0, 0, 0.15) 100%);
+	border-radius: 30px;
 }
 
 .instagram__banner-content {
@@ -1004,20 +1002,25 @@
 	padding: 19px 40px;
 	font-size: 20px;
 	text-transform: uppercase;
-	border-radius: 16px;
+	border-radius: 30px;
 	background: #fff;
 	font-weight: 500;
 	color: var(--text-primary);
 	text-decoration: none;
-	transition: background 0.2s ease, transform 0.2s ease;
+	transition: background 0.3s ease, transform 0.3s ease, color .3s ease;
 }
 
 .instagram__button:hover {
-	background: var(--gray-200);
-	transform: translateY(-1px);
+	background: var(--accent-red);
+	color: white;
+}
+
+.instagram__button:hover img {
+	filter: brightness(0) invert(1)
 }
 
 .instagram__button img {
+	transition: all .3s ease;
 	transform: rotate(-45deg);
 }
 
