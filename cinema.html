@@ -1,375 +1,383 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>danamall</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/font.css" />
-    <link rel="stylesheet" href="./styles/typography-utilite.css" />
-    <link rel="stylesheet" href="./styles/tokens.css" />
-    <link rel="stylesheet" href="./styles/typography.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/current-directory.css" />
-    <link rel="stylesheet" href="./styles/stores.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__body p-cont">
-          <div class="header__container">
-            <a href="/" class="header__logo" aria-label="DANA MALL">
-              <img src="./images/Logo.svg" alt="DANA MALL" />
-            </a>
-            <nav class="header__nav">
-              <a href="/stores.html">Магазины</a>
-              <a href="/cafe-and-restaurants.html">Кафе и рестораны</a>
-              <a href="/current-directory.html">Кинотеатр</a>
-              <a href="/map.html">Карта ТЦ</a>
-            </nav>
-            <div class="header__info">
-              <div class="header__hours hours__dropdown">
-                <button class="hours__dropdown__toggle" aria-expanded="false">
-                  <img src="./images/hours.svg" alt="" />
-                  <span>Ежедневно 10:00 — 22:00</span>
-                  <span class="hours__dropdown__arrow"></span>
-                </button>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>danamall</title>
+	<link rel="stylesheet" href="./styles/style.css" />
+	<link rel="stylesheet" href="./styles/header.css" />
+	<link rel="stylesheet" href="./styles/footer.css" />
+	<link rel="stylesheet" href="./styles/font.css" />
+	<link rel="stylesheet" href="./styles/typography-utilite.css" />
+	<link rel="stylesheet" href="./styles/tokens.css" />
+	<link rel="stylesheet" href="./styles/typography.css" />
+	<link rel="stylesheet" href="./styles/main.css" />
+	<link rel="stylesheet" href="./styles/current-directory.css" />
+	<link rel="stylesheet" href="./styles/stores.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-                <div class="hours__dropdown__menu" hidden>
-                  <ul>
-                    <li>Гипермаркет Green — 8:00–23:00</li>
-                    <li>Фуд-корт — 10:00–22:00</li>
-                    <li>Кинотеатр Mooon — Вс–Чт: 10:00–00:00</li>
-                    <li>Кинотеатр Mooon — Пт–Сб: 10:00–01:30</li>
-                    <li>Паркинг — круглосуточно</li>
-                  </ul>
-                </div>
-              </div>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__body p-cont">
+				<div class="header__container">
+					<a href="/" class="header__logo" aria-label="DANA MALL">
+						<img src="./images/Logo.svg" alt="DANA MALL" />
+					</a>
+					<nav class="header__nav">
+						<a href="/stores.html">Магазины</a>
+						<a href="/cafe-and-restaurants.html">Кафе и рестораны</a>
+						<a href="/cinema.html">Кинотеатр</a>
+						<a href="/map.html">Карта ТЦ</a>
+					</nav>
+					<div class="header__info">
+						<div class="header__hours hours__dropdown">
+							<button class="hours__dropdown__toggle" aria-expanded="false">
+								<img src="./images/hours.svg" alt="" />
+								<span>Ежедневно 10:00 — 22:00</span>
+								<span class="hours__dropdown__arrow"></span>
+							</button>
 
-              <div class="header-buttons__block">
-                <button class="header__map">
-                  <img src="./images/map.svg" alt="" />
-                </button>
-                <button class="header__search">
-                  <img src="./images/search.svg" alt="" />
-                </button>
-                <button class="header__icon burger" id="burgerBtn">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="header-menu" id="headerMenu">
-            <div class="p-cont header-menu__wrapper">
-              <div class="header-menu-info__content">
-                <div class="header-menu-link__content">
-                  <div class="header-menu__column">
-                    <a href="/map.html">Схема ТЦ</a>
-                    <a href="/how-to-get.html">Как добраться</a>
-                    <a href="/parking.html">Паркинг</a>
-                    <a href="/about-us.html">О DANA MALL</a>
-                    <a href="/arendators.html">Арендаторам</a>
-                    <a href="/news.html">Новости</a>
-                    <a href="/contacts.html">Контакты</a>
-                  </div>
-                  <div class="header-menu__column">
-                    <a href="/stores.html">Магазины</a>
-                    <a href="/cafe-and-restaurants.html">Кафе и рестораны</a>
-                    <a href="/services-and-facilities.html">Сервисы и услуги</a>
-                    <a href="/kids.html">Детям</a>
-                    <a href="/entertainments.html">Развлечения</a>
-                    <a href="/current-directory.html">Кинотеатр</a>
-                  </div>
-                </div>
-                <div class="header-menu__info">
-                  <div class="header-menu-info__center">
-                    <p class="header-menu-info__label">Инфоцентр</p>
-                    <div class="header-menu-info__block">
-                      <p>+375 (29) 201-02-19</p>
-                      <p>info@dana-mall.com</p>
-                      <p>г. Минск, ул. П. Мстиславца, 11, ст.м. Восток</p>
-                    </div>
-                  </div>
-                  <div class="header-menu-info__arenda">
-                    <p class="header-menu-info__label">Отдел аренды</p>
-                    <div class="header-menu-info__block">
-                      <p>г. Минск, ул. П. Мстиславца, 9, («Дана центр»)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="header-menu__footer">
-                <div class="header-menu-footer__body">
-                  <a
-                    href="https://instagram.com/danamall"
-                    class="header-menu__social"
-                    target="_blank"
-                    ><img src="./images/inst-logo.svg" alt="" />
-                    <span>Мы в Instagram</span>
-                    <img src="./images/inst-arrow.svg" alt=""
-                  /></a>
-                  <p class="header__signature">DANA MALL, 2025</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main class="main">
-        <div class="main__body container p-cont">
-          <section class="current-directory-info">
-            <div class="current-directory-text">
-              <small>Главная / Кинотеатр</small>
-              <h1 class="page-directory__title">КИНОТЕАТР MOON</h1>
-              <div class="nav__block">
-                <div class="tags__body">
-                  <div class="tag-floor">3 этаж</div>
-                  <p class="tag-type">Развлечение</p>
-                </div>
-                <a href="#">На карте </a>
-              </div>
-              <div class="info__body">
-                <div class="info-text__body">
-                  <div class="info-block">
-                    <strong>Режим:</strong> ПН – ВС 10:00 — 22:00
-                  </div>
-                  <div class="info-block">
-                    <strong>Телефон:</strong> +375 29 686-00-33
-                  </div>
-                  <div class="info-block">
-                    <strong>Билеты:</strong> MOOON.BY
-                  </div>
-                </div>
-                <div class="logo">
-                  <img src="./images/moon-logo.png" alt="moon" width="80" />
-                </div>
-              </div>
-              <div class="description__block">
-                <p>
-                  Кинопространство moon в ТРЦ Dana Mall — беспроигрышный вариант
-                  для полноценного расслабления и непревзойденного отдыха,
-                  которое подарит своим гостям настоящее удовольствие от
-                  просмотра фильмов MOON.
-                </p>
-                <p>
-                  Кино здесь обособленно подчинено ключевым событиям, ведь
-                  кинопространство оснащено самыми актуальными залами —
-                  уютнейшее место, куда вновь и вновь хочется возвращаться с
-                  любимым человеком, большой компанией или чтобы побыть наедине
-                  с собой.
-                </p>
-              </div>
-            </div>
+							<div class="hours__dropdown__menu" hidden>
+								<ul>
+									<li>Гипермаркет Green — 8:00–23:00</li>
+									<li>Фуд-корт — 10:00–22:00</li>
+									<li>Кинотеатр Mooon — Вс–Чт: 10:00–00:00</li>
+									<li>Кинотеатр Mooon — Пт–Сб: 10:00–01:30</li>
+									<li>Паркинг — круглосуточно</li>
+								</ul>
+							</div>
+						</div>
 
-            <div class="current-directory-image">
-              <img src="./images/moon.jpg" alt="Moon current-directory" />
-            </div>
-          </section>
+						<div class="header-buttons__block">
+							<button class="header__map">
+								<img src="./images/map.svg" alt="" />
+							</button>
+							<button class="header__search">
+								<img src="./images/search.svg" alt="" />
+							</button>
+							<button class="header__icon burger" id="burgerBtn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="header-menu" id="headerMenu">
+					<div class="p-cont header-menu__wrapper">
+						<div class="header-menu-info__content">
+							<div class="header-menu-link__content">
+								<div class="header-menu__column">
+									<a href="/map.html">Схема ТЦ</a>
+									<a href="/how-to-get.html">Как добраться</a>
+									<a href="/parking.html">Паркинг</a>
+									<a href="/about-us.html">О DANA MALL</a>
+									<a href="/arendators.html">Арендаторам</a>
+									<a href="/news.html">Новости</a>
+									<a href="/contacts.html">Контакты</a>
+								</div>
+								<div class="header-menu__column">
+									<a href="/stores.html">Магазины</a>
+									<a href="/cafe-and-restaurants.html">Кафе и рестораны</a>
+									<a href="/services-and-facilities.html">Сервисы и услуги</a>
+									<a href="/kids.html">Детям</a>
+									<a href="/entertainments.html">Развлечения</a>
+									<a href="/cinema.html">Кинотеатр</a>
+								</div>
+							</div>
+							<div class="header-menu__info">
+								<div class="header-menu-info__center">
+									<p class="header-menu-info__label">Инфоцентр</p>
+									<div class="header-menu-info__block">
+										<p>+375 (29) 201-02-19</p>
+										<p>info@dana-mall.com</p>
+										<p>г. Минск, ул. П. Мстиславца, 11, ст.м. Восток</p>
+									</div>
+								</div>
+								<div class="header-menu-info__arenda">
+									<p class="header-menu-info__label">Отдел аренды</p>
+									<div class="header-menu-info__block">
+										<p>г. Минск, ул. П. Мстиславца, 9, («Дана центр»)</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="header-menu__footer">
+							<div class="header-menu-footer__body">
+								<a href="https://instagram.com/danamall" class="header-menu__social" target="_blank"><img
+										src="./images/inst-logo.svg" alt="" />
+									<span>Мы в Instagram</span>
+									<img src="./images/inst-arrow.svg" alt="" /></a>
+								<p class="header__signature">DANA MALL, 2025</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container p-cont">
+				<nav class="breadcrumbs" aria-label="Навигация по разделам">
+					<a href="/">Главная</a> / <span>Магазины</span>
+				</nav>
+				<div class="main__body news__body">
+					<section class="current-directory-info">
+						<div class="current-directory-info__body">
+							<div class="current-directory-text">
+								<div class="page-directory-title__block">
+									<h1 class="page-directory__title">MANGO</h1>
+									<div class="nav__block">
+										<div class="tags__body">
+											<div class="tag-floor">3 этаж</div>
 
-          <section class="now-showing">
-            <h2>СЕЙЧАС В ПРОКАТЕ</h2>
+										</div>
+										<a class="link__map" href="#">На карте <img src="./images/arrow-button.svg" alt=""></a>
+									</div>
+								</div>
+								<div class="info__body">
+									<div class="info-text__body">
+										<div class="info-block">
+											<p>Категория:</p>
+											<p>Женская одежда</p>
+										</div>
+										<div class="info-block">
+											<p>Режим работы:</p>
+											<p>ПН – ВС 10:00 — 22:00</p>
+										</div>
+										<div class="info-block">
+											<p>Телефон:</p>
+											<p>+375 29 686-00-33</p>
 
-            <div class="swiper current-directory-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/kinoteatr-1.png" alt="Битва" />
-                  <h4>Битва за битвой</h4>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/kinoteatr-2.png" alt="Автобус" />
-                  <h4>Школьный автобус</h4>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/kinoteatr-3.png" alt="Заклятие" />
-                  <h4>Заклятие 4: Последний обряд</h4>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/kinoteatr-4.png" alt="Грабитель" />
-                  <h4>Грабитель с крыши</h4>
-                </div>
-              </div>
+										</div>
+										<div class="info-block">
+											<p>Билеты:</p>
+											<p>MOOON.BY</p>
 
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </section>
+										</div>
+									</div>
+									<div class="logo">
+										<img src="./images/moon-logo.png" alt="moon" width="80" />
+									</div>
+								</div>
+								<div class="description__block">
+									<p>
+										Кинопространство moon в ТРЦ Dana Mall — беспроигрышный вариант
+										для полноценного расслабления и непревзойденного отдыха,
+										которое подарит своим гостям настоящее удовольствие от
+										просмотра фильмов MOON.
+									</p>
+									<p>
+										Кино здесь обособленно подчинено ключевым событиям, ведь
+										кинопространство оснащено самыми актуальными залами —
+										уютнейшее место, куда вновь и вновь хочется возвращаться с
+										любимым человеком, большой компанией или чтобы побыть наедине
+										с собой.
+									</p>
+								</div>
+							</div>
+							<div class="current-directory-image">
+								<img src="./images/moon.jpg" alt="Moon current-directory" />
+							</div>
+						</div>
+					</section>
 
-          <section class="banner">
-            <img src="./images/moon-card.jpg" alt="" />
-            <div class="banner__text">
-              <div class="banner__text_block">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="223"
-                  height="40"
-                  viewBox="0 0 223 40"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_913_5684)">
-                    <mask
-                      id="mask0_913_5684"
-                      style="mask-type: luminance"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
-                      width="223"
-                      height="40"
-                    >
-                      <path d="M223 0H0V40H223V0Z" fill="white" />
-                    </mask>
-                    <g mask="url(#mask0_913_5684)">
-                      <path
-                        d="M123.615 39.8902C135.02 39.8902 144.266 30.9605 144.266 19.9451C144.266 8.92972 135.02 0 123.615 0C112.21 0 102.965 8.92972 102.965 19.9451C102.965 30.9605 112.21 39.8902 123.615 39.8902Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M60.7539 19.9706C60.7539 8.21751 69.8077 0 81.3354 0C92.863 0 101.917 8.21751 101.917 19.9706C101.917 31.7238 92.8685 39.9414 81.3354 39.9414C69.8077 39.9363 60.7539 31.7188 60.7539 19.9706ZM93.965 19.9706C93.965 12.2137 88.2541 7.06623 81.3354 7.06623C74.4166 7.06623 68.7058 12.2137 68.7058 19.9706C68.7058 27.7277 74.4166 32.8751 81.3354 32.8751C88.2541 32.8751 93.965 27.7277 93.965 19.9706Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M145.223 19.9706C145.223 8.21751 154.271 0 165.804 0C177.332 0 186.385 8.21751 186.385 19.9706C186.385 31.7238 177.336 39.9414 165.804 39.9414C154.271 39.9363 145.223 31.7188 145.223 19.9706ZM178.429 19.9706C178.429 12.2137 172.717 7.06623 165.799 7.06623C158.88 7.06623 153.169 12.2137 153.169 19.9706C153.169 27.7277 158.88 32.8751 165.799 32.8751C172.717 32.8751 178.429 27.7277 178.429 19.9706Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M208.245 0C203.105 0 198.756 1.97506 195.975 6.00706H195.811V0.767512H187.859V39.1688H195.811V18.0877C195.811 10.4842 200.011 6.75411 205.664 6.75411C211.63 6.75411 215.057 9.81394 215.057 17.4174V39.1637H223.009V16.0002C223.003 4.70742 216.943 0 208.245 0Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M45.0196 0C39.3458 0 34.8904 1.94437 31.982 6.58014H31.8497C28.5227 1.74482 25.2963 0 19.6968 0C15.1143 0 10.3569 2.0774 8.05775 5.8638H7.9518V0.767512H0V39.1688H7.9518V17.1258C7.9518 10.213 11.443 6.75923 16.7725 6.75923C22.1018 6.75923 25.5878 9.76788 25.5878 16.6806V39.1688H33.5395V17.4635C33.5395 10.5507 37.0307 6.75923 42.4396 6.75923C47.7691 6.75923 51.0643 9.76788 51.0643 16.6806V39.1688H59.016V15.5908C59.016 5.07071 53.0509 0 45.0196 0Z"
-                        fill="white"
-                      />
-                    </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_913_5684">
-                      <rect width="223" height="40" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <h3>КИНО НОВОГО УРОВНЯ</h3>
-              </div>
-              <button class="banner__button">СМОТРЕТЬ АФИШУ ↗</button>
-            </div>
-          </section>
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="footer__brands">
-          <div class="footer__brands-track" id="brandsTrack">
-            <span>ZARA</span><span>BERSHKA</span><span>CONTE</span
-            ><span>COLINS</span> <span>PULL&BEAR</span><span>SISTER'S</span
-            ><span>STRADIVARIUS</span> <span>MANGO</span><span>MILAVITSA</span
-            ><span>O'STIN</span> <span>ZNWR</span><span>MARK FORMELLE</span>
-          </div>
-        </div>
-        <div class="container p-cont">
-          <div class="footer__grid">
-            <!-- Режим работы (занимает 2 колонки) -->
-            <section class="footer__work">
-              <h4>РЕЖИМ РАБОТЫ</h4>
-              <div class="work-cols">
-                <div class="work-col work-col-gap">
-                  <div class="">
-                    <p class="muted">Гипермаркет Green</p>
-                    <p class="strong">8:00 — 23:00</p>
-                  </div>
-                  <div class="">
-                    <p class="muted">Фуд-корт Dana Mall</p>
-                    <p class="strong">10:00 — 22:00</p>
-                  </div>
-                </div>
-                <div class="work-col work-col-gap">
-                  <div class="">
-                    <p class="muted">Магазины и услуги</p>
-                    <p class="strong">10:00 — 22:00</p>
-                  </div>
-                  <div class="">
-                    <p class="muted">Подземный паркинг</p>
-                    <p class="strong">Круглосуточно</p>
-                  </div>
-                </div>
-                <div class="work-col">
-                  <p class="muted">Кинопространство Mooon</p>
-                  <p class="strong strong-time">Вс–Чт: 10:00 — 00:00</p>
-                  <p class="strong strong-time">Пт–Сб: 10:00 — 01:30</p>
-                </div>
-              </div>
-            </section>
+					<section class="now-showing">
+						<div class="cinema-slider__head">
+							<h2>СЕЙЧАС В ПРОКАТЕ</h2>
+							<div class="cinema-buttons__block">
+								<button class="swiper-button-prev news-prev news-arrow swiper-button-disabled"
+									aria-label="Previous slide" tabindex="-1" aria-controls="swiper-wrapper-6bbd451d8d10e9a2f"
+									disabled="" aria-disabled="true"></button>
+								<button class="swiper-button-next news-next news-arrow" aria-label="Next slide" tabindex="0"
+									aria-controls="swiper-wrapper-6bbd451d8d10e9a2f" aria-disabled="false"></button>
+							</div>
+						</div>
+						<div class="swiper current-directory-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="./images/kinoteatr-1.png" alt="Битва" />
 
-            <!-- Адрес -->
-            <section class="footer__addr">
-              <h4>АДРЕС DANA MALL</h4>
-              <p>Беларусь, г. Минск, ул. П. Мстиславца, 11, ст.м.Восток</p>
-              <a class="footer__link-arrow" href="#"
-                >Как добраться
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.666748 14.8887L14.889 0.666504M14.889 0.666504V14.8887M14.889 0.666504H0.666748"
-                    stroke="white"
-                    stroke-width="1.33333"
-                    stroke-linecap="round"
-                    stroke-linejoin="bevel"
-                  />
-                </svg>
-              </a>
-            </section>
+									<div class="cinema-slide__content">
+										<p>Битва за битвой</p>
+										<span class="cinema__category">триллер, боевик, драма, криминал</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/kinoteatr-2.png" alt="Автобус" />
+									<div class="cinema-slide__content">
+										<p>Битва за битвой</p>
+										<span class="cinema__category">триллер, боевик, драма, криминал</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/kinoteatr-3.png" alt="Заклятие" />
+									<div class="cinema-slide__content">
+										<p>Битва за битвой</p>
+										<span class="cinema__category">триллер, боевик, драма, криминал</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/kinoteatr-4.png" alt="Грабитель" />
+									<div class="cinema-slide__content">
+										<p>Битва за битвой</p>
+										<span class="cinema__category">триллер, боевик, драма, криминал</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/kinoteatr-4.png" alt="Грабитель" />
+									<div class="cinema-slide__content">
+										<p>Битва за битвой</p>
+										<span class="cinema__category">триллер, боевик, драма, криминал</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/kinoteatr-4.png" alt="Грабитель" />
+									<div class="cinema-slide__content">
+										<p>Битва за битвой</p>
+										<span class="cinema__category">триллер, боевик, драма, криминал</span>
+									</div>
+								</div>
+							</div>
 
-            <!-- Инфоцентр -->
-            <section class="footer__info">
-              <h4>ИНФОЦЕНТР</h4>
-              <p>+375 (29) 201-02-19</p>
-              <a href="mailto:info@dana-mall.com">info@dana-mall.com</a>
-            </section>
-          </div>
-          <div class="footer__bar">
-            <div class="footer-legal__block">
-              <button
-                class="footer__legal-toggle"
-                id="legalToggle"
-                aria-expanded="false"
-              >
-                Юридическая информация <span class="caret"></span>
-              </button>
-              <div class="footer__legal" id="legalPanel">
-                <div class="footer__legal-inner">
-                  <p>
-                    Общество с ограниченной ответственностью «Гранд Атриум»
-                    220076, г. Минск, ул. П. Мстиславца, дом 11, помещение 3,
-                    кабинет 57 УНП 193620986 Свидетельство о государственной
-                    регистрации №193620986, выдано Минским горисполкомом
-                    01.04.2022 г.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="footer__bar-link"
-              >Политика в отношении обработки персональных данных</a
-            >
-            <p class="footer__copy">© DANA MALL, 2025</p>
-          </div>
-        </div>
-      </footer>
+						</div>
+					</section>
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="./js/header.js"></script>
-      <script src="./js/footer.js"></script>
-      <script src="./js/index.js"></script>
-      <script src="./js/swiper.js"></script>
-    </div>
-  </body>
+					<section class="banner">
+						<img src="./images/moon-card.jpg" alt="" />
+						<div class="banner__text">
+							<div class="banner__text_block">
+								<svg xmlns="http://www.w3.org/2000/svg" width="223" height="40" viewBox="0 0 223 40"
+									fill="none">
+									<g clip-path="url(#clip0_913_5684)">
+										<mask id="mask0_913_5684" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0"
+											y="0" width="223" height="40">
+											<path d="M223 0H0V40H223V0Z" fill="white" />
+										</mask>
+										<g mask="url(#mask0_913_5684)">
+											<path
+												d="M123.615 39.8902C135.02 39.8902 144.266 30.9605 144.266 19.9451C144.266 8.92972 135.02 0 123.615 0C112.21 0 102.965 8.92972 102.965 19.9451C102.965 30.9605 112.21 39.8902 123.615 39.8902Z"
+												fill="white" />
+											<path
+												d="M60.7539 19.9706C60.7539 8.21751 69.8077 0 81.3354 0C92.863 0 101.917 8.21751 101.917 19.9706C101.917 31.7238 92.8685 39.9414 81.3354 39.9414C69.8077 39.9363 60.7539 31.7188 60.7539 19.9706ZM93.965 19.9706C93.965 12.2137 88.2541 7.06623 81.3354 7.06623C74.4166 7.06623 68.7058 12.2137 68.7058 19.9706C68.7058 27.7277 74.4166 32.8751 81.3354 32.8751C88.2541 32.8751 93.965 27.7277 93.965 19.9706Z"
+												fill="white" />
+											<path
+												d="M145.223 19.9706C145.223 8.21751 154.271 0 165.804 0C177.332 0 186.385 8.21751 186.385 19.9706C186.385 31.7238 177.336 39.9414 165.804 39.9414C154.271 39.9363 145.223 31.7188 145.223 19.9706ZM178.429 19.9706C178.429 12.2137 172.717 7.06623 165.799 7.06623C158.88 7.06623 153.169 12.2137 153.169 19.9706C153.169 27.7277 158.88 32.8751 165.799 32.8751C172.717 32.8751 178.429 27.7277 178.429 19.9706Z"
+												fill="white" />
+											<path
+												d="M208.245 0C203.105 0 198.756 1.97506 195.975 6.00706H195.811V0.767512H187.859V39.1688H195.811V18.0877C195.811 10.4842 200.011 6.75411 205.664 6.75411C211.63 6.75411 215.057 9.81394 215.057 17.4174V39.1637H223.009V16.0002C223.003 4.70742 216.943 0 208.245 0Z"
+												fill="white" />
+											<path
+												d="M45.0196 0C39.3458 0 34.8904 1.94437 31.982 6.58014H31.8497C28.5227 1.74482 25.2963 0 19.6968 0C15.1143 0 10.3569 2.0774 8.05775 5.8638H7.9518V0.767512H0V39.1688H7.9518V17.1258C7.9518 10.213 11.443 6.75923 16.7725 6.75923C22.1018 6.75923 25.5878 9.76788 25.5878 16.6806V39.1688H33.5395V17.4635C33.5395 10.5507 37.0307 6.75923 42.4396 6.75923C47.7691 6.75923 51.0643 9.76788 51.0643 16.6806V39.1688H59.016V15.5908C59.016 5.07071 53.0509 0 45.0196 0Z"
+												fill="white" />
+										</g>
+									</g>
+									<defs>
+										<clipPath id="clip0_913_5684">
+											<rect width="223" height="40" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+								<h3>КИНО НОВОГО УРОВНЯ</h3>
+							</div>
+							<button class="banner__button">СМОТРЕТЬ АФИШУ <img src="./images/arrow-button.svg" alt=""></button>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__brands">
+				<div class="footer__brands-track" id="brandsTrack">
+					<span>ZARA</span><span>BERSHKA</span><span>CONTE</span><span>COLINS</span>
+					<span>PULL&BEAR</span><span>SISTER'S</span><span>STRADIVARIUS</span>
+					<span>MANGO</span><span>MILAVITSA</span><span>O'STIN</span> <span>ZNWR</span><span>MARK FORMELLE</span>
+				</div>
+			</div>
+			<div class="container p-cont">
+				<div class="footer__grid">
+					<!-- Режим работы (занимает 2 колонки) -->
+					<section class="footer__work">
+						<h4>РЕЖИМ РАБОТЫ</h4>
+						<div class="work-cols">
+							<div class="work-col work-col-gap">
+								<div class="">
+									<p class="muted">Гипермаркет Green</p>
+									<p class="strong">8:00 — 23:00</p>
+								</div>
+								<div class="">
+									<p class="muted">Фуд-корт Dana Mall</p>
+									<p class="strong">10:00 — 22:00</p>
+								</div>
+							</div>
+							<div class="work-col work-col-gap">
+								<div class="">
+									<p class="muted">Магазины и услуги</p>
+									<p class="strong">10:00 — 22:00</p>
+								</div>
+								<div class="">
+									<p class="muted">Подземный паркинг</p>
+									<p class="strong">Круглосуточно</p>
+								</div>
+							</div>
+							<div class="work-col">
+								<p class="muted">Кинопространство Mooon</p>
+								<p class="strong strong-time">Вс–Чт: 10:00 — 00:00</p>
+								<p class="strong strong-time">Пт–Сб: 10:00 — 01:30</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Адрес -->
+					<section class="footer__addr">
+						<h4>АДРЕС DANA MALL</h4>
+						<p>Беларусь, г. Минск, <br>ул. П. Мстиславца, 11, <br>ст.м.Восток</p>
+						<a class="footer__link-arrow" href="#">Как добраться
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.666748 14.8887L14.889 0.666504M14.889 0.666504V14.8887M14.889 0.666504H0.666748"
+									stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="bevel" />
+							</svg>
+						</a>
+					</section>
+
+					<!-- Инфоцентр -->
+					<section class="footer__info">
+						<h4>ИНФОЦЕНТР</h4>
+						<p>+375 (29) 201-02-19</p>
+						<a href="mailto:info@dana-mall.com">info@dana-mall.com</a>
+					</section>
+				</div>
+				<div class="footer__bar">
+					<div class="footer-legal__block">
+						<button class="footer__legal-toggle" id="legalToggle" aria-expanded="false">
+							Юридическая информация <span class="caret"></span>
+						</button>
+						<div class="footer__legal" id="legalPanel">
+							<div class="footer__legal-inner">
+								<p>
+									Общество с ограниченной ответственностью «Гранд Атриум»
+									220076, г. Минск, ул. П. Мстиславца, дом 11, помещение 3,
+									кабинет 57 УНП 193620986 Свидетельство о государственной
+									регистрации №193620986, выдано Минским горисполкомом
+									01.04.2022 г.
+								</p>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="footer__bar-link">Политика в отношении обработки персональных данных</a>
+					<p class="footer__copy">© DANA MALL, 2025</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/header.js"></script>
+		<script src="./js/footer.js"></script>
+		<script src="./js/index.js"></script>
+		<script src="./js/swiper.js"></script>
+	</div>
+</body>
+
 </html>

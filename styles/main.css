@@ -215,9 +215,14 @@
 	font-size: 16px;
 	column-gap: 20px;
 	padding: 9.5px 20px;
-	flex: 1 1 auto;
+	flex: 0 1 auto;
 	max-width: 200px;
+
 	height: 43px;
+}
+
+.tag__separator {
+	color: #626262;
 }
 
 .news-card__link .promo__meta {
@@ -367,16 +372,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.badge--sale::before {
-	content: "";
-	position: absolute;
-	left: -10px;
-	top: 4px;
-	height: 16px;
-	background-color: #5858584d;
-	width: 2px;
 }
 
 .badge--tag {
@@ -688,7 +683,7 @@
 }
 
 .news-card__body {
-	padding-top: 14px;
+	padding-top: 16px;
 	display: grid;
 	gap: 6px;
 	transition: all .5s ease;
@@ -708,7 +703,7 @@
 	font: 16px;
 }
 
-.news-card__meta {
+.promo__meta {
 	display: flex;
 	gap: 8px;
 	align-items: center;
@@ -717,15 +712,13 @@
 
 .tag {
 	height: 30px;
-	padding: 0 10px;
+	font-weight: 500;
 	border-radius: 999px;
 	display: inline-flex;
 	align-items: center;
-	font: var(--w-medium) 13px/1 var(--font-primary);
 }
 
 .tag--date {
-	background: #f1f2f4;
 	color: #6b7280;
 }
 
@@ -735,7 +728,6 @@
 }
 
 .tag--news {
-	background: #e9f7ef;
 	color: #2f8c60;
 }
 
@@ -1050,7 +1042,19 @@
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 120%;
-	margin-bottom: 24px;
+	margin-bottom: 8px;
+}
+
+.route-map__block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.route-card__text {
+	margin-bottom: 10px;
 }
 
 .route-card__list {
@@ -1573,10 +1577,12 @@ span.tariff-time {
 	.promo__text {
 		row-gap: 11px;
 	}
-	.brand__logo{
+
+	.brand__logo {
 		width: 60px;
 		height: 60px;
 	}
+
 	.promo {
 		background-color: transparent;
 		padding: 0;

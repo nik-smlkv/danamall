@@ -168,13 +168,35 @@ new Swiper(".about-us__swiper", {
 	},
 });
 new Swiper(".current-directory-swiper", {
-	slidesPerView: 4,
-	spaceBetween: 20,
 	loop: true,
 	freeMode: true,
+	spaceBetween: 20,
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: ".now-showing .swiper-button-next",
+		prevEl: ".now-showing .swiper-button-prev",
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1.2, // для 360px — один слайд + немного следующего
+		},
+		480: {
+			slidesPerView: 2, // чуть шире — два слайда
+		},
+		768: {
+			slidesPerView: 2.5, // планшет
+		},
+		1024: {
+			slidesPerView: 3, // малый десктоп
+		},
+		1280: {
+			slidesPerView: 4, // стандартный десктоп
+		},
+		1440: {
+			slidesPerView: 4.5, // чуть больше
+		},
+		1920: {
+			slidesPerView: 5, // широкие экраны
+		},
 	},
 });
 
@@ -199,16 +221,31 @@ new Swiper('.news-swiper', {
 		}
 	}
 });
-
-new Swiper('.current-directory-gallery-swiper', {
-	slidesPerView: 3,
+new Swiper('.directory-news-swiper', {
+	slidesPerView: 1.2,
 	spaceBetween: 16,
 	loop: true,
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
 	},
- 
+	breakpoints: {
+		640: {
+			slidesPerView: 2
+		},
+		900: {
+			slidesPerView: 3
+		},
+		1200: {
+			slidesPerView: "auto"
+		}
+	}
+});
+
+new Swiper('.current-directory-gallery-swiper', {
+	slidesPerView: 4,
+	spaceBetween: 40,
+	loop: true,
 });
 
 const gallery = document.querySelector('.directory__gallery');

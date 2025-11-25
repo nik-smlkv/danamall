@@ -8,16 +8,7 @@
 
 
 /* заголовок */
-.page-directory__title {
-	margin: 0 0 24px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	font-family: var(--font-headline, system-ui);
-	font-weight: 500;
-	font-size: 80px;
-	text-transform: uppercase;
-	color: var(--text-primary, #050816);
-}
+
 
 /* ===== FILTERS ===== */
 .filters__body {
@@ -270,6 +261,8 @@
 	color: #626262;
 }
 
+
+
 /* ===== ADAPTIVE ===== */
 @media(max-width: 1300px) {
 	.filters__body {
@@ -308,20 +301,13 @@
 	}
 }
 
-@media(max-width: 768px) {
-	.page-directory__title {
-		font-size: clamp(2rem, -0.692rem + 7.692vi, 3rem);
-	}
+.news__body{
+	padding-bottom: 0;
 }
 
 @media (max-width: 640px) {
 	.page-directory {
 		padding: 24px 12px 40px;
-	}
-
-	.page-directory__title {
-		margin-bottom: 18px;
-
 	}
 
 	.directory-card {

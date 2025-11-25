@@ -24,17 +24,17 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+				<header class="header">
 			<div class="header__body p-cont">
 				<div class="header__container">
 					<a href="/" class="header__logo" aria-label="DANA MALL">
 						<img src="./images/Logo.svg" alt="DANA MALL" />
 					</a>
 					<nav class="header__nav">
-						<a href="#">Магазины</a>
-						<a href="#">Кафе и рестораны</a>
-						<a href="#">Кинотеатр</a>
-						<a href="#">Карта ТЦ</a>
+						<a href="/stores.html">Магазины</a>
+						<a href="/cafe-and-restaurants.html">Кафе и рестораны</a>
+						<a href="/cinema.html">Кинотеатр</a>
+						<a href="/map.html">Карта ТЦ</a>
 					</nav>
 					<div class="header__info">
 						<div class="header__hours hours__dropdown">
@@ -44,13 +44,29 @@
 								<span class="hours__dropdown__arrow"></span>
 							</button>
 
-							<div class="hours__dropdown__menu" hidden>
+							<div class="hours__dropdown__menu">
 								<ul>
-									<li>Гипермаркет Green — 8:00–23:00</li>
-									<li>Фуд-корт — 10:00–22:00</li>
-									<li>Кинотеатр Mooon — Вс–Чт: 10:00–00:00</li>
-									<li>Кинотеатр Mooon — Пт–Сб: 10:00–01:30</li>
-									<li>Паркинг — круглосуточно</li>
+									<li>
+										<p class="menu-item__title">Гипермаркет Green</p>
+										<p class="menu-item__time">8:00 — 23:00</p>
+									</li>
+									<li>
+										<p class="menu-item__title">Фуд-корт Dana Mall</p>
+										<p class="menu-item__time">10:00 — 22:00</p>
+									</li>
+									<li>
+										<p class="menu-item__title">Магазины и услуги</p>
+										<p class="menu-item__time">10:00 — 22:00</p>
+									</li>
+									<li>
+										<p class="menu-item__title">Кинопространство Mooon</p>
+										<p class="menu-item__time">Вс-Чт: 10:00 — 00:00</p>
+										<p class="menu-item__time">Пт–Сб: 10:00 — 01:30</p>
+									</li>
+									<li>
+										<p class="menu-item__title">Подземный паркинг</p>
+										<p class="menu-item__time">Круглосуточно</p>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -75,21 +91,21 @@
 						<div class="header-menu-info__content">
 							<div class="header-menu-link__content">
 								<div class="header-menu__column">
-									<a href="#">Карта ТЦ</a>
-									<a href="#">Как добраться</a>
-									<a href="#">Паркинг</a>
-									<a href="#">О DANA MALL</a>
-									<a href="#">Арендаторам</a>
-									<a href="#">Новости</a>
-									<a href="#">Контакты</a>
+									<a href="/map.html">Карта ТЦ</a>
+									<a href="/how-to-get.html">Как добраться</a>
+									<a href="/parking.html">Паркинг</a>
+									<a href="/about-us.html">О DANA MALL</a>
+									<a href="/arendators.html">Арендаторам</a>
+									<a href="/news.html">Новости</a>
+									<a href="/contacts.html">Контакты</a>
 								</div>
 								<div class="header-menu__column">
-									<a href="#">Магазины</a>
-									<a href="#">Кафе и рестораны</a>
-									<a href="#">Сервисы и услуги</a>
-									<a href="#">Детям</a>
-									<a href="#">Развлечения</a>
-									<a href="#">Кинотеатр</a>
+									<a href="/stores.html">Магазины</a>
+									<a href="/cafe-and-restaurants.html">Кафе и рестораны</a>
+									<a href="/services-and-facilities.html">Сервисы и услуги</a>
+									<a href="/kids.html">Детям</a>
+									<a href="/entertainments.html">Развлечения</a>
+									<a href="/cinema.html">Кинотеатр</a>
 								</div>
 							</div>
 							<div class="header-menu__info">
@@ -351,80 +367,86 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
-			<!-- Бренды -->
+				<footer class="footer">
 			<div class="footer__brands">
 				<div class="footer__brands-track" id="brandsTrack">
 					<span>ZARA</span><span>BERSHKA</span><span>CONTE</span><span>COLINS</span>
 					<span>PULL&BEAR</span><span>SISTER'S</span><span>STRADIVARIUS</span>
-					<span>MANGO</span><span>MILAVITSA</span><span>O'STIN</span> <span>ZNWR</span><span>MARK
-						FORMELLE</span>
+					<span>MANGO</span><span>MILAVITSA</span><span>O'STIN</span> <span>ZNWR</span><span>MARK FORMELLE</span>
 				</div>
 			</div>
-
-			<!-- Контент как на макете -->
-			<div class="footer__grid">
-				<!-- Режим работы (занимает 2 колонки) -->
-				<section class="footer__work">
-					<h4>РЕЖИМ РАБОТЫ</h4>
-					<div class="work-cols">
-						<div class="work-col">
-							<p class="muted">Гипермаркет Green</p>
-							<p class="strong">8:00 — 23:00</p>
-
-							<p class="muted">Фуд-корт Dana Mall</p>
-							<p class="strong">10:00 — 22:00</p>
+			<div class="container p-cont">
+				<div class="footer__grid">
+					<!-- Режим работы (занимает 2 колонки) -->
+					<section class="footer__work">
+						<h4>РЕЖИМ РАБОТЫ</h4>
+						<div class="work-cols">
+							<div class="work-col work-col-gap">
+								<div class="">
+									<p class="muted">Гипермаркет Green</p>
+									<p class="strong">8:00 — 23:00</p>
+								</div>
+								<div class="">
+									<p class="muted">Фуд-корт Dana Mall</p>
+									<p class="strong">10:00 — 22:00</p>
+								</div>
+							</div>
+							<div class="work-col work-col-gap">
+								<div class="">
+									<p class="muted">Магазины и услуги</p>
+									<p class="strong">10:00 — 22:00</p>
+								</div>
+								<div class="">
+									<p class="muted">Подземный паркинг</p>
+									<p class="strong">Круглосуточно</p>
+								</div>
+							</div>
+							<div class="work-col">
+								<p class="muted">Кинопространство Mooon</p>
+								<p class="strong strong-time">Вс–Чт: 10:00 — 00:00</p>
+								<p class="strong strong-time">Пт–Сб: 10:00 — 01:30</p>
+							</div>
 						</div>
-						<div class="work-col">
-							<p class="muted">Магазины и услуги</p>
-							<p class="strong">10:00 — 22:00</p>
+					</section>
 
-							<p class="muted">Подземный паркинг</p>
-							<p class="strong">Круглосуточно</p>
-						</div>
-						<div class="work-col">
-							<p class="muted">Кинопространство Mooon</p>
-							<p>Вс–Чт: 10:00 — 00:00</p>
-							<p>Пт–Сб: 10:00 — 01:30</p>
+					<!-- Адрес -->
+					<section class="footer__addr">
+						<h4>АДРЕС DANA MALL</h4>
+						<p>Беларусь, г. Минск, <br>ул. П. Мстиславца, 11, <br>ст.м.Восток</p>
+						<a class="footer__link-arrow" href="#">Как добраться
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.666748 14.8887L14.889 0.666504M14.889 0.666504V14.8887M14.889 0.666504H0.666748"
+									stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="bevel" />
+							</svg>
+						</a>
+					</section>
+
+					<!-- Инфоцентр -->
+					<section class="footer__info">
+						<h4>ИНФОЦЕНТР</h4>
+						<p>+375 (29) 201-02-19</p>
+						<a href="mailto:info@dana-mall.com">info@dana-mall.com</a>
+					</section>
+				</div>
+				<div class="footer__bar">
+					<div class="footer-legal__block">
+						<button class="footer__legal-toggle" id="legalToggle" aria-expanded="false">
+							Юридическая информация <span class="caret"></span>
+						</button>
+						<div class="footer__legal" id="legalPanel">
+							<div class="footer__legal-inner">
+								<p>
+									Общество с ограниченной ответственностью «Гранд Атриум»
+									220076, г. Минск, ул. П. Мстиславца, дом 11, помещение 3,
+									кабинет 57 УНП 193620986 Свидетельство о государственной
+									регистрации №193620986, выдано Минским горисполкомом
+									01.04.2022 г.
+								</p>
+							</div>
 						</div>
 					</div>
-				</section>
-
-				<!-- Адрес -->
-				<section class="footer__addr">
-					<h4>АДРЕС DANA MALL</h4>
-					<p>Беларусь, г. Минск,</p>
-					<p>ул. П. Мстиславца, 11,</p>
-					<p>ст.м.Восток</p>
-					<a class="footer__link-arrow" href="#">Как добраться</a>
-				</section>
-
-				<!-- Инфоцентр -->
-				<section class="footer__info">
-					<h4>ИНФОЦЕНТР</h4>
-					<p>+375 (29) 201-02-19</p>
-					<p><a href="mailto:info@dana-mall.com">info@dana-mall.com</a></p>
-				</section>
-			</div>
-
-			<!-- Нижняя плашка -->
-			<div class="footer__bar">
-				<button class="footer__legal-toggle" id="legalToggle" aria-expanded="false">
-					Юридическая информация <span class="caret">▾</span>
-				</button>
-				<a href="#" class="footer__bar-link">Политика в отношении обработки персональных данных</a>
-				<p class="footer__copy">© DANA MALL, 2025</p>
-			</div>
-
-			<!-- Раскрывающийся блок юридической инфы -->
-			<div class="footer__legal" id="legalPanel" hidden>
-				<div class="footer__legal-inner">
-					<p>
-						ООО «Дана Молл». УНП 123456789. Юр. адрес: 220000, Беларусь, г.
-						Минск, ул. П. Мстиславца, 11. Настоящая информация размещена в
-						целях соблюдения действующего законодательства и носит справочный
-						характер.
-					</p>
+					<a href="#" class="footer__bar-link">Политика в отношении обработки персональных данных</a>
+					<p class="footer__copy">© DANA MALL, 2025</p>
 				</div>
 			</div>
 		</footer>

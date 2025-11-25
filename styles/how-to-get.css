@@ -4,7 +4,6 @@
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 24px;
-	margin-top: 32px;
 }
 
 .route-card {
@@ -41,6 +40,7 @@
 	line-height: 110%;
 	align-items: center;
 	gap: 8px;
+ 
 }
 
 .route-card__icon {
@@ -118,9 +118,35 @@
 	}
 }
 
+@media(max-width: 900px) {
+	.page-directory__block {
+		flex-direction: column;
+		row-gap: 16px;
+		margin-bottom: 30px;
+		align-items: start;
+	}
+
+	.page-directory__block .page-directory__title {
+		margin-bottom: 0;
+	}
+}
+
 @media (max-width: 640px) {
 	.route-cards {
 		grid-template-columns: 1fr;
+	}
+
+	.page-directory__block {
+		margin-bottom: 16px;
+	}
+
+	.route-card__title {
+		font-size: 20px;
+	}
+
+	.route-card__content {
+		padding: 16px;
+		padding-bottom: 0;
 	}
 
 	.route-card {
