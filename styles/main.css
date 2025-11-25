@@ -728,8 +728,8 @@
 
 .news-card__desc {
 	margin: 0;
-	color: var(--text-secondary);
-	font: 16px;
+	color: #090714;
+	font-size: 16px;
 }
 
 .promo__meta {
