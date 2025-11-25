@@ -168,7 +168,10 @@
 .directory-filters__plan span {
 	white-space: nowrap;
 }
-
+.directory-filters__plan svg{
+	width: 16px;
+	height: 16px;
+}
 .directory-filters__select {
 	position: relative;
 	width: 100%;

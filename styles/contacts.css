@@ -1,6 +1,6 @@
 .contacts__grid {
 	display: flex;
-	gap: 40px;
+	gap: 105px;
 	justify-content: space-between;
 }
 
@@ -350,11 +350,19 @@
 	}
 }
 
+@media(max-width: 1440px) {
+	.rent-form__title {
+		font-size: 32px;
+	}
+}
+
 @media(max-width: 1360px) {
 	.contacts__grid {
 		flex-direction: column;
 
 	}
+
+
 
 	.contacts__block h3 {
 		max-width: 381px;
@@ -399,7 +407,8 @@
 	.route-map__title {
 		font-size: clamp(1.5rem, 0.333rem + 3.333vi, 3rem);
 	}
-	.departments__title  {
+
+	.departments__title {
 		font-size: clamp(1.5rem, 0.333rem + 3.333vi, 3rem);
 	}
 }
@@ -429,13 +438,16 @@
 		flex: 1 1 100%;
 		margin-bottom: 0;
 	}
-	.map__embed{
+
+	.map__embed {
 		height: 65vh;
 		max-height: 100%;
 	}
-	.route-map{
+
+	.route-map {
 		flex: 1 1 100%;
 	}
+
 	.feedback-form .rent-form__block {
 		flex-direction: column-reverse;
 		width: 100%;

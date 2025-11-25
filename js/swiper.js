@@ -192,7 +192,7 @@ new Swiper(".current-directory-swiper", {
 			slidesPerView: 4, // стандартный десктоп
 		},
 		1440: {
-			slidesPerView: 4.5, // чуть больше
+			slidesPerView: 4, // чуть больше
 		},
 		1920: {
 			slidesPerView: 5, // широкие экраны
